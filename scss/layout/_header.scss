@@ -1,0 +1,17 @@
+// -------------------- HEADER
+
+.fullscreen-video {
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .baobao-video {
+        position: absolute;
+        height: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+// -------------------- RESET
+
+/* -------reseteo------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----------reseteo clases bootstrap---------- */
+
+.container { padding: 0; }
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.row > * {
+    padding: 0 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+p { margin-bottom: 0; }
