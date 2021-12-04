@@ -1,7 +1,9 @@
-/* -------color------- */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.fullscreen video {
+  width: 100%;
+}
+
 /* -------reseteo------- */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -34,27 +36,7 @@ p {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
-}
-
-.fullscreen-video {
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 66px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.fullscreen-video .baobao-video {
-  position: absolute;
-  height: 100%;
+  font-family: 'Manrope', sans-serif;
 }
 
 /* -------logo------- */

@@ -1,9 +1,15 @@
 // -------------------- IMPORTS
 
+@import './abstracts/mixins';
 @import './abstracts/variables';
+
+@import './components/images';
+@import './components/videos';
 
 @import './base/reset';
 @import './base/typo';
 
+@import './layout/flex';
+@import './layout/grid';
 @import './layout/header';
 @import './layout/nav';
