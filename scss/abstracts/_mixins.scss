@@ -1,0 +1,13 @@
+// -------------------- MIXINS
+
+// flex principal
+
+@mixin flex($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex: {
+        direction: $direction;
+        wrap: $wrap;
+    }
+    justify-content: $justify;
+    align-items: $align;
+}

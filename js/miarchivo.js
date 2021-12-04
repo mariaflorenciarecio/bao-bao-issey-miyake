@@ -4,7 +4,7 @@ let paisEntrada = prompt("¡Bienvenido a BAO BAO ISSEY MIYAKE!\nPor favor, ingre
 console.log(paisEntrada, typeof paisEntrada);
 let paisSalida = "Realizamos envíos a " + paisEntrada + ". ¡Disfrute su compra!";
 
-if((paisEntrada == "ARGENTINA") || (paisEntrada == "argentina")) {
+if((paisEntrada == "ARGENTINA") || (paisEntrada == "argentina") || (paisEntrada == "Argentina")) {
     alert(paisSalida);
 } else if((paisEntrada == "") || (paisEntrada == " ")) {
     alert("Por favor, complete el campo requerido para poder continuar.");
