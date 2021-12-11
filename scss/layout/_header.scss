@@ -1,0 +1,73 @@
+// -------------------- HEADER
+
+.header { 
+    @include flex(column, nowrap, center, flex-start);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 17.2rem 0 0 10rem;
+
+    h1 { @include subtitle($white, left); }
+    p { @include paragraph($white, left, 64rem); }
+
+    &__title {
+        display: flex;
+        height: 5.4rem;
+
+        p, .header__effect span { 
+            @include title($white, left); 
+        }
+    }
+
+    &__effect {
+        overflow: hidden;
+
+        span {
+            display: block;
+            text-align: left;
+            padding-left: 1rem;
+            animation: spin_words 6s infinite;
+
+            @keyframes spin_words {
+                10% {
+                    transform: translateY(-112%);
+                }
+                25% {
+                    transform: translateY(-100%);
+                }
+                35% {
+                    transform: translateY(-212%);
+                }
+                50% {
+                    transform: translateY(-200%);
+                }
+                60% {
+                    transform: translateY(-312%);
+                }
+                75% {
+                    transform: translateY(-300%);
+                }
+                85% {
+                    transform: translateY(-412%);
+                }
+                100% {
+                    transform: translateY(-400%);
+                }
+            }
+        }
+    }
+
+    .white-button { @include button($white, 3rem, left); }
+
+    &__video {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: fill;
+    }
+}

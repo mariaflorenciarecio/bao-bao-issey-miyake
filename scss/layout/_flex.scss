@@ -1,0 +1,248 @@
+// -------------------- NOVEDADES --------------------
+
+#novedades {
+    background-color: $white;
+    padding: 5rem 0;
+    
+    h2 { 
+        @include title($black, center); 
+        padding-bottom: 5rem;
+    }
+
+    .flex__content {
+        @include flex(row, wrap, space-around, center);
+
+        .flex__item {
+            @include flex(column, nowrap, center, center);
+            img { height: 50vw; }
+            .flex__detail { @include flex-detail($black); }
+            &:nth-child(-n+2) { padding-bottom: 3rem; }
+        }
+    }
+
+    .black-button {
+        @include button($black, 6.2rem, center);
+        padding-bottom: 1.2rem;
+    }
+}
+
+// -------------------- COLECCION --------------------
+
+#coleccion {
+    background-color: $black;
+    padding-top: 5rem;
+
+    h2 {
+        @include title($white, center); 
+        padding-bottom: 5rem;
+    }
+
+    .flex__card {
+        @include flex(column, nowrap, center, center);
+        img { width: 100vw; }
+
+        .flex__info {
+            @include flex-info($white);
+            height: 100vw;
+        }
+    }
+}
+
+// -------------------- CARTERAS --------------------
+
+#carteras {
+    @include flex(column, nowrap, center, center);
+    background-color: $white;
+    padding: 5rem 0;
+
+    h2 { 
+        @include title($black, center); 
+        padding-bottom: 5rem;
+    }
+
+    img { width: 100vw; }
+
+    .flex__info {
+        @include flex-info($black);
+        padding: 3rem 0 5.2rem 0;
+    }
+
+    .flex__content {
+        .flex__item {
+            padding-bottom: 3rem;
+
+            .overlay__item {
+                @include overlay__content(rgba(0, 0, 0, 0.6));
+                img { width: 80vw; }
+
+                .white-button { @include button($white, none, center); }
+            }
+        }
+    }
+
+    .flex__content:last-child .flex__item:last-child { padding-bottom: 0; }
+}
+
+// -------------------- ESENCIALES --------------------
+
+#esenciales {
+    background-color: $black;
+    padding: 5rem 0;
+
+    h2 { 
+        @include title($white, center); 
+        padding-bottom: 5rem;
+    }
+
+    .flex__content {
+        @include flex(row, wrap, space-around, center);
+
+        .flex__item {
+            @include flex(column, nowrap, center, center);
+            width: 50vw;
+            img { height: 50vw; }
+            .flex__detail { @include flex-detail($white); }
+            &:nth-child(-n+2) { padding-bottom: 3rem; }
+        }
+    }
+
+    .white-button {
+        @include button($white, 6.2rem, center);
+        padding-bottom: 1.2rem;
+    }
+}
+
+// -------------------- REGALOS --------------------
+
+#regalos {
+    @include flex(column, nowrap, center, center);
+    background-color: $white;
+    padding: 5rem 0;
+
+    h2 { 
+        @include title($black, center); 
+        padding-bottom: 5rem;
+    }
+
+    img { max-width: 100vw; }
+
+    .flex__info {
+        @include flex-info($black);
+        padding: 3rem 0 5.2rem 0;
+    }
+
+    .flex__content {
+        .flex__item {
+            img { width: 80vw; }
+
+            .overlay__item {
+                @include overlay__content(rgba(0, 0, 0, 0.6));
+                .white-button { @include button($white, none, center); }
+            }
+
+            .flex__detail {
+                @include flex-detail($black);
+                padding-bottom: 3rem;
+                text-transform: lowercase;
+            }
+
+            &:last-child {
+                .flex__detail { padding-bottom: 0; }
+            }
+        }
+    }
+}
+
+// -------------------- GIFT CARDS --------------------
+
+#gift-cards {
+    background-color: $black;
+    padding: 5rem 0;
+
+    h2 { 
+        @include title($white, center); 
+        padding-bottom: 5rem;
+    }
+
+    .flex__content {
+        @include flex(column, nowrap, center, center);
+
+        .flex__item {
+            .overlay__item {
+                @include overlay__content(rgba(0, 0, 0, 0.6));
+                img { width: 80vw; }
+                .white-button { @include button($white, 28rem, center); }
+            }
+
+            .flex__detail { 
+                @include flex-detail($white); 
+                padding-bottom: 3rem;
+            }
+
+            &:last-child .flex__detail { padding-bottom: 0; }
+        }
+    }
+}
+
+// -------------------- SERVICIOS --------------------
+
+#servicios {
+    background-color: $white;
+    padding: 3rem 0;
+
+    .flex__content {
+        @include flex(row, wrap, space-around, center);
+
+        .flex__item {
+            @include flex(column, nowrap, center, center);
+            width: 45vw;
+            i { font-size: 5rem }
+            .flex__detail { @include flex-detail($black); }
+            &:nth-child(-n+2) { padding-bottom: 3rem; }
+        }
+    }
+}
+
+// -------------------- FOOTER --------------------
+
+footer {
+    background-color: $black;
+    padding: 5rem 0;
+
+    .flex__content {
+        @include flex(row, wrap, space-between, start);
+        .flex__item { width: 50vw; padding: 1.5rem; }
+        .flex__item:last-child { margin-right: auto; }
+    }
+
+    .flex__item {
+        li { 
+            @include subtitle($white, left); 
+            padding-bottom: .25rem;
+        }
+    
+        a { @include paragraph($white, left, none); }
+
+        .newsletter {
+            @include flex(column, nowrap, center, center);
+            padding: 1.5rem 0 5rem 0;
+            p { @include paragraph($white, left, 40rem); }
+            .subscribe-form { padding-top: 1.5rem; }
+        }
+    
+        .copyright {
+            padding-top: 5rem;
+            border-top: 1px solid $white;
+
+            p { 
+                @include paragraph($white, center, none); 
+                padding-bottom: .5rem;
+            }
+        }
+
+        .footer-social {
+            text-align-last: center;
+            i { font-size: 1.5rem; padding: .5rem; }
+        }
+    }
+}
