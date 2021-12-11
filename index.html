@@ -10,8 +10,6 @@
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,70 +24,89 @@
 <body>
     <!-- APERTURA HEADER -->
     <header>
-        <!-- nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="baobao-logo" src="./assets/img/baobao-black-logo.png"
-                        alt="Logo de Bao Bao Issey Miyake"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./html/novedades.html">Novedades</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./html/coleccion.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Colección
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./tienda.html">Lucent</a></li>
-                                <li><a class="dropdown-item" href="./tienda.html">Prism</a></li>
-                                <li><a class="dropdown-item" href="./tienda.html">Platinum</a></li>
-                                <li><a class="dropdown-item" href="./tienda.html">Slash</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./html/carteras.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Carteras
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="./tienda.html">Tote</a></li>
-                                <li><a class="dropdown-item" href="./tienda.html">Crossbody</a></li>
-                                <li><a class="dropdown-item" href="./tienda.html">Backpack</a></li>
-                                <li><a class="dropdown-item" href="./tienda.html">Clutch</a></li>
-                                <li><a class="dropdown-item" href="./tienda.html">Pouch</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="./tienda.html">Complementos</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./html/esenciales.html">Esenciales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./html/regalos.html">Regalos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./html/gift-cards.html">Gift Cards</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+        <!-- barra de navegacion -->
+        <nav id="nav">
+            <div class="highlight">
+                <p>¡FELICES FIESTAS! 50% de descuento ingresando el código <strong>XMAS21</strong></p>
             </div>
+            <div class="navbar">
+                <ul class="navbar__info">
+                    <li><a href="./index.html"><i class="fas fa-store"></i> Nuestros locales</a></li>
+                    <li><a href="./index.html"><i class="fas fa-hands-helping"></i> Atención al cliente</a></li>
+                </ul>
+                <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+                <ul class="navbar__icons">
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-user"></i></a></li>
+                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href=""><i class="fas fa-heart"></i></a></li>
+                </ul>
+            </div>
+            <input type="checkbox" id="toggle" class="toggle">
+            <ul class="navmenu">
+                <li><a class="navmenu__item" href="./html/novedades.html">Novedades</a></li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Colección</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="./html/coleccion/lucent.html">Lucent Series</a></li>
+                        <li><a href="./html/coleccion/prism.html">Prism Series</a></li>
+                        <li><a href="./html/coleccion/platinum.html">Platinum Series</a></li>
+                        <li><a href="./html/coleccion/slash.html">Slash Series</a></li>
+                    </ul>
+                </li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Carteras</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="">Tote</a></li>
+                        <li><a href="">Crossbody</a></li>
+                        <li><a href="">Backpack</a></li>
+                        <li><a href="">Clutch</a></li>
+                        <li><a href="">Pouch</a></li>
+                        <li><a href="">Complementos</a></li>
+                    </ul>
+                </li>
+                <li><a class="navmenu__item" href="./html/esenciales.html">Esenciales</a></li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Regalos</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="./html/regalos/regalos-grandes.html">Grandes</a></li>
+                        <li><a href="./html/regalos/regalos-medianos.html">Medianos</a></li>
+                        <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
+                    </ul>
+                </li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Gift Cards</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="./html/items/gift-card-platinum.html">Platinum</a></li>
+                        <li><a href="./html/items/gift-card-gold.html">Gold</a></li>
+                        <li><a href="./html/items/gift-card-silver.html">Silver</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <label for="toggle" class="toggle__label">
+                <span><i class="fas fa-bars"></i></span>
+            </label>
         </nav>
         <!-- video -->
-        <div class="fullscreen">
-            <video autoplay muted loop class="baobao-video" src="./assets/video/baobao-origin.mp4" type="video/mp4"></video>
+        <div class="header">
+            <h1>Bao Bao Issey Miyake</h1>
+            <div class="header__title">
+                <p>Tu cartera ideal</p>
+                <div class="header__effect">
+                    <span>tote</span>
+                    <span>crossbody</span>
+                    <span>clutch</span>
+                    <span>pouch</span>
+                    <span>tote</span>
+                </div>
+            </div>
+            <p>Colección de carteras con un concepto y método de producción innovadores. Formas versátiles infinitas, generadas a partir de una estructura de piezas triangulares. Belleza, diversión, sorpresa y practicidad para cada momento de tu vida.</p>
+            <div class="white-button">
+                <a href="./html/tienda.html">Descubrir</a>
+            </div>
+            <video class="header__video" autoplay muted loop>
+                <source src="./assets/video/baobao-origin.mp4" type="video/mp4">
+            </video>
         </div>
     </header>
     <!-- CIERRE HEADER -->
@@ -99,8 +116,7 @@
         <!-- APERTURA SECCION NOVEDADES -->
         <section id="novedades">
             <h2>Novedades</h2>
-            <!-- carousel novedades -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -108,7 +124,6 @@
                         aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner">
-                    <!-- primera novedad -->
                     <div class="carousel-item active">
                         <img src="./assets/img/index/novedades/felices-fiestas.png" class="d-block w-100" alt="Código de Descuento del 50%">
                         <div class="carousel-caption d-none d-md-block">
@@ -117,14 +132,12 @@
                             <p>XMAS21</p>
                         </div>
                     </div>
-                    <!-- segunda novedad -->
                     <div class="carousel-item">
                         <img src="./assets/img/index/novedades/platinum-one.jpg" class="d-block w-100" alt="Carteras Tote Platinum One">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Platinum One</h3>
                             <p>Cuatro nuevos colores, perfectos para la temporada navideña. Incluye dije extraíble.</p>
-                            <!-- checkear linkeo -->
-                            <a href="./tienda.html">Descubrir</a>
+                            <a href="./html/tienda.html">Descubrir</a>
                         </div>
                     </div>
                 </div>
@@ -138,109 +151,100 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div> -->
             <!-- novedades -->
-            <div class="novedades__flex">
-                <!-- primera cartera -->
-                <div class="novedades__flex---cartera">
-                    <a href="./tienda.html">
-                        <img src="./assets/img/index/novedades/platinum-one-rosa.png" alt="Cartera Tote Platinum Series Rosa">
-                    </a>
-                    <div>
-                        <h3>Platinum</h3>
-                        <h4>Cartera Tote</h4>
-                        <!-- checkear precio -->
-                        <p>$200.000</p>
+            <div class="flex__content">
+                    <div class="flex__item">
+                        <a href="./html/items/tote-platinum.html">
+                            <img src="./assets/img/index/novedades/platinum-one-rosa.png" alt="Cartera Tote Platinum Series Rosa">
+                        </a>
+                        <div class="flex__detail">
+                            <h3>Cartera Tote</h3>
+                            <p>$200.000</p>
+                        </div>
                     </div>
-                </div>
-                <!-- segunda cartera -->
-                <div class="novedades__flex---cartera">
-                    <a href="./tienda.html">
+                <div class="flex__item">
+                    <a href="./html/items/tote-platinum.html">
                         <img src="./assets/img/index/novedades/platinum-one-verde.png"
                             alt="Cartera Tote Platinum Series Verde">
                     </a>
-                    <div>
-                        <h3>Platinum</h3>
-                        <h4>Cartera Tote</h4>
-                        <!-- checkear precio -->
+                    <div class="flex__detail">
+                        <h3>Cartera Tote</h3>
                         <p>$200.000</p>
                     </div>
                 </div>
-                <!-- tercera cartera -->
-                <div class="novedades__flex---cartera">
-                    <a href="./tienda.html">
+                <div class="flex__item">
+                    <a href="./html/items/tote-platinum.html">
                         <img src="./assets/img/index/novedades/platinum-one-violeta.png"
                             alt="Cartera Tote Platinum Series Violeta">
                     </a>
-                    <div>
-                        <h3>Platinum</h3>
-                        <h4>Cartera Tote</h4>
-                        <!-- checkear precio -->
+                    <div class="flex__detail">
+                        <h3>Cartera Tote</h3>
                         <p>$200.000</p>
                     </div>
                 </div>
-                <!-- cuarta cartera -->
-                <div class="novedades__flex---cartera">
-                    <a href="./tienda.html">
+                <div class="flex__item">
+                    <a href="./html/items/tote-platinum.html">
                         <img src="./assets/img/index/novedades/platinum-one-dorado.png"
                             alt="Cartera Tote Platinum Series Dorado">
                     </a>
-                    <div>
-                        <h3>Platinum</h3>
-                        <h4>Cartera Tote</h4>
-                        <!-- checkear precio -->
+                    <div class="flex__detail">
+                        <h3>Cartera Tote</h3>
                         <p>$200.000</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <!-- checkear linkeo -->
-                <a href="./tienda.html">Descubrir</a>
+            <div class="black-button">
+                <a href="./html/tienda.html">Descubrir</a>
             </div>
         </section>
         <!-- CIERRE SECCION NOVEDADES -->
 
         <!-- APERTURA SECCION COLECCION -->
         <section id="coleccion">
-            <h2>Colección</h2>
+            <h2>Coleccion</h2>
             <!-- primera serie -->
-            <div class="coleccion__serie">
+            <div class="flex__card">
                 <img src="./assets/img/index/coleccion/lucent.png" alt="Cartera Tote Lucent Series">
-                <div>
+                <div class="flex__info">
                     <h3>Lucent Series</h3>
                     <p>El origen de todas las series. Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera.</p>
-                    <!-- checkear linkeo -->
-                    <a href="./tienda.html">Descubrir</a>
+                    <div class="button">
+                        <a href="./html/tienda.html">Descubrir</a>
+                    </div>
                 </div>
             </div>
             <!-- segunda serie -->
-            <div class="coleccion__serie">
+            <div class="flex__card">
                 <img src="./assets/img/index/coleccion/prism.png" alt="Cartera Crossbody Prism Series">
-                <div>
+                <div class="flex__info">
                     <h3>Prism Series</h3>
                     <p>Triángulos más pequeños que los de Lucent Series. La luz se concentra en las piezas creando un delicado resplandor, parecido a una joya.</p>
-                    <!-- checkear linkeo -->
-                    <a href="./tienda.html">Descubrir</a>
+                    <div class="button">
+                        <a href="./html/tienda.html">Descubrir</a>
+                    </div>
                 </div>
             </div>
             <!-- tercera serie -->
-            <div class="coleccion__serie">
+            <div class="flex__card">
                 <img src="./assets/img/index/coleccion/platinum.png" alt="Cartera Tote Platinum Series">
-                <div>
+                <div class="flex__info">
                     <h3>Platinum Series</h3>
                     <p>Material platino imbuido con acabado espejo. Una serie premium que ofrece un brillo de sofisticación aún mayor, utilizando nuestras técnicas avanzadas.</p>
-                    <!-- checkear linkeo -->
-                    <a href="./tienda.html">Descubrir</a>
+                    <div class="button">
+                        <a href="./html/tienda.html">Descubrir</a>
+                    </div>
                 </div>
             </div>
             <!-- cuarta serie -->
-            <div class="coleccion__serie">
+            <div class="flex__card">
                 <img src="./assets/img/index/coleccion/slash.png" alt="Cartera Tote Slash Series">
-                <div>
+                <div class="flex__info">
                     <h3>Slash Series</h3>
                     <p>Carteras rectangulares con cierre. Las mismas se pueden aplanar doblando el fondo y los costados hacia adentro, ofreciendo una comodidad suprema.</p>
-                    <!-- checkear linkeo -->
-                    <a href="./tienda.html">Descubrir</a>
+                    <div class="button">
+                        <a href="./html/tienda.html">Descubrir</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -249,48 +253,68 @@
         <!-- APERTURA SECCION CARTERAS -->
         <section id="carteras">
             <h2>Carteras</h2>
-            <div class="carteras__grid">
-                <!-- primer tipo -->
-                <div class="carteras__grid--item1">
-                    <img src="./assets/img/index/carteras/tote.png" alt="Carteras Tote">
-                    <div>
-                        <h3>Tote</h3>
-                        <p>Belleza, diversión y practicidad. Estas carteras son perfectas para utilizarlas en cualquier ocasión.</p>
-                        <!-- checkear linkeo -->
-                        <a href="./tienda.html">Descubrir</a>
+            <div>
+                <img src="./assets/img/index/carteras/tote.png" alt="Carteras Tote">
+                <div class="flex__info">
+                    <h3>Tote</h3>
+                    <p>Belleza, diversión y practicidad. Estas carteras son perfectas para utilizarlas en cualquier ocasión.</p>
+                    <div class="button">
+                        <a href="./html/tienda.html">Descubrir</a>
                     </div>
                 </div>
-                <!-- segundo tipo -->
-                <div class="carteras__grid--item2">
-                    <img src="./assets/img/index/carteras/clutch.png" alt="Cartera Clutch">
-                    <!-- checkear linkeo -->
-                    <h3><a href="./tienda.html">Clutch</a></h3>
+            </div>
+            <div class="flex__content">
+                <div class="flex__item">
+                    <div class="overlay__item">
+                        <img src="./assets/img/index/carteras/clutch.png" alt="Cartera Clutch">
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <h3><a href="./html/carteras/clutch.html">Clutch</a></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- tercer tipo -->
-                <div class="carteras__grid--item3">
-                    <img src="./assets/img/index/carteras/pouch.png" alt="Cartera Pouch">
-                    <!-- checkear linkeo -->
-                    <h3><a href="./tienda.html">Pouch</a></h3>
+                <div class="flex__item">
+                    <div class="overlay__item">
+                        <img src="./assets/img/index/carteras/pouch.png" alt="Cartera Pouch">
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <h3><a href="./html/carteras/pouch.html">Pouch</a></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- cuarto tipo -->
-                <div class="carteras__grid--item4">
-                    <img src="./assets/img/index/carteras/complementos.png" alt="Complementos">
-                <div>
-                    <!-- checkear linkeo -->
-                    <h3><a href="./tienda.html">Complementos</a></h3>
+                <div class="flex__item">
+                    <div class="overlay__item">
+                        <img src="./assets/img/index/carteras/complementos.png" alt="Complementos">
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <h3><a href="./html/carteras/complementos.html">Complementos</a></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="flex__content">
+                <div class="flex__item">
+                    <div class="overlay__item">
+                        <img src="./assets/img/index/carteras/crossbody.png" alt="Cartera Crossbody">
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <h3><a href="./html/carteras/crossbody.html">Crossbody</a></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- quinto tipo -->
-                <div class="carteras__grid--item5">
-                    <img src="./assets/img/index/carteras/crossbody.png" alt="Cartera Crossbody">
-                    <!-- checkear linkeo -->
-                    <h3><a href="./tienda.html">Crossbody</a></h3>
-                </div>
-                <!-- sexto tipo -->
-                <div class="carteras__grid--item6">
-                    <img src="./assets/img/index/carteras/backpack.png" alt="Cartera Backpack">
-                    <!-- checkear linkeo -->
-                    <h3><a href="./tienda.html">Backpack</a></h3>
+                <div class="flex__item">
+                    <div class="overlay__item">
+                        <img src="./assets/img/index/carteras/backpack.png" alt="Cartera Backpack">
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <h3><a href="./html/carteras/backpack.html">Backpack</a></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -299,59 +323,52 @@
         <!-- APERTURA SECCION ESENCIALES -->
         <section id="esenciales">
             <h2>Esenciales</h2>
-            <div class="esenciales__flex">
+            <!-- carteras -->
+            <div class="flex__content">
                 <!-- primera cartera -->
-                <div class="esenciales__cartera">
-                    <a href="./tienda.html">
-                        <img src="./assets/img/index/esenciales/tote-lucent-plateado.jpg" alt="Cartera Tote Lucent Series Plateado">
+                <div class="flex__item">
+                    <a href="./html/items/tote-lucent.html">
+                        <img src="./assets/img/index/esenciales/tote-lucent-plateado.png" alt="Cartera Tote Lucent Series Plateado">
                     </a>
-                    <div>
-                        <h3>Lucent</h3>
-                        <h4>Cartera Tote</h4>
-                        <!-- checkear precio -->
+                    <div class="flex__detail">
+                        <h3>Cartera Tote</h3>
                         <p>$200.000</p>
                     </div>
                 </div>
                 <!-- segunda cartera -->
-                <div class="esenciales__cartera">
-                    <a href="./tienda.html">
-                        <img src="./assets/img/index/esenciales/crossbody-lucent-plateado.jpg" alt="Cartera Crossbody Lucent Series Plateado">
+                <div class="flex__item">
+                    <a href="./html/items/crossbody-lucent.html">
+                        <img src="./assets/img/index/esenciales/crossbody-lucent-plateado.png" alt="Cartera Crossbody Lucent Series Plateado">
                     </a>
-                    <div>
-                        <h3>Lucent</h3>
-                        <h4>Cartera Crossbody</h4>
-                        <!-- checkear precio -->
+                    <div class="flex__detail">
+                        <h3>Cartera Crossbody</h3>
                         <p>$150.000</p>
                     </div>
                 </div>
                 <!-- tercera cartera -->
-                <div class="esenciales__cartera">
-                    <a href="./tienda.html">
-                        <img src="./assets/img/index/esenciales/tote-slash-plateado.jpg" alt="Cartera Tote Slash Series Plateado">
+                <div class="flex__item">
+                    <a href="./html/items/tote-slash.html">
+                        <img src="./assets/img/index/esenciales/tote-slash-plateado.png" alt="Cartera Tote Slash Series Plateado">
                     </a>
-                    <div>
-                        <h3>Slash</h3>
-                        <h4>Cartera Tote</h4>
-                        <!-- checkear precio -->
+                    <div class="flex__detail">
+                        <h3>Cartera Tote</h3>
                         <p>$200.000</p>
                     </div>
                 </div>
                 <!-- cuarta cartera -->
-                <div class="esenciales__cartera">
-                    <a href="./tienda.html">
-                        <img src="./assets/img/index/esenciales/crossbody-slash-plateado.jpg" alt="Cartera Crossbody Slash Series Plateado">
+                <div class="flex__item">
+                    <a href="./html/items/crossbody-slash.html">
+                        <img src="./assets/img/index/esenciales/crossbody-slash-plateado.png" alt="Cartera Crossbody Slash Series Plateado">
                     </a>
-                    <div>
-                        <h3>Slash</h3>
-                        <h4>Cartera Crossbody</h4>
-                        <!-- checkear precio -->
+                    <div class="flex__detail">
+                        <h3>Cartera Crossbody</h3>
                         <p>$150.000</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <!-- checkear linkeo -->
-                <a href="./tienda.html">Descubrir</a>
+            <!-- boton -->
+            <div class="white-button">
+                <a href="./html/tienda.html">Descubrir</a>
             </div>
         </section>
         <!-- CIERRE SECCION ESENCIALES -->
@@ -361,54 +378,57 @@
             <h2>Regalos</h2>
             <div>
                 <img src="./assets/img/index/regalos/carteras.png" alt="Carteras Bao Bao Issey Miyake">
-                <div>
+                <div class="flex__info">
                     <h3>¡Sorprendé a esa persona!</h3>
                     <p>Cada momento es un regalo. Descubrí que hay en nuestra wishlist para encontrar el regalo perfecto.</p>
-                    <!-- checkear linkeo -->
-                    <a href="./tienda.html">Descubrir</a>
+                    <div class="button">
+                        <a href="./html/regalos/regalos-medianos.html">Descubrir</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div>
+            <div class="flex__content">
+                <div class="flex__item">
+                    <div class="overlay__item">
                         <img src="./assets/img/index/regalos/regalos-grandes.png" alt="Regalos Grandes">
-                        <div>
-                            <!-- checkear linkeo -->
-                            <a href="./tienda.html">Descubrir</a>
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <a href="./html/regalos/regalos-grandes.html">Descubrir</a>
+                            </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="flex__detail">
                         <h3>Nuestros Favoritos</h3>
                         <p>Regalos Grandes</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="flex__item">
+                    <div class="overlay__item">
                         <img src="./assets/img/index/regalos/regalos-medianos.png" alt="Regalos Medianos">
-                        <div>
-                            <!-- checkear linkeo -->
-                            <a href="./tienda.html">Descubrir</a>
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <a href="./html/regalos/regalos-medianos.html">Descubrir</a>
+                            </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="flex__detail">
                         <h3>Para Alguien Especial</h3>
                         <p>Regalos Medianos</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="flex__item">
+                    <div class="overlay__item">
                         <img src="./assets/img/index/regalos/regalos-pequeños.png" alt="Regalos Pequeños">
-                        <div>
-                            <!-- checkear linkeo -->
-                            <a href="./tienda.html">Descubrir</a>
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <a href="./html/regalos/regalos-pequeños.html">Descubrir</a>
+                            </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="flex__detail">
                         <h3>Pequeños Detalles</h3>
                         <p>Regalos Pequeños</p>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- CIERRE SECCION REGALOS -->
@@ -416,42 +436,46 @@
         <!-- APERTURA SECCION GIFT-CARDS -->
         <section id="gift-cards">
             <h2>Gift Cards</h2>
-            <div class="gift-cards__flex">
-                <div class="gift-cards__tarjeta">
-                    <div>
-                        <div>
-                            <img src="./assets/img/index/gift-cards/gift-card-platinum.png" alt="Gift Card Platinum">
-                            <!-- checkear linkeo -->
-                            <a href="./tienda.html">Descubrir</a>
+            <div class="flex__content">
+                <div class="flex__item">
+                    <div class="overlay__item">
+                        <img src="./assets/img/index/gift-cards/gift-card-platinum.png" alt="Gift Card Platinum">
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <a href="./html/items/gift-card-platinum.html">Descubrir</a>
+                            </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="flex__detail">
                         <h3>Gift Card Platinum</h3>
-                        <!-- checkear precio -->
                         <p>$200.000</p>
                     </div>
                 </div>
-                <div class="gift-cards__tarjeta">
-                    <div>
+                <div class="flex__item">
+                    <div class="overlay__item">
                         <img src="./assets/img/index/gift-cards/gift-card-gold.png" alt="Gift Card Gold">
-                        <!-- checkear linkeo -->
-                        <a href="./tienda.html">Descubrir</a>
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <a href="./html/items/gift-card-gold.html">Descubrir</a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
+                    <div class="flex__detail">
                         <h3>Gift Card Gold</h3>
-                        <!-- checkear precio -->
                         <p>$150.000</p>
                     </div>
                 </div>
-                <div class="gift-cards__tarjeta">
-                    <div>
+                <div class="flex__item">
+                    <div class="overlay__item">
                         <img src="./assets/img/index/gift-cards/gift-card-silver.png" alt="Gift Card Silver">
-                        <!-- checkear linkeo -->
-                        <a href="./tienda.html">Descubrir</a>
+                        <div class="overlay__content">
+                            <div class="white-button">
+                                <a href="./html/items/gift-card-silver.html">Descubrir</a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
+                    <div class="flex__detail">
                         <h3>Gift Card Silver</h3>
-                        <!-- checkear precio -->
                         <p>$100.000</p>
                     </div>
                 </div>
@@ -461,32 +485,34 @@
 
         <!-- APERTURA SECCION SERVICIOS -->
         <section id="servicios">
-            <div class="servicios__item">
-                <i class="fas fa-truck"></i>
-                <div>
-                    <h3>Envío Gratis</h3>
-                    <p>Compras superiores a $150.000</p>
+            <div class="flex__content">
+                <div class="flex__item">
+                    <i class="fas fa-truck"></i>
+                    <div class="flex__detail">
+                        <h3>Envío Gratis</h3>
+                        <p>Compras superiores a $150.000</p>
+                    </div>
                 </div>
-            </div>
-            <div class="servicios__item">
-                <i class="fas fa-cash-register"></i>
-                <div>
-                    <h3>Cuotas sin Interés</h3>
-                    <p>3, 6 y 12 cuotas sin interés</p>
+                <div class="flex__item">
+                    <i class="fas fa-cash-register"></i>
+                    <div class="flex__detail">
+                        <h3>Cuotas sin Interés</h3>
+                        <p>3, 6 y 12 cuotas sin interés</p>
+                    </div>
                 </div>
-            </div>
-            <div class="servicios__item">
-                <i class="fas fa-sync"></i>
-                <div>
-                    <h3>Cambios y Devoluciones</h3>
-                    <p>30 días después de la compra</p>
+                <div class="flex__item">
+                    <i class="fas fa-sync"></i>
+                    <div class="flex__detail">
+                        <h3>Cambios y Devoluciones</h3>
+                        <p>30 días después de la compra</p>
+                    </div>
                 </div>
-            </div>
-            <div class="servicios__item">
-                <i class="fas fa-store"></i>
-                <div>
-                    <h3>Entrega en Tienda</h3>
-                    <p>Retirá tu pedido en la tienda más cercana</p>
+                <div class="flex__item">
+                    <i class="fas fa-store"></i>
+                    <div class="flex__detail">
+                        <h3>Entrega en Tienda</h3>
+                        <p>Retirá tu pedido en la tienda más cercana</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -496,91 +522,89 @@
 
     <!-- APERTURA FOOTER -->
     <footer>
-        <div>
-            <!-- logo -->
-            <a href="./index.html"><img src="./assets/img/baobao-white-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
-            <!-- redes sociales -->
-            <div>
-                <a href="https://www.baobaoisseymiyake.com/"><i class="fas fa-globe"></i></a>
-                <a href="https://www.instagram.com/baobaoisseymiyake_official/"><i class="fab fa-instagram"></i></a>
+        <div class="flex__content">
+            <div class="flex__item">
+                <a href="./index.html"><img src="./assets/img/baobao-white-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+                <div class="footer-social">
+                    <a href="https://www.baobaoisseymiyake.com/"><i class="fas fa-globe"></i></a>
+                    <a href="https://www.instagram.com/baobaoisseymiyake_official/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
         <!-- informacion principal -->
-        <div>
+        <div class="flex__content">
             <!-- bao bao issey miyake -->
-            <div>
+            <div class="flex__item">
                 <ul>
-                    <li>Bao Bao Issey Miyake</li>
-                    <li><a href="#novedades">Novedades</a></li>
-                    <li><a href="#coleccion">Colección</a></li>
-                    <li><a href="#carteras">Carteras</a></li>
-                    <li><a href="#esenciales">Esenciales</a></li>
-                    <li><a href="#regalos">Regalos</a></li>
-                    <li><a href="#gift-cards">Gift Cards</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
+                    <li class="subtitle">Bao Bao Issey Miyake</li>
+                    <li><a href="./html/novedades.html">Novedades</a></li>
+                    <li><a href="./html/esenciales.html">Esenciales</a></li>
+                    <li><a href="./html/tienda.html">Tienda</a></li>
                 </ul>
             </div>
             <!-- coleccion -->
-            <div>
+            <div class="flex__item">
                 <ul>
-                    <li>Colección</li>
-                    <li><a href=".tienda.html">Lucent Series</a></li>
-                    <li><a href="./tienda.html">Prism Series</a></li>
-                    <li><a href="./tienda.html">Platinum Series</a></li>
-                    <li><a href="./tienda.html">Slash Series</a></li>
+                    <li class="subtitle">Colección</li>
+                    <li><a href="./html/coleccion/lucent.html">Lucent Series</a></li>
+                    <li><a href="./html/coleccion/prism.html">Prism Series</a></li>
+                    <li><a href="./html/coleccion/platinum.html">Platinum Series</a></li>
+                    <li><a href="./html/coleccion/slash.html">Slash Series</a></li>
                 </ul>
             </div>
             <!-- carteras -->
-            <div>
+            <div class="flex__item">
                 <ul>
-                    <li>Carteras</li>
-                    <li><a href="./tienda.html">Tote</a></li>
-                    <li><a href="./tienda.html">Crossbody</a></li>
-                    <li><a href="./tienda.html">Backpack</a></li>
-                    <li><a href="./tienda.html">Clutch</a></li>
-                    <li><a href="./tienda.html">Pouch</a></li>
-                    <li><a href="./tienda.html">Complementos</a></li>
+                    <li class="subtitle">Carteras</li>
+                    <li><a href="./html/carteras/tote.html">Tote</a></li>
+                    <li><a href="./html/carteras/crossbody.html">Crossbody</a></li>
+                    <li><a href="./html/carteras/backpack.html">Backpack</a></li>
+                    <li><a href="./html/carteras/clutch.html">Clutch</a></li>
+                    <li><a href="./html/carteras/pouch.html">Pouch</a></li>
+                    <li><a href="./html/carteras/complementos.html">Complementos</a></li>
                 </ul>
             </div>
             <!-- regalos -->
-            <div>
+            <div class="flex__item">
                 <ul>
-                    <li>Regalos</li>
-                    <li><a href="./tienda.html">Nuestros favoritos</a></li>
-                    <li><a href="./tienda.html">Para alguien especial</a></li>
-                    <li><a href="./tienda.html">Pequeños detalles</a></li>
+                    <li class="subtitle">Regalos</li>
+                    <li><a href="./html/regalos/regalos-grandes.html">Grandes</a></li>
+                    <li><a href="./html/regalos/regalos-medianos.html">Medianos</a></li>
+                    <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
                 </ul>
             </div>
             <!-- gift cards -->
-            <div>
+            <div class="flex__item">
                 <ul>
-                    <li>Gift Cards</li>
-                    <li><a href="./tienda.html">Gift Card Platinum</a></li>
-                    <li><a href="./tienda.html">Gift Card Gold</a></li>
-                    <li><a href="./tienda.html">Gift Card Silver</a></li>
+                    <li class="subtitle">Gift Cards</li>
+                    <li><a href="./html/items/gift-card-platinum.html">Platinum</a></li>
+                    <li><a href="./html/items/gift-card-gold.html">Gold</a></li>
+                    <li><a href="./html/items/gift-card-silver.html">Silver</a></li>
                 </ul>
             </div>
             <!-- sobre nosotros -->
-            <div>
+            <div class="flex__item">
                 <ul>
-                    <li>Sobre Nosotros</li>
+                    <li class="subtitle">Sobre Nosotros</li>
                     <li><a href="./index.html">Términos y condiciones</a></li>
                     <li><a href="./index.html">Políticas de privacidad</a></li>
                     <li><a href="./index.html">Locales</a></li>
                 </ul>
             </div>
             <!-- ayuda -->
-            <div>
+            <div class="flex__item">
                 <ul>
-                    <li>Ayuda</li>
+                    <li class="subtitle">Ayuda</li>
                     <li><a href="./index.html">Atención al cliente</a></li>
                     <li><a href="./index.html">Preguntas frecuentes</a></li>
-                    <li><a href="./index.html">Botón de arrepentimiento</a></li>
+                    <li><a href="./index.html">Arrepentimiento</a></li>
                 </ul>
             </div>
-            <!-- newsletter -->
-            <div>
-                <p>Suscribite al newsletter para recibir novedades de nuevas colecciones, promociones, eventos y proyectos especiales</p>
+        </div>
+        <!-- newsletter -->
+        <div class="flex__item">
+            <div class="newsletter">
+                <p>Suscribite al newsletter para recibir novedades de nuestras colecciones, promociones, eventos y proyectos especiales:</p>
                 <form action="" class="subscribe-form">
                     <input class="subscribe" type="email" name="email" placeholder="Ingresá tu e-mail" required>
                     <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
@@ -589,23 +613,20 @@
             </div>
         </div>
         <!-- copyright -->
-        <div class="copyright">
-            <p>© 2021 ISSEY MIYAKE INC. Todos los derechos reservados.</p>
-            <p>Desarrollado con 💜 por María Florencia Recio.</p>
-            <div class="footer-social">
-                <a href="https://github.com/mariaflorenciarecio"><i class="fab fa-github"></i></i></a>
-                <a href="https://www.linkedin.com/in/mariaflorenciarecio/"><i class="fab fa-linkedin-in"></i></a>
+        <div class="flex__item">
+            <div class="copyright">
+                <p>© 2021 ISSEY MIYAKE INC. Todos los derechos reservados.</p>
+                <p>Desarrollado con 💜 por María Florencia Recio.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/mariaflorenciarecio"><i class="fab fa-github"></i></i></a>
+                    <a href="https://www.linkedin.com/in/mariaflorenciarecio/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
         </div>
     </footer>
     <!-- CIERRE FOOTER -->
 
     <!-- APERTURA SCRIPTS -->
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
     <!-- aos -->
