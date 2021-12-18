@@ -1,5 +1,5 @@
 // // siempre indicar la extension
-// import {Products} from "./data.js";
+import {Products} from "./data.js";
 import {Cart} from "./carrito.js";
 import {Product} from "./productos.js";
 import {renderList} from "./utils.js";
@@ -32,3 +32,22 @@ formProduct.addEventListener("submit", () => {
 })
 
 renderList("products-list", products)
+
+// card
+
+for (const productDetail of Products) {
+    let productCard = document.createElement("div");
+    let namePhoto = productDetail.name.replaceAll(' ', '-')
+    productCard.classList.add('flex__item');
+    // definicion del innetHTML del elemento con una plantilla de texto
+    productCard.innerHTML = `<div class="flex__item">
+                                <a href="#">
+                                    <img class="imgResponsive" src="./assets/img/tienda/${namePhoto}.png" alt="${productDetail.name}">
+                                </a>
+                            </div>
+                            <div class="flex__detail">
+                                <h3>${productDetail.name}</h3>
+                                <p>$${productDetail.price}</p>
+                            </div>`;
+document.getElementById('store').appendChild(productCard);
+}

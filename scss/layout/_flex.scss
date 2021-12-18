@@ -26,6 +26,34 @@
     }
 }
 
+// -------------------- TIENDA --------------------
+
+#tienda {
+    background-color: $white;
+    padding: 5rem 0;
+    
+    h2 { 
+        @include title($black, center); 
+        padding-bottom: 5rem;
+    }
+
+    .flex__content {
+        @include flex(row, wrap, space-around, center);
+
+        .flex__item {
+            @include flex(column, nowrap, center, center);
+            img { height: 50vw; }
+            .flex__detail { @include flex-detail($black); }
+            &:nth-child(-n+2) { padding-bottom: 3rem; }
+        }
+    }
+
+    .black-button {
+        @include button($black, 6.2rem, center);
+        padding-bottom: 1.2rem;
+    }
+}
+
 // -------------------- COLECCION --------------------
 
 #coleccion {
