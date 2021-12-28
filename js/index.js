@@ -1,8 +1,10 @@
 // // siempre indicar la extension
 import {Products} from "./data.js";
 import {Cart} from "./carrito.js";
+import {Client} from "./clientes.js";
 import {Product} from "./productos.js";
 import {renderList} from "./utils.js";
+import {footer} from "./footer.js";
 
 const cart = new Cart();
 
@@ -13,7 +15,7 @@ console.log(cart.listItems())
 
 const products = cart.listItems();
 
-// form creacion de productos
+// -------------------- FORMULARIO USUARIO***
 const formProduct = document.getElementById("form-product")
 const inputIdProduct = document.getElementById("input-id-product")
 const inputNameProduct = document.getElementById("input-name-product")
@@ -33,21 +35,29 @@ formProduct.addEventListener("submit", () => {
 
 renderList("products-list", products)
 
-// card
+// -------------------- CARDS
 
 for (const productDetail of Products) {
     let productCard = document.createElement("div");
-    let namePhoto = productDetail.name.replaceAll(' ', '-')
-    productCard.classList.add('flex__item');
-    // definicion del innetHTML del elemento con una plantilla de texto
-    productCard.innerHTML = `<div class="flex__item">
-                                <a href="#">
-                                    <img class="imgResponsive" src="./assets/img/tienda/${namePhoto}.png" alt="${productDetail.name}">
-                                </a>
-                            </div>
-                            <div class="flex__detail">
-                                <h3>${productDetail.name}</h3>
-                                <p>$${productDetail.price}</p>
-                            </div>`;
-document.getElementById('store').appendChild(productCard);
+    let namePhoto = productDetail.name.replaceAll(" ", "-")
+    productCard.classList.add("card");
+    productCard.innerHTML = `
+        <div class="overlay__item">
+        <img src="./assets/img/tienda/${namePhoto}.jpg" alt="${productDetail.name}">
+            <div class="overlay__content">
+                <div class="white-button">
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="card__detail">
+            <h4>${productDetail.color}</h4>
+            <h3>${productDetail.category} ${productDetail.collection}</h3>
+            <p>$${productDetail.price}</p>
+        </div>
+    `;
+    document.getElementById("catalogue").appendChild(productCard);
 }
+
+// -------------------- FOOTER
+

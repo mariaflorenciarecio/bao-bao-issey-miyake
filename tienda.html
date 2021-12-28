@@ -22,20 +22,83 @@
 
 <!-- APERTURA BODY -->
 <body>
+    <!-- APERTURA HEADER -->
+    <header>
+        <!-- barra de navegacion -->
+        <nav>
+            <div class="highlight">
+                <p>¡FELICES FIESTAS! 50% de descuento ingresando el código <strong>XMAS21</strong></p>
+            </div>
+            <div class="navbar">
+                <ul class="navbar__info">
+                    <li><a href="./index.html"><i class="fas fa-store"></i> Nuestros locales</a></li>
+                    <li><a href="./index.html"><i class="fas fa-hands-helping"></i> Atención al cliente</a></li>
+                </ul>
+                <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+                <ul class="navbar__icons">
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                    <li><a href=""><i class="fas fa-user"></i></a></li>
+                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href=""><i class="fas fa-heart"></i></a></li>
+                </ul>
+            </div>
+            <input type="checkbox" id="toggle" class="toggle">
+            <ul class="navmenu">
+                <li><a class="navmenu__item" href="./html/novedades.html">Novedades</a></li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Colección</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="./html/coleccion/lucent.html">Lucent Series</a></li>
+                        <li><a href="./html/coleccion/prism.html">Prism Series</a></li>
+                        <li><a href="./html/coleccion/platinum.html">Platinum Series</a></li>
+                        <li><a href="./html/coleccion/slash.html">Slash Series</a></li>
+                    </ul>
+                </li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Carteras</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="">Tote</a></li>
+                        <li><a href="">Crossbody</a></li>
+                        <li><a href="">Backpack</a></li>
+                        <li><a href="">Clutch</a></li>
+                        <li><a href="">Pouch</a></li>
+                        <li><a href="">Complementos</a></li>
+                    </ul>
+                </li>
+                <li><a class="navmenu__item" href="./html/esenciales.html">Esenciales</a></li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Regalos</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="./html/regalos/regalos-grandes.html">Grandes</a></li>
+                        <li><a href="./html/regalos/regalos-medianos.html">Medianos</a></li>
+                        <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
+                    </ul>
+                </li>
+                <li class="navmenu__container">
+                    <button class="navmenu__item">Gift Cards</button>
+                    <ul class="navmenu__dropdown">
+                        <li><a href="./html/items/gift-card-platinum.html">Platinum</a></li>
+                        <li><a href="./html/items/gift-card-gold.html">Gold</a></li>
+                        <li><a href="./html/items/gift-card-silver.html">Silver</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <label for="toggle" class="toggle__label">
+                <span><i class="fas fa-bars"></i></span>
+            </label>
+        </nav>
+    </header>
+    <!-- CIERRE HEADER -->
 
     <form id="form-product">
         <p>Id</p>
         <input autocomplete="off" type="number" id="input-id-product">
-
         <p>Nombre</p>
         <input autocomplete="off" type="text" id="input-name-product">
-
         <p>Precio</p>
         <input autocomplete="off" type="number" id="input-price-product">
-
         <p>Cantidad</p>
         <input autocomplete="off" type="number" id="input-quantity-product">
-
         <div>
             <button>Agregar</button>
         </div>
@@ -43,9 +106,10 @@
 
     <ul id="products-list"></ul>
 
-    <div id="tienda">
-        <div id="store" class="flex__content"></div>
-    </div>
+    <section id="tienda">
+        <h2>Tienda</h2>
+        <div id="catalogue"></div>
+    </section>
 
     <!-- APERTURA SCRIPTS -->
     <!-- font awesome -->
