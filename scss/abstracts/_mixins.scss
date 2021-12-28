@@ -29,12 +29,12 @@
 
 // destacado
 
-// @mixin highlight($align) {
-//     color: $grey-400;
-//     font: { size: 1.2rem; weight: $extra-bold; }
-//     text: { align: $align; transform: lowercase; decoration: none; }
-//     letter-spacing: .05rem;
-// }
+@mixin highlight($align) {
+    color: $grey-400;
+    font: { size: 1.2rem; weight: $extra-bold; }
+    text: { align: $align; transform: lowercase; decoration: none; }
+    letter-spacing: .05rem;
+}
 
 // parrafo
 
@@ -62,13 +62,10 @@
 // flex detalle
 
 @mixin flex-detail($color) {
-    h3 { 
-        @include subtitle($color, center);
-        padding-top: 3rem 
-    }
-    p { 
-        @include paragraph($color, center, none);
-    }
+    padding-top: 3rem;
+    h3 { @include subtitle($color, center); }
+    h4 { @include highlight(center); }
+    p { @include paragraph($color, center, none); }
 }
 
 // icon
