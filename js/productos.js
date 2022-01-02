@@ -7,7 +7,7 @@ const Products = [
         category: "Backpack",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 5,
     },
 
     {
@@ -18,7 +18,7 @@ const Products = [
         category: "Backpack",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 2,
     },
 
     {
@@ -29,7 +29,7 @@ const Products = [
         category: "Backpack",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 4,
     },
 
     {
@@ -39,7 +39,7 @@ const Products = [
         category: "Accesorio",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 8,
     },
 
     {
@@ -50,7 +50,7 @@ const Products = [
         category: "Accesorio",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 9,
     },
 
     {
@@ -61,7 +61,7 @@ const Products = [
         category: "Accesorio",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 10,
     },
 
     {
@@ -72,7 +72,7 @@ const Products = [
         category: "Clutch",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 3,
     },
 
     {
@@ -83,7 +83,7 @@ const Products = [
         category: "Clutch",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 2,
     },
 
     {
@@ -94,7 +94,7 @@ const Products = [
         category: "Clutch",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 7,
     },
 
     {
@@ -105,7 +105,7 @@ const Products = [
         category: "Crossbody",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 1,
     },
 
     {
@@ -116,7 +116,7 @@ const Products = [
         category: "Crossbody",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 6,
     },
 
     {
@@ -127,7 +127,7 @@ const Products = [
         category: "Crossbody",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 5,
     },
 
     {
@@ -138,7 +138,7 @@ const Products = [
         category: "Crossbody",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 2,
     },
 
     {
@@ -149,7 +149,7 @@ const Products = [
         category: "Crossbody",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 1,
     },
 
     {
@@ -160,7 +160,7 @@ const Products = [
         category: "Crossbody",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 7,
     },
 
     {
@@ -171,7 +171,7 @@ const Products = [
         category: "Crossbody",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 8,
     },
 
     {
@@ -182,7 +182,7 @@ const Products = [
         category: "Crossbody",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 10,
     },
 
     {
@@ -193,7 +193,7 @@ const Products = [
         category: "Crossbody",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 4,
     },
 
     {
@@ -204,7 +204,7 @@ const Products = [
         category: "Pouch",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 6,
     },
 
     {
@@ -215,7 +215,7 @@ const Products = [
         category: "Pouch",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 5,
     },
 
     {
@@ -226,7 +226,7 @@ const Products = [
         category: "Pouch",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 10,
     },
 
     {
@@ -237,7 +237,7 @@ const Products = [
         category: "Tote",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 2,
     },
 
     {
@@ -248,7 +248,7 @@ const Products = [
         category: "Tote",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 1,
     },
 
     {
@@ -259,7 +259,7 @@ const Products = [
         category: "Tote",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 7,
     },
 
     {
@@ -270,7 +270,7 @@ const Products = [
         category: "Tote",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 8,
     },
 
     {
@@ -281,7 +281,7 @@ const Products = [
         category: "Tote",
         color: "Rosa",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 9,
     },
 
     {
@@ -292,7 +292,7 @@ const Products = [
         category: "Tote",
         color: "Verde",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 8,
     },
 
     {
@@ -303,7 +303,7 @@ const Products = [
         category: "Tote",
         color: "Violeta",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 5,
     },
 
     {
@@ -314,7 +314,7 @@ const Products = [
         category: "Tote",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 10,
     },
 
     {
@@ -325,7 +325,7 @@ const Products = [
         category: "Tote",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 4,
     },
 
     {
@@ -336,7 +336,7 @@ const Products = [
         category: "Tote",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 2,
     },
 
     {
@@ -347,7 +347,7 @@ const Products = [
         category: "Tote",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 1,
     },
 
     {
@@ -358,7 +358,7 @@ const Products = [
         category: "Tote",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 3,
     },
 
     {
@@ -369,7 +369,7 @@ const Products = [
         category: "Tote",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 7,
     },
 
     {
@@ -380,7 +380,7 @@ const Products = [
         category: "Accesorio",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 10,
     },
 
     {
@@ -391,7 +391,7 @@ const Products = [
         category: "Accesorio",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 5,
     },
 
     {
@@ -402,6 +402,6 @@ const Products = [
         category: "Accesorio",
         color: "Plateado",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        stock: true
+        inStock: 6,
     }
 ];

@@ -80,12 +80,12 @@ let cart = [];
 
 function addToCart(id) {
     if (cart.some((item) => item.id === id)) {
-        alert("Product already in cart!");
+        changeNumberOfUnits("plus", id);
     } else {
         const item = Products.find((product) => product.id === id);
         cart.push({
             ...item, 
-            units: 1,
+            numberOfUnits: 1,
         });
     }; // checkea si el producto ya existe en el carrito
     updateCart();
@@ -115,9 +115,9 @@ function renderCartItems() {
                     <h3><a href="#">${item.name} ${item.collection}</a></h3>
                     <h4>${item.color}</h4>
                     <div class="item__units">
-                        <i class="fas fa-minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
-                        <strong>2</strong>
-                        <i class="fas fa-plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
+                        <i class="fas fa-minus minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
+                        <strong>${item.numberOfUnits}</strong>
+                        <i class="fas fa-plus plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
                     </div>
                     <span class="item__subtotal">$${item.price} c/u</span>
                     <strong class="item__total">$2.000</strong>
@@ -130,8 +130,22 @@ function renderCartItems() {
 // CAMBIAR NUMERO DE UNIDADES DE UN ITEM
 
 function changeNumberOfUnits(action, id) {
-    
-}
+    cart = cart.map((item) => {
+        let numberOfUnits = item.numberOfUnits;
+        if(item.id === id) {
+            if (action === "minus" && numberOfUnits > 1) {
+                numberOfUnits--;
+            } else if (action === "plus" && numberOfUnits < item.inStock) {
+                numberOfUnits++;
+            }
+        };
+        return {
+            ...item,
+            numberOfUnits,
+        };
+    });
+    updateCart();
+};
 
 
 /**

@@ -144,22 +144,20 @@ h1 {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 8rem;
   border: 1px solid #000000;
   margin-top: .5rem;
 }
 
-#carrito #carrito__items .item__units strong {
-  padding: 0 .8rem;
-}
-
 #carrito #carrito__items .item__units i {
   padding: .8rem;
+  cursor: pointer;
 }
 
 #carrito .cart__price {

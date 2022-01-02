@@ -42,13 +42,15 @@
             } 
 
             &__units {
-                @include flex(row, nowrap, left, center);
+                @include flex(row, nowrap, space-between, center);
+                width: 8rem;
                 border: 1px solid $black;
                 margin-top: .5rem;
 
-                strong { padding: 0 .8rem; }
-
-                i { padding: .8rem; }
+                i { 
+                    padding: .8rem; 
+                    cursor: pointer;
+                }
             }
         }
     }
