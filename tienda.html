@@ -36,8 +36,11 @@
                 </ul>
                 <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
                 <ul class="navbar__icons">
-                    <li><a href=""><i class="fas fa-user"></i></a></li>
-                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><span><i class="fas fa-user"></i></span></li>
+                    <li class="navbar__carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="navbar__items">0</span>
+                    </li>
                 </ul>
             </div>
             <input type="checkbox" id="toggle" class="toggle">
@@ -116,9 +119,8 @@
             <!-- items renderizados -->
         </div>
 
-        <div class="cart__price">
-            <h3>Subtotal</h3>
-            <h3>$2.000</h3>
+        <div id="subtotal" class="cart__price">
+            <!-- subtotales renderizados -->
         </div>
 
         <div class="cart__checkout">

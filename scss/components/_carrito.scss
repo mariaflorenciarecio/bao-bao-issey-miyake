@@ -57,14 +57,18 @@
 
     .cart__price {
         border-top: 1px solid $black;
-        text-align-last: justify;
+        padding: 1rem 0;
         margin-top: 1.5rem;
+
+        span {
+            @include highlight(start);
+            text-align-last: left;
+        }
 
         h3 { 
             @include subtitle($black, center); 
-            display: inline-block;
             font-size: 1.8rem;
-            padding: 1.5rem 0;
+            text-align-last: justify;
         }
     }
 

@@ -162,8 +162,19 @@ h1 {
 
 #carrito .cart__price {
   border-top: 1px solid #000000;
-  text-align-last: justify;
+  padding: 1rem 0;
   margin-top: 1.5rem;
+}
+
+#carrito .cart__price span {
+  color: #979797;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: start;
+  text-transform: lowercase;
+  text-decoration: none;
+  letter-spacing: .05rem;
+  text-align-last: left;
 }
 
 #carrito .cart__price h3 {
@@ -174,9 +185,8 @@ h1 {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .1rem;
-  display: inline-block;
   font-size: 1.8rem;
-  padding: 1.5rem 0;
+  text-align-last: justify;
 }
 
 #carrito .cart__checkout {
@@ -1313,7 +1323,7 @@ nav {
   z-index: 1;
 }
 
-nav p, nav a, nav button {
+nav p, nav a, nav button, nav span {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1447,6 +1457,25 @@ nav .navbar__icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+nav .navbar__icons .navbar__carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 4rem;
 }
 
 @media screen and (min-width: 768px) {

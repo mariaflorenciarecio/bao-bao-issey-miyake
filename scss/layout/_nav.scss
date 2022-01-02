@@ -8,7 +8,7 @@ nav {
 
     // tipografia
 
-    p, a, button { 
+    p, a, button, span { 
         color: white; 
         font: { size: 1.2rem; weight: $regular; }
         letter-spacing: .1rem;
@@ -83,6 +83,11 @@ nav {
 
         &__icons {
             @include flex(row, nowrap, center, center);
+
+            .navbar__carrito {
+                @include flex(row, nowrap, space-between, flex-end);
+                width: 4rem;
+            }
 
             @media screen and (min-width: $md) {
                 width: 16rem;

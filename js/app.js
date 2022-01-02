@@ -46,6 +46,8 @@
 
 const productCard = document.getElementById("catalogo")
 const cartItems = document.getElementById("carrito__items")
+const subtotal = document.getElementById("subtotal")
+const cartUnits = document.getElementById("navbar__items")
 
 // RENDERIZAR PRODUCTOS (CARDS)
 
@@ -95,7 +97,22 @@ function addToCart(id) {
 
 function updateCart() {
     renderCartItems();
-    // renderSubtotal();
+    renderSubtotal();
+};
+
+// CALCULAR Y RENDERIZAR SUBTOTALES
+function renderSubtotal() {
+    let totalPrice = 0, totalItems = 0;
+    
+    cart.forEach((item) => {
+        totalPrice += item.price * item.numberOfUnits;
+        totalItems += item.numberOfUnits;
+    });
+    subtotal.innerHTML = `
+        <span>Cantidad: ${totalItems}</span>
+        <h3>Subtotal $${totalPrice}</h3>
+    `;
+    cartUnits.innerHTML = totalItems;
 };
 
 // RENDERIZAR ITEMS (CARRITO)
@@ -120,7 +137,7 @@ function renderCartItems() {
                         <i class="fas fa-plus plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
                     </div>
                     <span class="item__subtotal">$${item.price} c/u</span>
-                    <strong class="item__total">$2.000</strong>
+                    <strong class="item__total">$${item.price*item.numberOfUnits}</strong>
                 </div>
             </div>
         `;
