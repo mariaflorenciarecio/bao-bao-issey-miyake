@@ -19,119 +19,6 @@ h1 {
   text-transform: uppercase;
 }
 
-#novedades {
-  background-color: #ffffff;
-  padding: 5rem 0;
-}
-
-#novedades h2 {
-  color: #000000;
-  font-size: 3.6rem;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  padding-bottom: 5rem;
-}
-
-#novedades .flex__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#novedades .flex__content .flex__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#novedades .flex__content .flex__item img {
-  height: 50vw;
-}
-
-#novedades .flex__content .flex__item .flex__detail {
-  padding-top: 3rem;
-}
-
-#novedades .flex__content .flex__item .flex__detail h3 {
-  color: #000000;
-  font-size: 1.4rem;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .1rem;
-}
-
-#novedades .flex__content .flex__item .flex__detail h4 {
-  color: #979797;
-  font-size: 1.2rem;
-  font-weight: 800;
-  text-align: center;
-  text-transform: lowercase;
-  text-decoration: none;
-  letter-spacing: .05rem;
-}
-
-#novedades .flex__content .flex__item .flex__detail p {
-  color: #000000;
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  line-height: 1.5;
-  max-width: none;
-}
-
-#novedades .flex__content .flex__item:nth-child(-n+2) {
-  padding-bottom: 3rem;
-}
-
-#novedades .black-button {
-  padding-top: 6.2rem;
-  text-align: center;
-  padding-bottom: 1.2rem;
-}
-
-#novedades .black-button h3 a, #novedades .black-button a {
-  color: #000000;
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  border: 1px solid #000000;
-  padding: 1.2rem 2.4rem;
-  cursor: pointer;
-}
-
 #coleccion {
   background-color: #000000;
   padding-top: 5rem;
@@ -148,7 +35,12 @@ h1 {
   padding-bottom: 5rem;
 }
 
-#coleccion .flex__card {
+#coleccion .colection__cards {
+  max-width: 114rem;
+  margin: auto;
+}
+
+#coleccion .colection__cards .flex__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,13 +56,21 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
-#coleccion .flex__card img {
+#coleccion .colection__cards .flex__card img {
   width: 100vw;
 }
 
-#coleccion .flex__card .flex__info {
+@media screen and (min-width: 768px) {
+  #coleccion .colection__cards .flex__card img {
+    width: 50%;
+  }
+}
+
+#coleccion .colection__cards .flex__card .flex__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +89,7 @@ h1 {
   height: 100vw;
 }
 
-#coleccion .flex__card .flex__info h3 {
+#coleccion .colection__cards .flex__card .flex__info h3 {
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 800;
@@ -200,7 +100,7 @@ h1 {
   padding-bottom: 1.5rem;
 }
 
-#coleccion .flex__card .flex__info p {
+#coleccion .colection__cards .flex__card .flex__info p {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -211,12 +111,12 @@ h1 {
   max-width: 34rem;
 }
 
-#coleccion .flex__card .flex__info .button {
+#coleccion .colection__cards .flex__card .flex__info .button {
   padding-top: 4.2rem;
   text-align: center;
 }
 
-#coleccion .flex__card .flex__info .button h3 a, #coleccion .flex__card .flex__info .button a {
+#coleccion .colection__cards .flex__card .flex__info .button h3 a, #coleccion .colection__cards .flex__card .flex__info .button a {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -227,6 +127,77 @@ h1 {
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  #coleccion .colection__cards .flex__card .flex__info {
+    height: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #coleccion .colection__cards .flex__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #coleccion .colection__cards .flex__card .flex__info:hover {
+    background-color: #ffffff;
+    height: 49vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #coleccion .colection__cards .flex__card .flex__info:hover h3 {
+    color: #000000;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    padding-bottom: 1.5rem;
+  }
+  #coleccion .colection__cards .flex__card .flex__info:hover p {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+    max-width: 34rem;
+  }
+  #coleccion .colection__cards .flex__card .flex__info:hover .button {
+    padding-top: 4.2rem;
+    text-align: center;
+  }
+  #coleccion .colection__cards .flex__card .flex__info:hover .button h3 a, #coleccion .colection__cards .flex__card .flex__info:hover .button a {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1rem;
+    border: 1px solid #000000;
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+  }
 }
 
 #carteras {
@@ -465,7 +436,7 @@ h1 {
   padding-top: 3rem;
 }
 
-#esenciales .flex__content .flex__item .flex__detail h3 {
+#esenciales .flex__content .flex__item .flex__detail h3, #esenciales .flex__content .flex__item .flex__detail h3 a {
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 800;
@@ -535,12 +506,12 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 5rem 0;
 }
 
 #regalos h2 {
-  color: #000000;
+  color: #ffffff;
   font-size: 3.6rem;
   font-weight: 800;
   text-align: center;
@@ -574,7 +545,7 @@ h1 {
 }
 
 #regalos .flex__info h3 {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.4rem;
   font-weight: 800;
   text-align: center;
@@ -585,7 +556,7 @@ h1 {
 }
 
 #regalos .flex__info p {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
@@ -601,14 +572,14 @@ h1 {
 }
 
 #regalos .flex__info .button h3 a, #regalos .flex__info .button a {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .1rem;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
   cursor: pointer;
 }
@@ -693,8 +664,8 @@ h1 {
   text-transform: lowercase;
 }
 
-#regalos .flex__content .flex__item .flex__detail h3 {
-  color: #000000;
+#regalos .flex__content .flex__item .flex__detail h3, #regalos .flex__content .flex__item .flex__detail h3 a {
+  color: #ffffff;
   font-size: 1.4rem;
   font-weight: 800;
   text-align: center;
@@ -714,7 +685,7 @@ h1 {
 }
 
 #regalos .flex__content .flex__item .flex__detail p {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
@@ -725,154 +696,6 @@ h1 {
 }
 
 #regalos .flex__content .flex__item:last-child .flex__detail {
-  padding-bottom: 0;
-}
-
-#gift-cards {
-  background-color: #000000;
-  padding: 5rem 0;
-}
-
-#gift-cards h2 {
-  color: #ffffff;
-  font-size: 3.6rem;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  padding-bottom: 5rem;
-}
-
-#gift-cards .flex__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item {
-  position: relative;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item .overlay__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #000000;
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item .overlay__content:hover {
-  opacity: 1;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item .overlay__content > * {
-  -webkit-transform: translateY(2rem);
-          transform: translateY(2rem);
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: -webkit-transform 0.25s;
-  transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s;
-  width: 90%;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item .overlay__content:hover > * {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  width: 90%;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item img {
-  width: 80vw;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item .white-button {
-  padding-top: 28rem;
-  text-align: center;
-}
-
-#gift-cards .flex__content .flex__item .overlay__item .white-button h3 a, #gift-cards .flex__content .flex__item .overlay__item .white-button a {
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  border: 1px solid #ffffff;
-  padding: 1.2rem 2.4rem;
-  cursor: pointer;
-}
-
-#gift-cards .flex__content .flex__item .flex__detail {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-#gift-cards .flex__content .flex__item .flex__detail h3 {
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .1rem;
-}
-
-#gift-cards .flex__content .flex__item .flex__detail h4 {
-  color: #979797;
-  font-size: 1.2rem;
-  font-weight: 800;
-  text-align: center;
-  text-transform: lowercase;
-  text-decoration: none;
-  letter-spacing: .05rem;
-}
-
-#gift-cards .flex__content .flex__item .flex__detail p {
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  line-height: 1.5;
-  max-width: none;
-}
-
-#gift-cards .flex__content .flex__item:last-child .flex__detail {
   padding-bottom: 0;
 }
 
@@ -925,7 +748,7 @@ h1 {
   padding-top: 3rem;
 }
 
-#servicios .flex__content .flex__item .flex__detail h3 {
+#servicios .flex__content .flex__item .flex__detail h3, #servicios .flex__content .flex__item .flex__detail h3 a {
   color: #000000;
   font-size: 1.4rem;
   font-weight: 800;
@@ -962,12 +785,14 @@ h1 {
 
 #tienda {
   background-color: #ffffff;
-  padding-top: 2rem;
+  max-width: 114rem;
+  padding-top: 3.6rem;
+  margin: auto;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #tienda {
-    padding-top: 7.2rem;
+    padding-top: 9rem;
   }
 }
 
@@ -982,25 +807,16 @@ h1 {
   padding: 5rem 0;
 }
 
-#tienda #catalogue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#tienda #catalogo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 2rem;
+  padding: 0 2rem;
 }
 
-#tienda #catalogue .card {
+#tienda #catalogo .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,27 +834,11 @@ h1 {
           align-items: center;
 }
 
-#tienda #catalogue .card img {
-  width: 46vw;
-}
-
-@media (min-width: 768px) {
-  #tienda #catalogue .card img {
-    width: 30vw;
-  }
-}
-
-@media (min-width: 1200px) {
-  #tienda #catalogue .card img {
-    width: 20vw;
-  }
-}
-
-#tienda #catalogue .card .overlay__item {
+#tienda #catalogo .card .overlay__item {
   position: relative;
 }
 
-#tienda #catalogue .card .overlay__item .overlay__content {
+#tienda #catalogo .card .overlay__item .overlay__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1066,11 +866,11 @@ h1 {
   transition: opacity 0.25s;
 }
 
-#tienda #catalogue .card .overlay__item .overlay__content:hover {
+#tienda #catalogo .card .overlay__item .overlay__content:hover {
   opacity: 1;
 }
 
-#tienda #catalogue .card .overlay__item .overlay__content > * {
+#tienda #catalogo .card .overlay__item .overlay__content > * {
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
   -webkit-transition: -webkit-transform 0.25s;
@@ -1080,18 +880,22 @@ h1 {
   width: 90%;
 }
 
-#tienda #catalogue .card .overlay__item .overlay__content:hover > * {
+#tienda #catalogo .card .overlay__item .overlay__content:hover > * {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   width: 90%;
 }
 
-#tienda #catalogue .card .overlay__item .white-button {
+#tienda #catalogo .card .overlay__item img {
+  width: 100%;
+}
+
+#tienda #catalogo .card .overlay__item .white-button {
   padding-top: none;
   text-align: center;
 }
 
-#tienda #catalogue .card .overlay__item .white-button h3 a, #tienda #catalogue .card .overlay__item .white-button a {
+#tienda #catalogo .card .overlay__item .white-button h3 a, #tienda #catalogo .card .overlay__item .white-button a {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1104,12 +908,12 @@ h1 {
   cursor: pointer;
 }
 
-#tienda #catalogue .card .card__detail {
+#tienda #catalogo .card .card__detail {
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
-#tienda #catalogue .card .card__detail h3 {
+#tienda #catalogo .card .card__detail h3, #tienda #catalogo .card .card__detail h3 a {
   color: #000000;
   font-size: 1.4rem;
   font-weight: 800;
@@ -1119,7 +923,7 @@ h1 {
   letter-spacing: .1rem;
 }
 
-#tienda #catalogue .card .card__detail h4 {
+#tienda #catalogo .card .card__detail h4 {
   color: #979797;
   font-size: 1.2rem;
   font-weight: 800;
@@ -1129,7 +933,7 @@ h1 {
   letter-spacing: .05rem;
 }
 
-#tienda #catalogue .card .card__detail p {
+#tienda #catalogo .card .card__detail p {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1472,7 +1276,7 @@ nav .highlight p {
   position: relative;
   -webkit-animation: move 30s linear infinite;
           animation: move 30s linear infinite;
-  min-width: 50rem;
+  min-width: 60rem;
 }
 
 nav .highlight p:hover {
@@ -1485,7 +1289,7 @@ nav .highlight p:hover {
     left: 100vw;
   }
   to {
-    left: -45rem;
+    left: -65rem;
   }
 }
 
@@ -1494,7 +1298,7 @@ nav .highlight p:hover {
     left: 100vw;
   }
   to {
-    left: -45rem;
+    left: -65rem;
   }
 }
 

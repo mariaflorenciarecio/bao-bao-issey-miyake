@@ -42,10 +42,10 @@ nav {
         p { 
             position: relative; 
             animation: move 30s linear infinite;
-            min-width: 50rem;
+            min-width: 60rem;
 
             &:hover { animation-play-state: paused; }
-            @keyframes move { from { left: 100vw; } to { left: -45rem; } }
+            @keyframes move { from { left: 100vw; } to { left: -65rem; } }
         }
     }
 

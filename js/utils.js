@@ -1,3 +1,4 @@
+/**
 export const renderList = (listId, list) => {
 
     const listContainer = document.getElementById(listId)
@@ -10,3 +11,4 @@ export const renderList = (listId, list) => {
         listContainer.appendChild(itemList)
     }
 }
+**/

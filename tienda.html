@@ -27,7 +27,7 @@
         <!-- barra de navegacion -->
         <nav>
             <div class="highlight">
-                <p>¡FELICES FIESTAS! 50% de descuento ingresando el código <strong>XMAS21</strong></p>
+                <p>ENVIO GRATIS PARA COMPRAS SUPERIORES A $1.000 | 3, 6 Y 12 CUOTAS SIN INTERES</p>
             </div>
             <div class="navbar">
                 <ul class="navbar__info">
@@ -36,10 +36,8 @@
                 </ul>
                 <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
                 <ul class="navbar__icons">
-                    <li><a href=""><i class="fas fa-search"></i></a></li>
                     <li><a href=""><i class="fas fa-user"></i></a></li>
                     <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href=""><i class="fas fa-heart"></i></a></li>
                 </ul>
             </div>
             <input type="checkbox" id="toggle" class="toggle">
@@ -74,14 +72,6 @@
                         <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
                     </ul>
                 </li>
-                <li class="navmenu__container">
-                    <button class="navmenu__item">Gift Cards</button>
-                    <ul class="navmenu__dropdown">
-                        <li><a href="./html/items/gift-card-platinum.html">Platinum</a></li>
-                        <li><a href="./html/items/gift-card-gold.html">Gold</a></li>
-                        <li><a href="./html/items/gift-card-silver.html">Silver</a></li>
-                    </ul>
-                </li>
             </ul>
             <label for="toggle" class="toggle__label">
                 <span><i class="fas fa-bars"></i></span>
@@ -90,26 +80,32 @@
     </header>
     <!-- CIERRE HEADER -->
 
-    <form id="form-product">
-        <p>Id</p>
-        <input autocomplete="off" type="number" id="input-id-product">
-        <p>Nombre</p>
-        <input autocomplete="off" type="text" id="input-name-product">
-        <p>Precio</p>
-        <input autocomplete="off" type="number" id="input-price-product">
-        <p>Cantidad</p>
-        <input autocomplete="off" type="number" id="input-quantity-product">
-        <div>
-            <button>Agregar</button>
-        </div>
-    </form>
+    <!-- APERTURA MAIN -->
+    <main>
+        <!-- <form id="form-product">
+            <p>Id</p>
+            <input autocomplete="off" type="number" id="input-id-product">
+            <p>Nombre</p>
+            <input autocomplete="off" type="text" id="input-name-product">
+            <p>Precio</p>
+            <input autocomplete="off" type="number" id="input-price-product">
+            <p>Cantidad</p>
+            <input autocomplete="off" type="number" id="input-quantity-product">
+            <div>
+                <button>Agregar</button>
+            </div>
+        </form> -->
 
-    <ul id="products-list"></ul>
+        <!-- <ul id="products-list"></ul> -->
 
-    <section id="tienda">
-        <h2>Tienda</h2>
-        <div id="catalogue"></div>
-    </section>
+        <section id="tienda">
+            <!-- h2 sera remplazado en js por nombre de seccion seleccionada -->
+            <h2>Tienda</h2>
+            <div id="catalogo"></div>
+            <!-- productos renderizados -->
+        </section>
+    </main>
+    <!-- CIERRE MAIN -->
 
     <!-- APERTURA SCRIPTS -->
     <!-- font awesome -->
@@ -119,8 +115,9 @@
     <script>
         AOS.init({ duration: 1000 });
     </script>
-    <!-- index js -->
-    <script type="module" src="./js/index.js"></script>
+    <!-- js -->
+    <script src="./js/productos.js"></script>
+    <script src="./js/app.js"></script>
     <!-- CIERRE SCRIPTS -->
 </body>
 <!-- CIERRE BODY -->
