@@ -1,3 +1,5 @@
+/** 
+
 class Product {
     constructor(id, name, price, collection, category, color, description, stock) {
         this.id = id;
@@ -38,3 +40,5 @@ class Product {
         this.stock = false;
     }
 }
+
+*/

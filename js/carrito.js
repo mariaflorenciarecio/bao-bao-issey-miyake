@@ -1,3 +1,5 @@
+/**
+
 class Cart {
     constructor() {
         this.list = JSON.parse(localStorage.getItem("cart")) || [];
@@ -47,3 +49,5 @@ class Cart {
         localStorage.setItem("cart", JSON.stringify(this.list))
     }
 }
+
+*/

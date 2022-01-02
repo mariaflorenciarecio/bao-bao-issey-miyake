@@ -71,10 +71,24 @@ function renderProducts() {
 };
 renderProducts();
 
+// ARRAY DE CARRITO
+
+let cart = [];
+
 // AGREGAR PRODUCTOS AL CARRITO
 
 function addToCart(id) {
-    console.log(id);
+    // checkear si el producto ya existe en el carrito
+    if (cart.some((item) => item.id === id)) {
+        alert("Product already in cart!");
+    } else {
+        const item = Products.find((product) => product.id === id);
+        cart.push({
+            ...item, 
+            units: 1,
+        });
+        console.log(cart);
+    }
 }
 
 /**

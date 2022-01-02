@@ -116,7 +116,7 @@ h1 {
   text-align: center;
 }
 
-#coleccion .colection__cards .flex__card .flex__info .button h3 a, #coleccion .colection__cards .flex__card .flex__info .button a {
+#coleccion .colection__cards .flex__card .flex__info .button h3 a, #coleccion .colection__cards .flex__card .flex__info .button a, #coleccion .colection__cards .flex__card .flex__info .button button {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -126,6 +126,7 @@ h1 {
   letter-spacing: .1rem;
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -186,7 +187,7 @@ h1 {
     padding-top: 4.2rem;
     text-align: center;
   }
-  #coleccion .colection__cards .flex__card .flex__info:hover .button h3 a, #coleccion .colection__cards .flex__card .flex__info:hover .button a {
+  #coleccion .colection__cards .flex__card .flex__info:hover .button h3 a, #coleccion .colection__cards .flex__card .flex__info:hover .button a, #coleccion .colection__cards .flex__card .flex__info:hover .button button {
     color: #000000;
     font-size: 1.2rem;
     font-weight: 400;
@@ -196,6 +197,7 @@ h1 {
     letter-spacing: .1rem;
     border: 1px solid #000000;
     padding: 1.2rem 2.4rem;
+    background-color: transparent;
     cursor: pointer;
   }
 }
@@ -281,7 +283,7 @@ h1 {
   text-align: center;
 }
 
-#carteras .flex__info .button h3 a, #carteras .flex__info .button a {
+#carteras .flex__info .button h3 a, #carteras .flex__info .button a, #carteras .flex__info .button button {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;
@@ -291,6 +293,7 @@ h1 {
   letter-spacing: .1rem;
   border: 1px solid #000000;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -359,7 +362,7 @@ h1 {
   text-align: center;
 }
 
-#carteras .flex__content .flex__item .overlay__item .white-button h3 a, #carteras .flex__content .flex__item .overlay__item .white-button a {
+#carteras .flex__content .flex__item .overlay__item .white-button h3 a, #carteras .flex__content .flex__item .overlay__item .white-button a, #carteras .flex__content .flex__item .overlay__item .white-button button {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -369,6 +372,7 @@ h1 {
   letter-spacing: .1rem;
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -477,7 +481,7 @@ h1 {
   padding-bottom: 1.2rem;
 }
 
-#esenciales .white-button h3 a, #esenciales .white-button a {
+#esenciales .white-button h3 a, #esenciales .white-button a, #esenciales .white-button button {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -487,6 +491,7 @@ h1 {
   letter-spacing: .1rem;
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -571,7 +576,7 @@ h1 {
   text-align: center;
 }
 
-#regalos .flex__info .button h3 a, #regalos .flex__info .button a {
+#regalos .flex__info .button h3 a, #regalos .flex__info .button a, #regalos .flex__info .button button {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -581,6 +586,7 @@ h1 {
   letter-spacing: .1rem;
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -645,7 +651,7 @@ h1 {
   text-align: center;
 }
 
-#regalos .flex__content .flex__item .overlay__item .white-button h3 a, #regalos .flex__content .flex__item .overlay__item .white-button a {
+#regalos .flex__content .flex__item .overlay__item .white-button h3 a, #regalos .flex__content .flex__item .overlay__item .white-button a, #regalos .flex__content .flex__item .overlay__item .white-button button {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -655,6 +661,7 @@ h1 {
   letter-spacing: .1rem;
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -895,7 +902,7 @@ h1 {
   text-align: center;
 }
 
-#tienda #catalogo .card .overlay__item .white-button h3 a, #tienda #catalogo .card .overlay__item .white-button a {
+#tienda #catalogo .card .overlay__item .white-button h3 a, #tienda #catalogo .card .overlay__item .white-button a, #tienda #catalogo .card .overlay__item .white-button button {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -905,6 +912,7 @@ h1 {
   letter-spacing: .1rem;
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -1206,7 +1214,7 @@ footer .flex__item .footer-social i {
   text-align: left;
 }
 
-.header .white-button h3 a, .header .white-button a {
+.header .white-button h3 a, .header .white-button a, .header .white-button button {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1216,6 +1224,7 @@ footer .flex__item .footer-social i {
   letter-spacing: .1rem;
   border: 1px solid #ffffff;
   padding: 1.2rem 2.4rem;
+  background-color: transparent;
   cursor: pointer;
 }
 
