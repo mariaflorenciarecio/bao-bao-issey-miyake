@@ -3,14 +3,13 @@
 @import './abstracts/mixins';
 @import './abstracts/variables';
 
-@import './components/botones';
-@import './components/images';
-@import './components/videos';
-
 @import './base/reset';
 @import './base/typo';
 
+@import './components/carrito';
+
 @import './layout/flex';
+@import './layout/footer';
 @import './layout/grid';
 @import './layout/header';
 @import './layout/nav';

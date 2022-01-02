@@ -1,0 +1,37 @@
+// -------------------- TIENDA --------------------
+
+#tienda {
+    background-color: $white;
+    max-width: 114rem;
+    padding-top: 3.6rem;
+    margin: auto;
+
+    @media screen and (min-width: $md) { padding-top: 9rem; }
+    
+    h2 { 
+        @include title($black, center); 
+        padding: 5rem 0;
+    }
+
+    #catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        grid-gap: 2rem;
+        padding: 0 2rem;
+
+        .card {
+            @include flex(column, nowrap, center, center);
+
+            .overlay__item {
+                @include overlay__content(rgba(0, 0, 0, 0.6));
+                img { width: 100%; }
+                .white-button { @include button($white, none, center); }
+            }
+
+            .card__detail { 
+                @include flex-detail($black);
+                padding-bottom: 5rem;
+            } 
+        }
+    }
+}

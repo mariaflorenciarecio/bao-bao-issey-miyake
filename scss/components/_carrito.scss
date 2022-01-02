@@ -1,0 +1,73 @@
+// -------------------- CARRITO --------------------
+
+#carrito {
+    background-color: $white;
+    // height: 100vh;
+    width: 42rem;
+    position: absolute;
+    // top: 0;
+    // right: 0;
+    z-index: 2;
+    padding: 1.5rem 3rem 3rem 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+    .close {
+        @include icon($black, 3rem);
+        padding: 0;
+        text-align-last: right;
+    }
+    
+    h2 { 
+        @include subtitle($black, center); 
+        font-size: 1.8rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #carrito__items  {
+        .item {
+            @include flex(row, nowrap, space-between, center);
+            padding: 1.5rem 0;
+            
+            &__image img { height: 15rem; }
+
+            &__data { 
+                @include flex(column, nowrap, space-between, flex-start);
+                @include flex-detail($black);
+                @include icon($black, 3rem);
+                width: 20rem;
+                height: 15rem;
+                padding: 0;
+
+                .item__bin, .item__subtotal, .item__total { align-self: self-end; }
+            } 
+
+            &__units {
+                @include flex(row, nowrap, left, center);
+                border: 1px solid $black;
+                margin-top: .5rem;
+
+                strong { padding: 0 .8rem; }
+
+                i { padding: .8rem; }
+            }
+        }
+    }
+
+    .cart__price {
+        border-top: 1px solid $black;
+        text-align-last: justify;
+        margin-top: 1.5rem;
+
+        h3 { 
+            @include subtitle($black, center); 
+            display: inline-block;
+            font-size: 1.8rem;
+            padding: 1.5rem 0;
+        }
+    }
+
+    .cart__checkout {
+        @include button($black, none, center);
+        padding-top: 1.5rem;
+    }
+}

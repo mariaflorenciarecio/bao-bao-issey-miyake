@@ -45,6 +45,7 @@
 // SELECCIONAR ELEMENTOS
 
 const productCard = document.getElementById("catalogo")
+const cartItems = document.getElementById("carrito__items")
 
 // RENDERIZAR PRODUCTOS (CARDS)
 
@@ -78,7 +79,6 @@ let cart = [];
 // AGREGAR PRODUCTOS AL CARRITO
 
 function addToCart(id) {
-    // checkear si el producto ya existe en el carrito
     if (cart.some((item) => item.id === id)) {
         alert("Product already in cart!");
     } else {
@@ -87,9 +87,52 @@ function addToCart(id) {
             ...item, 
             units: 1,
         });
-        console.log(cart);
-    }
+    }; // checkea si el producto ya existe en el carrito
+    updateCart();
+};
+
+// ACTUALIZAR CARRITO
+
+function updateCart() {
+    renderCartItems();
+    // renderSubtotal();
+};
+
+// RENDERIZAR ITEMS (CARRITO)
+
+function renderCartItems() {
+    cartItems.innerHTML = ""; // limpia los elementos del carrito
+    cart.forEach((item) => {
+        cartItems.innerHTML += `
+            <div class="item">
+                <div class="item__image">
+                    <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
+                </div>
+                <div class="item__data">
+                    <div class="item__bin">
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                    <h3><a href="#">${item.name} ${item.collection}</a></h3>
+                    <h4>${item.color}</h4>
+                    <div class="item__units">
+                        <i class="fas fa-minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
+                        <strong>2</strong>
+                        <i class="fas fa-plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
+                    </div>
+                    <span class="item__subtotal">$${item.price} c/u</span>
+                    <strong class="item__total">$2.000</strong>
+                </div>
+            </div>
+        `;
+    });
+};
+
+// CAMBIAR NUMERO DE UNIDADES DE UN ITEM
+
+function changeNumberOfUnits(action, id) {
+    
 }
+
 
 /**
 for (const productDetail of Products) {
