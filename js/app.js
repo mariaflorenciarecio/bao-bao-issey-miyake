@@ -126,7 +126,7 @@ function renderCartItems() {
                     <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
                 </div>
                 <div class="item__data">
-                    <div class="item__bin">
+                    <div class="item__bin" onclick="removeFromCart(${item.id})">
                         <i class="far fa-trash-alt"></i>
                     </div>
                     <h3><a href="#">${item.name} ${item.collection}</a></h3>
@@ -143,6 +143,13 @@ function renderCartItems() {
         `;
     });
 };
+
+// BORRAR ITEMS DEL CARRITORY
+
+function removeFromCart(id) {
+    cart = cart.filter((item) => item.id !== id);
+    updateCart();
+}
 
 // CAMBIAR NUMERO DE UNIDADES DE UN ITEM
 

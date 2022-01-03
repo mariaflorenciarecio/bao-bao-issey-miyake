@@ -39,6 +39,8 @@
                 padding: 0;
 
                 .item__bin, .item__subtotal, .item__total { align-self: self-end; }
+
+                .item__bin { cursor: pointer; }
             } 
 
             &__units {

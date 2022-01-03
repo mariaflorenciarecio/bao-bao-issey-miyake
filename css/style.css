@@ -134,6 +134,10 @@ h1 {
       align-self: self-end;
 }
 
+#carrito #carrito__items .item__data .item__bin {
+  cursor: pointer;
+}
+
 #carrito #carrito__items .item__units {
   display: -webkit-box;
   display: -ms-flexbox;
