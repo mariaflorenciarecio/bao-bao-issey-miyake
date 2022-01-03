@@ -76,7 +76,8 @@ renderProducts();
 
 // ARRAY DE CARRITO
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("CART")) || [];
+updateCart();
 
 // AGREGAR PRODUCTOS AL CARRITO
 
@@ -98,6 +99,9 @@ function addToCart(id) {
 function updateCart() {
     renderCartItems();
     renderSubtotal();
+
+    // guardar items del carrito en el local storage
+    localStorage.setItem("CART", JSON.stringify(cart))
 };
 
 // CALCULAR Y RENDERIZAR SUBTOTALES
