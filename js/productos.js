@@ -105,7 +105,7 @@ const Products = [
         category: "Crossbody",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        inStock: 1,
+        inStock: 2,
     },
 
     {
@@ -149,7 +149,7 @@ const Products = [
         category: "Crossbody",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        inStock: 1,
+        inStock: 3,
     },
 
     {
@@ -248,7 +248,7 @@ const Products = [
         category: "Tote",
         color: "Negro",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        inStock: 1,
+        inStock: 4,
     },
 
     {
@@ -347,7 +347,7 @@ const Products = [
         category: "Tote",
         color: "Blanco",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        inStock: 1,
+        inStock: 5,
     },
 
     {

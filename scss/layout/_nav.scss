@@ -87,6 +87,7 @@ nav {
             .navbar__carrito {
                 @include flex(row, nowrap, space-between, flex-end);
                 width: 4rem;
+                cursor: pointer;
             }
 
             @media screen and (min-width: $md) {

@@ -2,10 +2,15 @@
 
 /* -------reseteo------- */
 
-* {
+::after,
+::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+* {
+    @extend ::after;
     font-size: 62.5%;
     list-style-type: none;
 }
