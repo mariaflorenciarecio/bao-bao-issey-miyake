@@ -3,14 +3,14 @@
 #tienda {
     background-color: $white;
     max-width: 114rem;
-    padding-top: 3.6rem;
+    padding-top: 9.1rem;
     margin: auto;
 
-    @media screen and (min-width: $md) { padding-top: 9rem; }
+    @media screen and (min-width: $md) { padding-top: 14.4rem; }
     
     h2 { 
         @include title($black, center); 
-        padding: 5rem 0;
+        padding: 5rem 0 5rem 0;
     }
 
     #catalogo {

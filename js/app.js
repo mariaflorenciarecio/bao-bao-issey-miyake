@@ -3,12 +3,13 @@
 ///////////////////////////
 
 const productCard = document.getElementById("catalogo");
-const toggleBtn = document.querySelector(".navbar__carrito");
-const closeBtn = document.querySelector(".close");
-const sidebar = document.querySelector(".sidebar");
 const cartItems = document.getElementById("carrito__items");
 const subtotal = document.getElementById("subtotal");
 const cartUnits = document.getElementById("navbar__items");
+
+const toggleBtn = document.querySelector(".navbar__carrito");
+const closeBtn = document.querySelector(".close");
+const sidebar = document.querySelector(".carrito__sidebar");
 
 ///////////////////////////////////
 // RENDERIZAR CARDS DE PRODUCTOS //
@@ -37,18 +38,17 @@ function renderProducts() {
 };
 renderProducts();
 
-///////////////////////////
-// MOSTRAR MODAL CARRITO //
-///////////////////////////
+//////////////////////////////
+// RENDERIZAR MODAL CARRITO //
+//////////////////////////////
 
 toggleBtn.addEventListener("click", function () {
     sidebar.classList.toggle("show-sidebar");
 });
 
-closeBtn.addEventListener("click", function () {
+closeBtn.addEventListener("click", function closeSidebar() {
     sidebar.classList.remove("show-sidebar");
 });
-
 
 ///////////////////////////////
 // MOSTRAR ITEMS DEL CARRITO //

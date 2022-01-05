@@ -14,6 +14,21 @@
 }
 
 body {
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 1.2rem;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 0.5rem 0.5rem #000000;
+          box-shadow: inset 0 0 0.5rem 0.5rem #000000;
+  border: solid .4rem transparent;
+}
+
+body {
   font-family: 'Manrope', sans-serif;
 }
 
@@ -23,7 +38,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.sidebar {
+.carrito__sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +49,6 @@ h1 {
   display: grid;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
-  row-gap: 1rem;
   -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.3s linear;
@@ -43,15 +57,16 @@ h1 {
           transform: translate(-100%);
   padding: 1.5rem 3rem 3rem 3rem;
   z-index: 2;
+  overflow-y: auto;
 }
 
 @media (min-width: 425px) {
-  .sidebar {
+  .carrito__sidebar {
     width: 42.5rem;
   }
 }
 
-.sidebar .close {
+.carrito__sidebar .close {
   color: #000000;
   font-size: 3rem;
   padding: .6rem;
@@ -60,7 +75,7 @@ h1 {
   cursor: pointer;
 }
 
-.sidebar h2 {
+.carrito__sidebar h2 {
   color: #000000;
   font-size: 1.4rem;
   font-weight: 800;
@@ -72,7 +87,21 @@ h1 {
   padding-bottom: 1.5rem;
 }
 
-.sidebar #carrito__items .item {
+.carrito__sidebar #carrito__items {
+  overflow-y: auto;
+}
+
+.carrito__sidebar #carrito__items::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.carrito__sidebar #carrito__items::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 0.1rem 0.1rem #979797;
+          box-shadow: inset 0 0 0.1rem 0.1rem #979797;
+  border: solid .4rem transparent;
+}
+
+.carrito__sidebar #carrito__items .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,11 +120,11 @@ h1 {
   padding: 1.5rem 0;
 }
 
-.sidebar #carrito__items .item__image img {
+.carrito__sidebar #carrito__items .item__image img {
   height: 15rem;
 }
 
-.sidebar #carrito__items .item__data {
+.carrito__sidebar #carrito__items .item__data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +149,7 @@ h1 {
   padding: 0;
 }
 
-.sidebar #carrito__items .item__data h3, .sidebar #carrito__items .item__data h3 a, .sidebar #carrito__items .item__data strong {
+.carrito__sidebar #carrito__items .item__data h3, .carrito__sidebar #carrito__items .item__data h3 a, .carrito__sidebar #carrito__items .item__data strong {
   color: #000000;
   font-size: 1.4rem;
   font-weight: 800;
@@ -130,7 +159,7 @@ h1 {
   letter-spacing: .1rem;
 }
 
-.sidebar #carrito__items .item__data h4 {
+.carrito__sidebar #carrito__items .item__data h4 {
   color: #979797;
   font-size: 1.2rem;
   font-weight: 800;
@@ -140,7 +169,7 @@ h1 {
   letter-spacing: .05rem;
 }
 
-.sidebar #carrito__items .item__data p, .sidebar #carrito__items .item__data span {
+.carrito__sidebar #carrito__items .item__data p, .carrito__sidebar #carrito__items .item__data span {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;
@@ -151,17 +180,17 @@ h1 {
   max-width: none;
 }
 
-.sidebar #carrito__items .item__data .item__bin, .sidebar #carrito__items .item__data .item__subtotal, .sidebar #carrito__items .item__data .item__total {
+.carrito__sidebar #carrito__items .item__data .item__bin, .carrito__sidebar #carrito__items .item__data .item__subtotal, .carrito__sidebar #carrito__items .item__data .item__total {
   -ms-flex-item-align: self-end;
       -ms-grid-row-align: self-end;
       align-self: self-end;
 }
 
-.sidebar #carrito__items .item__data .item__bin {
+.carrito__sidebar #carrito__items .item__data .item__bin {
   cursor: pointer;
 }
 
-.sidebar #carrito__items .item__units {
+.carrito__sidebar #carrito__items .item__units {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,18 +211,18 @@ h1 {
   margin-top: .5rem;
 }
 
-.sidebar #carrito__items .item__units i {
+.carrito__sidebar #carrito__items .item__units i {
   padding: .8rem;
   cursor: pointer;
 }
 
-.sidebar .cart__price {
+.carrito__sidebar .cart__price {
   border-top: 1px solid #000000;
   padding: 1rem 0;
   margin-top: 1.5rem;
 }
 
-.sidebar .cart__price span {
+.carrito__sidebar .cart__price span {
   color: #979797;
   font-size: 1.2rem;
   font-weight: 800;
@@ -204,7 +233,7 @@ h1 {
   text-align-last: left;
 }
 
-.sidebar .cart__price h3 {
+.carrito__sidebar .cart__price h3 {
   color: #000000;
   font-size: 1.4rem;
   font-weight: 800;
@@ -216,13 +245,13 @@ h1 {
   text-align-last: justify;
 }
 
-.sidebar .cart__checkout {
+.carrito__sidebar .cart__checkout {
   padding-top: none;
   text-align: center;
   padding-top: 1.5rem;
 }
 
-.sidebar .cart__checkout h3 a, .sidebar .cart__checkout a, .sidebar .cart__checkout button {
+.carrito__sidebar .cart__checkout h3 a, .carrito__sidebar .cart__checkout a, .carrito__sidebar .cart__checkout button {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;
@@ -358,13 +387,13 @@ footer .flex__item .footer-social i {
 #tienda {
   background-color: #ffffff;
   max-width: 114rem;
-  padding-top: 3.6rem;
+  padding-top: 9.1rem;
   margin: auto;
 }
 
 @media screen and (min-width: 768px) {
   #tienda {
-    padding-top: 9rem;
+    padding-top: 14.4rem;
   }
 }
 
@@ -376,7 +405,7 @@ footer .flex__item .footer-social i {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .1rem;
-  padding: 5rem 0;
+  padding: 5rem 0 5rem 0;
 }
 
 #tienda #catalogo {
@@ -734,8 +763,7 @@ nav .navmenu__dropdown a {
 }
 
 nav .highlight {
-  padding: .6rem;
-  border-bottom: .1rem solid white;
+  padding-top: .5rem;
 }
 
 nav .highlight p {
@@ -784,7 +812,7 @@ nav .navbar {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 nav .navbar__info {
