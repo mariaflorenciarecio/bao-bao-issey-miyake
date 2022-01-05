@@ -65,7 +65,7 @@
     padding-top: 3rem;
     h3, h3 a, strong { @include subtitle($color, center); }
     h4 { @include highlight(center); }
-    p, span { @include paragraph($color, center, none); }
+    p, span, label { @include paragraph($color, center, none); }
 }
 
 // icon

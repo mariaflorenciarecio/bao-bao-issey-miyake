@@ -1,7 +1,8 @@
 /* -------reseteo------- */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-::after, *,
-::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -169,7 +170,7 @@ h1 {
   letter-spacing: .05rem;
 }
 
-.carrito__sidebar #carrito__items .item__data p, .carrito__sidebar #carrito__items .item__data span {
+.carrito__sidebar #carrito__items .item__data p, .carrito__sidebar #carrito__items .item__data span, .carrito__sidebar #carrito__items .item__data label {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;
@@ -268,6 +269,27 @@ h1 {
 .show-sidebar {
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+select {
+  color: #000000;
+  background-color: transparent;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  width: 15rem;
+  border: 1px solid #000000;
+  border-radius: 0;
+  outline: none;
+  padding: .4rem;
+  margin-left: .5rem;
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 footer {
@@ -397,7 +419,58 @@ footer .flex__item .footer-social i {
   }
 }
 
-#tienda h2 {
+#tienda .clasificacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+  padding: 0 2rem;
+}
+
+#tienda .clasificacion h3, #tienda .clasificacion h3 a, #tienda .clasificacion strong {
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1rem;
+}
+
+#tienda .clasificacion h4 {
+  color: #979797;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: lowercase;
+  text-decoration: none;
+  letter-spacing: .05rem;
+}
+
+#tienda .clasificacion p, #tienda .clasificacion span, #tienda .clasificacion label {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  max-width: none;
+}
+
+#tienda .clasificacion h1 {
   color: #000000;
   font-size: 3.6rem;
   font-weight: 800;
@@ -406,6 +479,38 @@ footer .flex__item .footer-social i {
   text-decoration: none;
   letter-spacing: .1rem;
   padding: 5rem 0 5rem 0;
+}
+
+#tienda .clasificacion__elementos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tienda .clasificacion__elementos span {
+  padding: .5rem;
+}
+
+#tienda .clasificacion__elementos i {
+  color: #000000;
+  font-size: 1.2rem;
+  padding: .6rem;
+}
+
+#tienda .clasificacion__elementos label {
+  padding-left: 1.1rem;
 }
 
 #tienda #catalogo {
@@ -535,7 +640,7 @@ footer .flex__item .footer-social i {
   letter-spacing: .05rem;
 }
 
-#tienda #catalogo .card .card__detail p, #tienda #catalogo .card .card__detail span {
+#tienda #catalogo .card .card__detail p, #tienda #catalogo .card .card__detail span, #tienda #catalogo .card .card__detail label {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;

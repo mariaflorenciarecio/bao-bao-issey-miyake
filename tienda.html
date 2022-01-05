@@ -2,6 +2,7 @@
 <html lang="es">
 
 <!-- APERTURA HEAD -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,8 @@
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Tienda | BAO BAO ISSEY MIYAKE</title>
@@ -21,6 +23,7 @@
 <!-- CIERRE HEAD -->
 
 <!-- APERTURA BODY -->
+
 <body>
     <!-- APERTURA HEADER -->
     <header>
@@ -34,9 +37,10 @@
                     <li><a href="./index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
                     <li><a href="./index.html"><i class="fas fa-exclamation-circle"></i> Cancelar pedido</a></li>
                 </ul>
-                <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+                <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png"
+                        alt="Logo de Bao Bao Issey Miyake"></a>
                 <ul class="navbar__icons">
-                    <li >
+                    <li>
                         <i class="fas fa-user-astronaut"></i>
                     </li>
                     <li class="navbar__carrito">
@@ -85,16 +89,6 @@
     </header>
     <!-- CIERRE HEADER -->
 
-    <!-- APERTURA MAIN -->
-    <main>
-        <section id="tienda">
-            <!-- h2 sera remplazado en js por nombre de seccion seleccionada -->
-            <h2>Tienda</h2>
-            <div id="catalogo"></div>
-            <!-- productos renderizados -->
-        </section>
-    </main>
-
     <div id="carrito" class="carrito__sidebar">
         <div class="close">
             <i class="fas fa-times"></i>
@@ -106,10 +100,36 @@
             <button class="black-button">Finalizar compra</button>
         </div>
     </div>
-    
+
+    <!-- APERTURA MAIN -->
+    <main>
+        <section id="tienda">
+
+            <div class="clasificacion">
+                <h1>Tienda</h1>
+                <div class="clasificacion__elementos">
+                    <span><i class="fas fa-shopping-bag"></i>37 Productos</span>
+                    <span id="filtrar" class="black-button"><i class="fas fa-filter"></i>Filtrar</span>
+                    <div id="ordenar">
+                        <label>Ordenar por</label>
+                        <select>
+                            <option value="#">Más relevantes</option>
+                            <option value="#">A - Z</option>
+                            <option value="#">Z - A</option>
+                            <option value="#">Menor precio</option>
+                            <option value="#">Mayor precio</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="catalogo"></div>
+            <!-- productos renderizados -->
+        </section>
+    </main>
     <!-- CIERRE MAIN -->
 
-    
+
     <!-- APERTURA FOOTER -->
     <!-- <footer>
         <div class="flex__content">
@@ -121,10 +141,10 @@
                 </div>
             </div>
         </div> -->
-        <!-- informacion principal -->
-        <!-- <div class="flex__content"> -->
-            <!-- coleccion -->
-            <!-- <div class="flex__item">
+    <!-- informacion principal -->
+    <!-- <div class="flex__content"> -->
+    <!-- coleccion -->
+    <!-- <div class="flex__item">
                 <ul>
                     <li class="subtitle">Colección</li>
                     <li><a href="./html/coleccion/lucent.html">Lucent Series</a></li>
@@ -133,8 +153,8 @@
                     <li><a href="./html/coleccion/slash.html">Slash Series</a></li>
                 </ul>
             </div> -->
-            <!-- carteras -->
-            <!-- <div class="flex__item">
+    <!-- carteras -->
+    <!-- <div class="flex__item">
                 <ul>
                     <li class="subtitle">Carteras</li>
                     <li><a href="./html/carteras/tote.html">Tote</a></li>
@@ -145,8 +165,8 @@
                     <li><a href="./html/carteras/complementos.html">Complementos</a></li>
                 </ul>
             </div> -->
-            <!-- regalos -->
-            <!-- <div class="flex__item">
+    <!-- regalos -->
+    <!-- <div class="flex__item">
                 <ul>
                     <li class="subtitle">Regalos</li>
                     <li><a href="./html/regalos/regalos-grandes.html">Grandes</a></li>
@@ -154,8 +174,8 @@
                     <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
                 </ul>
             </div> -->
-            <!-- sobre nosotros -->
-            <!-- <div class="flex__item">
+    <!-- sobre nosotros -->
+    <!-- <div class="flex__item">
                 <ul>
                     <li class="subtitle">Sobre Nosotros</li>
                     <li><a href="./index.html">Términos y condiciones</a></li>
@@ -163,8 +183,8 @@
                     <li><a href="./index.html">Nuestros locales</a></li>
                 </ul>
             </div> -->
-            <!-- ayuda -->
-            <!-- <div class="flex__item">
+    <!-- ayuda -->
+    <!-- <div class="flex__item">
                 <ul>
                     <li class="subtitle">Ayuda</li>
                     <li><a href="./index.html">Atención al cliente</a></li>
@@ -173,8 +193,8 @@
                 </ul>
             </div>
         </div> -->
-        <!-- newsletter -->
-        <!-- <div class="flex__item">
+    <!-- newsletter -->
+    <!-- <div class="flex__item">
             <div class="newsletter">
                 <p>Suscribite al newsletter para recibir novedades de nuestras colecciones, promociones, eventos y proyectos especiales:</p>
                 <form action="" class="subscribe-form">
@@ -184,8 +204,8 @@
                 </form>
             </div>
         </div> -->
-        <!-- copyright -->
-        <!-- <div class="flex__item">
+    <!-- copyright -->
+    <!-- <div class="flex__item">
             <div class="copyright">
                 <p>© 2021 ISSEY MIYAKE INC. Todos los derechos reservados.</p>
                 <p>Desarrollado con 💜 por María Florencia Recio.</p>
