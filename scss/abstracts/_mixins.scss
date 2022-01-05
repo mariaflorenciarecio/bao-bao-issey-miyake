@@ -63,9 +63,9 @@
 
 @mixin flex-detail($color) {
     padding-top: 3rem;
-    h3 { @include subtitle($color, center); }
+    h3, h3 a, strong { @include subtitle($color, center); }
     h4 { @include highlight(center); }
-    p { @include paragraph($color, center, none); }
+    p, span, label { @include paragraph($color, center, none); }
 }
 
 // icon
@@ -82,13 +82,14 @@
     padding-top: $padding-top;
     text-align: $align;
 
-    h3 a, a {
+    h3 a, a, button {
         color: $color;
         font: { size: 1.2rem; weight: $regular; }
         text: { align: center; transform: uppercase; decoration: none; }
         letter-spacing: .1rem;
         border: 1px solid $color;
         padding: 1.2rem 2.4rem;
+        background-color: transparent;
         cursor: pointer;
     }
 }

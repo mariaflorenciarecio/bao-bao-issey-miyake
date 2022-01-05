@@ -4,11 +4,11 @@ nav {
     background-color: black;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
 
     // tipografia
 
-    p, a, button { 
+    p, a, button, span { 
         color: white; 
         font: { size: 1.2rem; weight: $regular; }
         letter-spacing: .1rem;
@@ -36,16 +36,15 @@ nav {
     // mensaje destacado
 
     .highlight {
-        padding: .6rem;
-        border-bottom: .1rem solid white;
+        padding-top: .5rem;
         
         p { 
             position: relative; 
             animation: move 30s linear infinite;
-            min-width: 50rem;
+            min-width: 60rem;
 
             &:hover { animation-play-state: paused; }
-            @keyframes move { from { left: 100vw; } to { left: -45rem; } }
+            @keyframes move { from { left: 100vw; } to { left: -65rem; } }
         }
     }
 
@@ -53,7 +52,7 @@ nav {
 
     .navbar {
         @include flex(row, nowrap, space-between, flex-start);
-        padding: 2rem;
+        padding: 1rem 2rem;
 
         &__info {
             display: none;
@@ -83,6 +82,12 @@ nav {
 
         &__icons {
             @include flex(row, nowrap, center, center);
+
+            .navbar__carrito {
+                @include flex(row, nowrap, space-between, flex-end);
+                width: 4rem;
+                cursor: pointer;
+            }
 
             @media screen and (min-width: $md) {
                 width: 16rem;
