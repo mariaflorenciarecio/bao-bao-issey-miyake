@@ -1,218 +1,25 @@
-// -------------------- NAV
-
 nav {
     background-color: black;
     position: fixed;
     width: 100%;
+    padding: 1rem;
     z-index: 1;
-
-    // tipografia
-
-    p, a, button, span { 
-        color: white; 
-        font: { size: 1.2rem; weight: $regular; }
-        letter-spacing: .1rem;
-        text-decoration: none;
-    }
-
-    strong { font-size: 1.2rem; }
-
-    i { 
-        color: white; 
-        font-size: 1.6rem; 
-        padding: 0 .6rem; 
-    }
-
-    .navmenu__dropdown {
-        a { 
-            text-transform: lowercase;
-
-            @media screen and (min-width: $md) {
-                color: black;
-            }
-        }
-    }
-
-    // mensaje destacado
-
-    .highlight {
-        padding-top: .5rem;
-        
-        p { 
-            position: relative; 
-            animation: move 30s linear infinite;
-            min-width: 60rem;
-
-            &:hover { animation-play-state: paused; }
-            @keyframes move { from { left: 100vw; } to { left: -65rem; } }
-        }
-    }
-
-    // primera barra
 
     .navbar {
         @include flex(row, nowrap, space-between, flex-start);
-        padding: 1rem 2rem;
+        padding: 1rem;
 
-        &__info {
-            display: none;
-
-            @media screen and (min-width: $md) {
-                display: block;
-                opacity: 1;
-                width: 16rem;
-                line-height: 2rem;
-                justify-content: left;
-            }
-        }
-
-        &__logo {
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-
-            @media screen and (min-width: $md) {
-                position: unset;
-                transform: none;
-                width: 16rem;
-
-                img { display: block; margin: auto; }
-            }
-        }
+        &__info { width: 12rem; line-height: 2.8rem; }
 
         &__icons {
-            @include flex(row, nowrap, center, center);
+            @include flex(row, nowrap, right, center);
+            width: 12rem;
 
-            .navbar__carrito {
-                @include flex(row, nowrap, space-between, flex-end);
-                width: 4rem;
-                cursor: pointer;
-            }
-
-            @media screen and (min-width: $md) {
-                width: 16rem;
-                justify-content: right;
-                margin-left: 0;
-            }
+            .navbar__wishlist { padding-right: 1.4rem; }
         }
     }
-
-    .toggle {
-        display: none;
-        &:checked ~ .navmenu { transform: scale(1, 1); }
-        &:checked ~ .navmenu a { opacity: 1; }
-    }
-
-    .toggle__label {
-        position: absolute;
-        top: 5rem;
-        left: 2rem;
-        cursor: pointer;
-
-        @media screen and (min-width: $md) { display: none; }
-    }
-
-    // segunda barra
 
     .navmenu {
-        background-color: black;
-        position: absolute;
-        text-align: left;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        transform: scale(1, 0);
-        padding-bottom: 1rem;
-
-        li { margin: 1.5rem; }
-
-        .navmenu__item {
-            font: { size: 1.2rem; weight: $regular; }
-            letter-spacing: .1rem;
-            text: { decoration: none; transform: uppercase; }
-            background: none;
-            border: none;
-            padding: 0 1rem;
-
-            @media screen and (min-width: $md) {
-                display: block;
-                text-align: center;
-                padding: 2rem 1rem;
-            }
-        }
-
-        button::before { content: "+ "; font-size: 1.4rem; }
-
-        &__container {
-            &:focus-within .navmenu__dropdown { display: block; visibility: visible; }
-        }
-
-        &__dropdown { 
-            display: none;
-        }
-
-        // breakpoint segunda barra
-
-        @media screen and (min-width: $md) {
-            @include flex(row, nowrap, center, center);
-            transform: none;
-            transition: none;
-            padding-bottom: 0;
-            
-            li {
-                margin: 0;
-
-                .navmenu__item {
-                    position: relative;
-
-                    &::before {
-                        content: "";
-                        display: block;
-                        height: .1rem;
-                        width: 50%;
-                        background: white;
-                        position: absolute;
-                        top: 1rem;
-                        right: 0;
-                        left: 0;
-                        transform: scale(0, 1);
-                        transform-origin: left;
-                        transition: transform ease-in-out 250ms;
-                    }
-
-                    &:hover::before { transform: scale(1, 1); }
-                }
-
-                a { opacity: 1; transition: none;}
-            }
-            
-
-            &__dropdown {
-                @include flex(row, nowrap, center, flex-start);
-
-                background-color: white;
-                height: 3rem;
-                position: absolute;
-                top: 5.6rem;
-                right: 0;
-                left: 0;
-                opacity: 0;
-                visibility: hidden;
-
-                a { 
-                    padding: 0 1rem;
-                    position: relative;
-                    top: .7rem;
-                }
-            }
-
-            &__container {
-                &:hover .navmenu__dropdown {
-                    display: flex;
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-        }
+        @include flex(row, nowrap, center, center);
     }
 }

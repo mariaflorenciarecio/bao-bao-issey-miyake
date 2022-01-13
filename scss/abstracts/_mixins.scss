@@ -63,7 +63,7 @@
 
 @mixin flex-detail($color) {
     padding-top: 3rem;
-    h3, h3 a, strong { @include subtitle($color, center); }
+    h3, h3 a, strong, button { @include subtitle($color, center); }
     h4 { @include highlight(center); }
     p, span, label { @include paragraph($color, center, none); }
 }

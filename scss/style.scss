@@ -6,8 +6,11 @@
 @import './base/reset';
 @import './base/typo';
 
+@import './components/buttons';
 @import './components/carrito';
+@import './components/search';
 @import './components/select';
+@import './components/switch';
 
 @import './layout/footer';
 @import './layout/tienda';

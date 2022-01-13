@@ -24,63 +24,37 @@
 <body>
     <!-- APERTURA HEADER -->
     <header>
-        <!-- barra de navegacion -->
         <nav>
-            <div class="highlight">
-                <p>ENVIO GRATIS PARA COMPRAS SUPERIORES A $1.000 | 3, 6 Y 12 CUOTAS SIN INTERES</p>
-            </div>
             <div class="navbar">
                 <ul class="navbar__info">
-                    <li><a href="./faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                    <li><a href="./cancelar-pedido.html"><i class="fas fa-exclamation-circle"></i> Cancelar pedido</a></li>
-                </ul>
-                <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
-                <ul class="navbar__icons">
-                    <li >
+                    <li>
                         <i class="fas fa-user-astronaut"></i>
+                        <span>Iniciar sesión</span>
                     </li>
-                    <li class="navbar__carrito">
+                    <li>
+                        <form>
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Buscar"/>
+                        </form>
+                    </li>
+                </ul>
+                <a href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+                <ul class="navbar__icons">
+                    <li class="navbar__wishlist">
+                        <i class="fas fa-heart"></i>
+                        <span id="wishlistUnits">0</span>
+                    </li>
+                    <li id="cartBtn" class="navbar__cart">
                         <i class="fas fa-shopping-cart"></i>
-                        <span id="navbar__items">0</span>
+                        <span id="cartUnits">0</span>
                     </li>
                 </ul>
             </div>
-            <input type="checkbox" id="toggle" class="toggle">
             <ul class="navmenu">
-                <li><a class="navmenu__item" href="./html/novedades.html">Novedades</a></li>
-                <li class="navmenu__container">
-                    <button class="navmenu__item">Colección</button>
-                    <ul class="navmenu__dropdown">
-                        <li><a href="./html/coleccion/lucent.html">Lucent Series</a></li>
-                        <li><a href="./html/coleccion/prism.html">Prism Series</a></li>
-                        <li><a href="./html/coleccion/platinum.html">Platinum Series</a></li>
-                        <li><a href="./html/coleccion/slash.html">Slash Series</a></li>
-                    </ul>
-                </li>
-                <li class="navmenu__container">
-                    <button class="navmenu__item">Carteras</button>
-                    <ul class="navmenu__dropdown">
-                        <li><a href="">Tote</a></li>
-                        <li><a href="">Crossbody</a></li>
-                        <li><a href="">Backpack</a></li>
-                        <li><a href="">Clutch</a></li>
-                        <li><a href="">Pouch</a></li>
-                        <li><a href="">Complementos</a></li>
-                    </ul>
-                </li>
-                <li><a class="navmenu__item" href="./html/esenciales.html">Esenciales</a></li>
-                <li class="navmenu__container">
-                    <button class="navmenu__item">Regalos</button>
-                    <ul class="navmenu__dropdown">
-                        <li><a href="./html/regalos/regalos-grandes.html">Grandes</a></li>
-                        <li><a href="./html/regalos/regalos-medianos.html">Medianos</a></li>
-                        <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
-                    </ul>
-                </li>
+                <li><button>New in</button></li>
+                <li><button>Colección</button></li>
+                <li><button>Esenciales</button></li>
             </ul>
-            <label for="toggle" class="toggle__label">
-                <span><i class="fas fa-bars"></i></span>
-            </label>
         </nav>
     </header>
     <!-- CIERRE HEADER -->
@@ -107,6 +81,11 @@
             <video class="hero__video" autoplay muted loop>
                 <source src="./assets/video/baobao-origin.mp4" type="video/mp4">
             </video>
+            <button class="switch">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-pause"></i>
+                <span class="switch__button"></span>
+            </button>
         </div>
         <!-- CIERRE HERO -->
     </main>
@@ -121,7 +100,7 @@
         AOS.init({ duration: 1000 });
     </script>
     <!-- index js -->
-    <script type="module" src="./js/index.js"></script>
+    <script src="./js/switch.js"></script>
     <!-- CIERRE SCRIPTS -->
 </body>
 <!-- CIERRE BODY -->

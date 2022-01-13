@@ -1,0 +1,17 @@
+nav, footer {
+    form {
+        @include flex(row, nowrap, left, center);
+    
+        input {
+            color: white; 
+            background-color: transparent;
+            border: none;
+            font: { size: 1.2rem; weight: 400; }
+            letter-spacing: .1rem;
+        }
+    
+        input::placeholder { color: white; }
+    
+        input:focus, select:focus, textarea:focus { outline: 0; }
+    }
+}

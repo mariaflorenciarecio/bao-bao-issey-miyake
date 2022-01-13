@@ -5,9 +5,9 @@
 const productCard = document.getElementById("catalogo");
 const cartItems = document.getElementById("carrito__items");
 const subtotal = document.getElementById("subtotal");
-const cartUnits = document.getElementById("navbar__items");
+const cartUnits = document.getElementById("cartUnits");
 
-const toggleBtn = document.querySelector(".navbar__carrito");
+const cartBtn = document.getElementById("cartBtn");
 const closeBtn = document.querySelector(".close");
 const sidebar = document.querySelector(".carrito__sidebar");
 
@@ -42,7 +42,7 @@ renderProducts();
 // RENDERIZAR MODAL CARRITO //
 //////////////////////////////
 
-toggleBtn.addEventListener("click", function () {
+cartBtn.addEventListener("click", function () {
     sidebar.classList.toggle("show-sidebar");
 });
 
@@ -116,7 +116,7 @@ function renderCartItems() {
     cart.forEach((item) => {
         const itemCard = document.createElement("div");
         itemCard.classList.add("item");
-        itemCard.innerHTML = `
+        itemCard.innerHTML += `
             <div class="item__image">
                 <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
             </div>
@@ -173,3 +173,4 @@ function changeNumberOfUnits(action, id) {
 
     updateCart();
 };
+
