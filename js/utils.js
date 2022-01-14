@@ -9,3 +9,9 @@ export {
     getElement
 }
 */
+
+const allProducts = './products.json';
+
+export {
+    allProducts,
+}
