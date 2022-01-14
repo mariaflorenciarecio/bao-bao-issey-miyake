@@ -1,18 +1,14 @@
-// -------------------- CARRITO --------------------
-
-.carrito__sidebar {
+.cart {
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: $white;
+    top: 0; right: 0;
+    width: 100%; height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     transition: all 0.3s linear;
-    transform: translate(-100%);
-    padding: 1.5rem 3rem 3rem 3rem;
+    transform: translateX(100%);
+    padding: 3rem;
     z-index: 2;
 
     @media (min-width: 425px) {
@@ -20,19 +16,19 @@
     }
 
     .close {
-        @include icon($black, 3rem);
-        padding: 0;
-        text-align-last: right;
+        @include icon(black, 2.5rem);
+        position: absolute;
+        top: 3rem; left: 3rem;
         cursor: pointer;
     }
     
     h2 { 
-        @include subtitle($black, center); 
+        @include subtitle(black, center); 
         font-size: 1.8rem;
-        padding-bottom: 1.5rem;
+        padding: .6rem 0 1.5rem 0;
     }
     
-    #carrito__items  {
+    #cart__items  {
         overflow-y: auto;
         
         &::-webkit-scrollbar {
@@ -52,8 +48,8 @@
 
             &__data { 
                 @include flex(column, nowrap, space-between, flex-start);
-                @include flex-detail($black);
-                @include icon($black, 3rem);
+                @include flex-detail(black);
+                @include icon(black, 3rem);
                 width: 20rem;
                 height: 15rem;
                 padding: 0;
@@ -66,7 +62,7 @@
             &__units {
                 @include flex(row, nowrap, space-between, center);
                 width: 8rem;
-                border: 1px solid $black;
+                border: 1px solid black;
                 margin-top: .5rem;
 
                 i { 
@@ -77,8 +73,8 @@
         }
     }
 
-    .cart__price {
-        border-top: 1px solid $black;
+    &__price {
+        border-top: 1px solid black;
         padding: 1rem 0;
         margin-top: 1.5rem;
 
@@ -88,18 +84,18 @@
         }
 
         h3 { 
-            @include subtitle($black, center); 
+            @include subtitle(black, center); 
             font-size: 1.8rem;
             text-align-last: justify;
         }
     }
 
-    .cart__checkout {
-        @include button($black, none, center);
+    &__checkout {
+        @include button(black, none, center);
         padding-top: 1.5rem;
     }
 }
 
-.show-sidebar {
-    transform: translate(0);
+.show {
+    transform: translateX(0);
 }

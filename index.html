@@ -8,8 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +22,11 @@
 <body>
     <!-- APERTURA HEADER -->
     <header>
+        <!-- nav -->
         <nav>
+            <!-- barra superior -->
             <div class="navbar">
+                <!-- nav info -->
                 <ul class="navbar__info">
                     <li>
                         <i class="fas fa-user-astronaut"></i>
@@ -38,18 +39,21 @@
                         </form>
                     </li>
                 </ul>
+                <!-- nav logo -->
                 <a href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+                <!-- nav icons -->
                 <ul class="navbar__icons">
                     <li class="navbar__wishlist">
                         <i class="fas fa-heart"></i>
                         <span id="wishlistUnits">0</span>
                     </li>
-                    <li id="cartBtn" class="navbar__cart">
+                    <li id="toggle-cart" class="navbar__cart">
                         <i class="fas fa-shopping-cart"></i>
                         <span id="cartUnits">0</span>
                     </li>
                 </ul>
             </div>
+            <!-- barra inferior -->
             <ul class="navmenu">
                 <li><button>New in</button></li>
                 <li><button>Colección</button></li>
@@ -62,10 +66,10 @@
     <!-- APERTURA MAIN -->
     <main>
         <!-- APERTURA HERO -->
-        <div class="hero">
+        <section class="hero">
             <h1>Bao Bao Issey Miyake</h1>
             <div class="hero__title">
-                <p>Tu cartera ideal</p>
+                <p>Your</p>
                 <div class="hero__effect">
                     <span>tote</span>
                     <span>crossbody</span>
@@ -86,7 +90,7 @@
                 <i class="fas fa-pause"></i>
                 <span class="switch__button"></span>
             </button>
-        </div>
+        </section>
         <!-- CIERRE HERO -->
     </main>
     <!-- CIERRE MAIN -->
@@ -94,14 +98,11 @@
     <!-- APERTURA SCRIPTS -->
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000 });
-    </script>
     <!-- index js -->
-    <script src="./js/switch.js"></script>
+    <script type="module" src="index.js"></script>
+    <!-- <script src="./js/switch.js"></script> -->
     <!-- CIERRE SCRIPTS -->
+
 </body>
 <!-- CIERRE BODY -->
 

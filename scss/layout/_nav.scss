@@ -9,13 +9,18 @@ nav {
         @include flex(row, nowrap, space-between, flex-start);
         padding: 1rem;
 
-        &__info { width: 12rem; line-height: 2.8rem; }
+        &__info { 
+            width: 12rem; 
+            line-height: 2.8rem; 
+        }
 
         &__icons {
             @include flex(row, nowrap, right, center);
             width: 12rem;
 
-            .navbar__wishlist { padding-right: 1.4rem; }
+            .navbar__wishlist { padding-right: 1rem; }
+
+            .navbar__cart { cursor: pointer; }
         }
     }
 
