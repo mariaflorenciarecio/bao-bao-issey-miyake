@@ -2,6 +2,7 @@ footer {
     @include flex(column, nowrap, center, center);
     background-color: black;
     padding: 2rem;
+    margin-top: 5rem;
 
     p, i { padding: .5rem; }
 }

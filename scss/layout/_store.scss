@@ -1,12 +1,12 @@
-// -------------------- TIENDA --------------------
-
-#tienda {
+.store {
     background-color: $white;
     max-width: 114rem;
-    padding-top: 9.1rem;
     margin: auto;
 
-    @media screen and (min-width: $md) { padding-top: 14.4rem; }
+    h2 { 
+        @include title($black, center); 
+        padding: 5rem 0;
+    }
 
     .clasificacion {
         @include flex(row, nowrap, space-between, center);
@@ -29,7 +29,7 @@
         }
     }
 
-    #catalogo {
+    #new-in, #essential, #collection {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
         grid-gap: 2rem;
@@ -50,4 +50,6 @@
             } 
         }
     }
+
+    .black-button { @include button(black, 1.2rem, center); }
 }

@@ -7,7 +7,9 @@
         "category": "Backpack",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 5
+        "stock": 5,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -18,7 +20,9 @@
         "category": "Backpack",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 2
+        "stock": 2,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -29,7 +33,9 @@
         "category": "Backpack",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 4
+        "stock": 4,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -39,7 +45,9 @@
         "category": "Accesorio",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 8
+        "stock": 8,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -50,7 +58,9 @@
         "category": "Accesorio",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 9
+        "stock": 9,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -61,7 +71,9 @@
         "category": "Accesorio",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 10
+        "stock": 10,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -72,7 +84,9 @@
         "category": "Clutch",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 3
+        "stock": 3,
+        "newIn": false,
+        "essential": true
     },
 
     {
@@ -83,7 +97,9 @@
         "category": "Clutch",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 2
+        "stock": 2,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -94,7 +110,9 @@
         "category": "Clutch",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 7
+        "stock": 7,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -105,7 +123,9 @@
         "category": "Crossbody",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 2
+        "stock": 2,
+        "newIn": false,
+        "essential": true
     },
 
     {
@@ -116,7 +136,9 @@
         "category": "Crossbody",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 6
+        "stock": 6,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -127,7 +149,9 @@
         "category": "Crossbody",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 5
+        "stock": 5,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -138,7 +162,9 @@
         "category": "Crossbody",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 2
+        "stock": 2,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -149,7 +175,9 @@
         "category": "Crossbody",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 3
+        "stock": 3,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -160,7 +188,9 @@
         "category": "Crossbody",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 7
+        "stock": 7,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -171,7 +201,9 @@
         "category": "Crossbody",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 8
+        "stock": 8,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -182,7 +214,9 @@
         "category": "Crossbody",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 10
+        "stock": 10,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -193,7 +227,9 @@
         "category": "Crossbody",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 4
+        "stock": 4,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -204,7 +240,9 @@
         "category": "Pouch",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 6
+        "stock": 6,
+        "newIn": false,
+        "essential": true
     },
 
     {
@@ -215,7 +253,9 @@
         "category": "Pouch",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 5
+        "stock": 5,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -226,7 +266,9 @@
         "category": "Pouch",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 10
+        "stock": 10,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -237,7 +279,9 @@
         "category": "Tote",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 2
+        "stock": 2,
+        "newIn": false,
+        "essential": true
     },
 
     {
@@ -248,7 +292,9 @@
         "category": "Tote",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 4
+        "stock": 4,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -259,7 +305,9 @@
         "category": "Tote",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 7
+        "stock": 7,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -270,7 +318,9 @@
         "category": "Tote",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 8
+        "stock": 8,
+        "newIn": true,
+        "essential": false
     },
 
     {
@@ -281,7 +331,9 @@
         "category": "Tote",
         "color": "Rosa",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 9
+        "stock": 9,
+        "newIn": true,
+        "essential": false
     },
 
     {
@@ -292,7 +344,9 @@
         "category": "Tote",
         "color": "Verde",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 8
+        "stock": 8,
+        "newIn": true,
+        "essential": false
     },
 
     {
@@ -303,7 +357,9 @@
         "category": "Tote",
         "color": "Violeta",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 5
+        "stock": 5,
+        "newIn": true,
+        "essential": false
     },
 
     {
@@ -314,7 +370,9 @@
         "category": "Tote",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 10
+        "stock": 10,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -325,7 +383,9 @@
         "category": "Tote",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 4
+        "stock": 4,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -336,7 +396,9 @@
         "category": "Tote",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 2
+        "stock": 2,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -347,7 +409,9 @@
         "category": "Tote",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 5
+        "stock": 5,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -358,7 +422,9 @@
         "category": "Tote",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 3
+        "stock": 3,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -369,7 +435,9 @@
         "category": "Tote",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 7
+        "stock": 7,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -380,7 +448,9 @@
         "category": "Accesorio",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 10
+        "stock": 10,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -391,7 +461,9 @@
         "category": "Accesorio",
         "color": "Negro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 5
+        "stock": 5,
+        "newIn": false,
+        "essential": false
     },
 
     {
@@ -402,6 +474,8 @@
         "category": "Accesorio",
         "color": "Plateado",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
-        "inStock": 6
+        "stock": 6,
+        "newIn": false,
+        "essential": false
     }
 ]

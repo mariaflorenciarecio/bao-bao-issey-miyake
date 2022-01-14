@@ -62,7 +62,7 @@
 // flex detalle
 
 @mixin flex-detail($color) {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     h3, h3 a, strong, button { @include subtitle($color, center); }
     h4 { @include highlight(center); }
     p, span, label { @include paragraph($color, center, none); }
@@ -80,6 +80,7 @@
 
 @mixin button($color, $padding-top, $align) {
     padding-top: $padding-top;
+    padding-bottom: 1.2rem;
     text-align: $align;
 
     h3 a, a, button {
@@ -102,7 +103,7 @@
     .overlay__content {
         @include flex(column, wrap, center, center);
 
-        color: $black;
+        color: black;
         background-color: $color;
         opacity: 0;
         position: absolute;
