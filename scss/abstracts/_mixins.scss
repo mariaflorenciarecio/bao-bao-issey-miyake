@@ -76,9 +76,9 @@
     padding: .6rem;
 }
 
-// boton
+// boton con texto
 
-@mixin button($color, $padding-top, $align) {
+@mixin button-text($color, $padding-top, $align) {
     padding-top: $padding-top;
     padding-bottom: 1.2rem;
     text-align: $align;
@@ -95,13 +95,28 @@
     }
 }
 
+// boton con icono
+
+@mixin button-icon($color) {
+    @include flex(row, wrap, space-evenly, center);
+
+    a, button {
+        color: $color;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        i { font-size: 2rem; }
+    }
+}
+
 // imagenes con transiciones
 
 @mixin overlay__content($color) {
     position: relative;
 
     .overlay__content {
-        @include flex(column, wrap, center, center);
+        @include flex(row, wrap, center, center);
 
         color: black;
         background-color: $color;

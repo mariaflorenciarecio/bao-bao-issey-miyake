@@ -1,3 +1,6 @@
+import { formatPrice } from './utils.js';
+import { addToCart } from './cart/setupCart.js';
+
 const display = (products, element) => {
     // mostrar elementos
     element.innerHTML = products.map((product) => {
@@ -7,21 +10,34 @@ const display = (products, element) => {
                 <div class="overlay__item">
                     <img src="./assets/img/tienda/${name}-${collection}-${color}.jpg" alt="${name} ${collection} Color ${color}">
                     <div class="overlay__content">
-                        <div class="white-button">
-                            <a href="producto.html?id=${id}">Ver más</a>
-                            <button data-id="${id}">Comprar</button>
+                        <div class="overlay__buttons">
+                            <a href="producto.html?id=${id}">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <button class="overlay__cart" data-id="${id}">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            <button data-id="${id}">
+                                <i class="fas fa-heart"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="card__detail">
                     <h4>${color}</h4>
                     <h3><a href="#">${name} ${collection}</a></h3>
-                    <p>$${price}</p>
+                    <p>${formatPrice(price)}</p>
                 </div>
             </div>
         `;
     })
     .join('');
+    element.addEventListener('click', function(e) {
+        const parent = e.target.parentElement;
+        if(parent.classList.contains('overlay__cart')) {
+            addToCart(parent.dataset.id)
+        }
+    });
 };
 
 export default display;

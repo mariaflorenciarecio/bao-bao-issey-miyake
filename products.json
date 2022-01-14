@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Backpack",
-        "price": 1000,
+        "price": 100000,
         "collection": "Lucent",
         "category": "Backpack",
         "color": "Blanco",
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "name": "Backpack",
-        "price": 1000,
+        "price": 100000,
         "collection": "Lucent",
         "category": "Backpack",
         "color": "Negro",
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "name": "Backpack",
-        "price": 1000,
+        "price": 100000,
         "collection": "Lucent",
         "category": "Backpack",
         "color": "Plateado",
@@ -41,7 +41,8 @@
     {
         "id": 4,
         "name": "Billetera",
-        "price": 250, "collection": "Lucent",
+        "price": 25000, 
+        "collection": "Lucent",
         "category": "Accesorio",
         "color": "Blanco",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
@@ -53,7 +54,7 @@
     {
         "id": 5,
         "name": "Billetera",
-        "price": 250,
+        "price": 25000,
         "collection": "Lucent",
         "category": "Accesorio",
         "color": "Negro",
@@ -66,7 +67,7 @@
     {
         "id": 6,
         "name": "Billetera",
-        "price": 250,
+        "price": 25000,
         "collection": "Lucent",
         "category": "Accesorio",
         "color": "Plateado",
@@ -79,7 +80,7 @@
     {
         "id": 7,
         "name": "Clutch",
-        "price": 500,
+        "price": 50000,
         "collection": "Prism",
         "category": "Clutch",
         "color": "Blanco",
@@ -92,7 +93,7 @@
     {
         "id": 8,
         "name": "Clutch",
-        "price": 500,
+        "price": 50000,
         "collection": "Prism",
         "category": "Clutch",
         "color": "Negro",
@@ -105,7 +106,7 @@
     {
         "id": 9,
         "name": "Clutch",
-        "price": 500,
+        "price": 50000,
         "collection": "Prism",
         "category": "Clutch",
         "color": "Plateado",
@@ -118,7 +119,7 @@
     {
         "id": 10,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Lucent",
         "category": "Crossbody",
         "color": "Blanco",
@@ -131,7 +132,7 @@
     {
         "id": 11,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Lucent",
         "category": "Crossbody",
         "color": "Negro",
@@ -144,7 +145,7 @@
     {
         "id": 12,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Lucent",
         "category": "Crossbody",
         "color": "Plateado",
@@ -157,7 +158,7 @@
     {
         "id": 13,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Prism",
         "category": "Crossbody",
         "color": "Blanco",
@@ -170,7 +171,7 @@
     {
         "id": 14,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Prism",
         "category": "Crossbody",
         "color": "Negro",
@@ -183,7 +184,7 @@
     {
         "id": 15,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Prism",
         "category": "Crossbody",
         "color": "Plateado",
@@ -196,7 +197,7 @@
     {
         "id": 16,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Slash",
         "category": "Crossbody",
         "color": "Blanco",
@@ -209,7 +210,7 @@
     {
         "id": 17,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Slash",
         "category": "Crossbody",
         "color": "Negro",
@@ -222,7 +223,7 @@
     {
         "id": 18,
         "name": "Crossbody",
-        "price": 750,
+        "price": 75000,
         "collection": "Slash",
         "category": "Crossbody",
         "color": "Plateado",
@@ -235,7 +236,7 @@
     {
         "id": 19,
         "name": "Pouch",
-        "price": 500,
+        "price": 50000,
         "collection": "Prism",
         "category": "Pouch",
         "color": "Blanco",
@@ -248,7 +249,7 @@
     {
         "id": 20,
         "name": "Pouch",
-        "price": 500,
+        "price": 50000,
         "collection": "Prism",
         "category": "Pouch",
         "color": "Negro",
@@ -261,7 +262,7 @@
     {
         "id": 21,
         "name": "Pouch",
-        "price": 500,
+        "price": 50000,
         "collection": "Prism",
         "category": "Pouch",
         "color": "Plateado",
@@ -274,7 +275,7 @@
     {
         "id": 22,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Lucent",
         "category": "Tote",
         "color": "Blanco",
@@ -287,7 +288,7 @@
     {
         "id": 23,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Lucent",
         "category": "Tote",
         "color": "Negro",
@@ -300,7 +301,7 @@
     {
         "id": 24,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Lucent",
         "category": "Tote",
         "color": "Plateado",
@@ -313,7 +314,7 @@
     {
         "id": 25,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Platinum",
         "category": "Tote",
         "color": "Plateado",
@@ -326,7 +327,7 @@
     {
         "id": 26,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Platinum",
         "category": "Tote",
         "color": "Rosa",
@@ -339,7 +340,7 @@
     {
         "id": 27,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Platinum",
         "category": "Tote",
         "color": "Verde",
@@ -352,7 +353,7 @@
     {
         "id": 28,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Platinum",
         "category": "Tote",
         "color": "Violeta",
@@ -365,7 +366,7 @@
     {
         "id": 29,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Prism",
         "category": "Tote",
         "color": "Blanco",
@@ -378,7 +379,7 @@
     {
         "id": 30,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Prism",
         "category": "Tote",
         "color": "Negro",
@@ -391,7 +392,7 @@
     {
         "id": 31,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Prism",
         "category": "Tote",
         "color": "Plateado",
@@ -404,7 +405,7 @@
     {
         "id": 32,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Slash",
         "category": "Tote",
         "color": "Blanco",
@@ -417,7 +418,7 @@
     {
         "id": 33,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Slash",
         "category": "Tote",
         "color": "Negro",
@@ -430,7 +431,7 @@
     {
         "id": 34,
         "name": "Tote",
-        "price": 1000,
+        "price": 100000,
         "collection": "Slash",
         "category": "Tote",
         "color": "Plateado",
@@ -443,7 +444,7 @@
     {
         "id": 35,
         "name": "Llavero",
-        "price": 100,
+        "price": 10000,
         "collection": "Lucent",
         "category": "Accesorio",
         "color": "Blanco",
@@ -456,7 +457,7 @@
     {
         "id": 36,
         "name": "Llavero",
-        "price": 100,
+        "price": 10000,
         "collection": "Lucent",
         "category": "Accesorio",
         "color": "Negro",
@@ -469,7 +470,7 @@
     {
         "id": 37,
         "name": "Llavero",
-        "price": 100,
+        "price": 10000,
         "collection": "Lucent",
         "category": "Accesorio",
         "color": "Plateado",

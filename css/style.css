@@ -845,10 +845,10 @@ nav .navmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -893,24 +893,33 @@ nav .navmenu {
   width: 100%;
 }
 
-.store #new-in .card .overlay__item .white-button, .store #essential .card .overlay__item .white-button, .store #collection .card .overlay__item .white-button {
-  padding-top: none;
-  padding-bottom: 1.2rem;
-  text-align: center;
+.store #new-in .card .overlay__item .overlay__buttons, .store #essential .card .overlay__item .overlay__buttons, .store #collection .card .overlay__item .overlay__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.store #new-in .card .overlay__item .white-button h3 a, .store #new-in .card .overlay__item .white-button a, .store #new-in .card .overlay__item .white-button button, .store #essential .card .overlay__item .white-button h3 a, .store #essential .card .overlay__item .white-button a, .store #essential .card .overlay__item .white-button button, .store #collection .card .overlay__item .white-button h3 a, .store #collection .card .overlay__item .white-button a, .store #collection .card .overlay__item .white-button button {
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .1rem;
-  border: 1px solid #ffffff;
-  padding: 1.2rem 2.4rem;
+.store #new-in .card .overlay__item .overlay__buttons a, .store #new-in .card .overlay__item .overlay__buttons button, .store #essential .card .overlay__item .overlay__buttons a, .store #essential .card .overlay__item .overlay__buttons button, .store #collection .card .overlay__item .overlay__buttons a, .store #collection .card .overlay__item .overlay__buttons button {
+  color: white;
+  border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.store #new-in .card .overlay__item .overlay__buttons a i, .store #new-in .card .overlay__item .overlay__buttons button i, .store #essential .card .overlay__item .overlay__buttons a i, .store #essential .card .overlay__item .overlay__buttons button i, .store #collection .card .overlay__item .overlay__buttons a i, .store #collection .card .overlay__item .overlay__buttons button i {
+  font-size: 2rem;
 }
 
 .store #new-in .card .card__detail, .store #essential .card .card__detail, .store #collection .card .card__detail {

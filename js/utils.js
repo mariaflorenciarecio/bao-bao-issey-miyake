@@ -12,6 +12,14 @@ export {
 
 const allProducts = './products.json';
 
+const formatPrice = (price) => {
+    let formattedPrice = new Intl.NumberFormat('en-US', {
+        style:'currency',
+        currency: 'USD',
+    }).format((price/100).toFixed(2));
+    return formattedPrice;
+}
+
 const getStorageItem = (item) => {
     let storageItem = localStorage.getItem(item);
     if(storageItem) {
@@ -27,6 +35,7 @@ const setStorageItem = (name, item) => {
 
 export {
     allProducts,
+    formatPrice,
     getStorageItem,
     setStorageItem,
 }

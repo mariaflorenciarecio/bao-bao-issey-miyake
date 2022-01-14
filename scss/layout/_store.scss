@@ -41,7 +41,7 @@
             .overlay__item {
                 @include overlay__content(rgba(0, 0, 0, 0.6));
                 img { width: 100%; }
-                .white-button { @include button($white, none, center); }
+                .overlay__buttons { @include button-icon(white); }
             }
 
             .card__detail { 
@@ -51,5 +51,5 @@
         }
     }
 
-    .black-button { @include button(black, 1.2rem, center); }
+    .black-button { @include button-text(black, 1.2rem, center); }
 }

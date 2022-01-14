@@ -91,7 +91,7 @@
     }
 
     &__checkout {
-        @include button(black, none, center);
+        @include button-text(black, none, center);
         padding-top: 1.5rem;
     }
 }
