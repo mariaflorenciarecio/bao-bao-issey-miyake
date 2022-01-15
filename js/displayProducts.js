@@ -24,7 +24,6 @@ const display = (products, element) => {
                     </div>
                 </div>
                 <div class="card__detail">
-                    <h4>${color}</h4>
                     <h3><a href="#">${name} ${collection}</a></h3>
                     <p>${formatPrice(price)}</p>
                 </div>

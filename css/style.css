@@ -52,6 +52,61 @@ nav i, footer i {
   padding: 0 .6rem;
 }
 
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.loading .loader {
+  border: 1rem solid #979797;
+  border-top: 1rem solid black;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 nav button, footer button {
   color: white;
   background-color: transparent;
@@ -174,7 +229,7 @@ nav button, footer button {
   padding: 0;
 }
 
-.cart #cart__items .item__data h3, .cart #cart__items .item__data h3 a, .cart #cart__items .item__data strong, .cart #cart__items .item__data button {
+.cart #cart__items .item__data h3, .cart #cart__items .item__data h3 a, .cart #cart__items .item__data strong {
   color: black;
   font-size: 1.4rem;
   font-weight: 800;
@@ -291,12 +346,12 @@ nav button, footer button {
   cursor: pointer;
 }
 
-.show {
+.cart__show {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-nav form, footer form {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,32 +369,35 @@ nav form, footer form {
           align-items: center;
 }
 
-nav form input, footer form input {
-  color: white;
+form input {
+  color: black;
   background-color: transparent;
-  border: none;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: .1rem;
+  border: 1px solid black;
+  border-radius: 0;
+  padding: .4rem;
+  margin-bottom: 2rem;
 }
 
-nav form input::-webkit-input-placeholder, footer form input::-webkit-input-placeholder {
-  color: white;
+form input::-webkit-input-placeholder {
+  color: black;
 }
 
-nav form input:-ms-input-placeholder, footer form input:-ms-input-placeholder {
-  color: white;
+form input:-ms-input-placeholder {
+  color: black;
 }
 
-nav form input::-ms-input-placeholder, footer form input::-ms-input-placeholder {
-  color: white;
+form input::-ms-input-placeholder {
+  color: black;
 }
 
-nav form input::placeholder, footer form input::placeholder {
-  color: white;
+form input::placeholder {
+  color: black;
 }
 
-nav form input:focus, nav form select:focus, nav form textarea:focus, footer form input:focus, footer form select:focus, footer form textarea:focus {
+form input:focus, form select:focus, form textarea:focus {
   outline: 0;
 }
 
@@ -433,7 +491,7 @@ footer {
           align-items: center;
   background-color: black;
   padding: 2rem;
-  margin-top: 5rem;
+  margin: 5rem 0 0 auto;
 }
 
 footer p, footer i {
@@ -716,7 +774,7 @@ nav .navmenu {
   padding: 5rem 0;
 }
 
-.store .clasificacion {
+.store .classification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,10 +791,10 @@ nav .navmenu {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2.5rem;
-  padding: 0 2rem;
+  padding: 12.4rem 2rem 0 2rem;
 }
 
-.store .clasificacion h3, .store .clasificacion h3 a, .store .clasificacion strong, .store .clasificacion button {
+.store .classification h3, .store .classification h3 a, .store .classification strong {
   color: #000000;
   font-size: 1.4rem;
   font-weight: 800;
@@ -746,7 +804,7 @@ nav .navmenu {
   letter-spacing: .1rem;
 }
 
-.store .clasificacion h4 {
+.store .classification h4 {
   color: #979797;
   font-size: 1.2rem;
   font-weight: 800;
@@ -756,7 +814,7 @@ nav .navmenu {
   letter-spacing: .05rem;
 }
 
-.store .clasificacion p, .store .clasificacion span, .store .clasificacion label {
+.store .classification p, .store .classification span, .store .classification label {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 400;
@@ -767,7 +825,7 @@ nav .navmenu {
   max-width: none;
 }
 
-.store .clasificacion h1 {
+.store .classification h1 {
   color: #000000;
   font-size: 3.6rem;
   font-weight: 800;
@@ -775,10 +833,9 @@ nav .navmenu {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: .1rem;
-  padding: 5rem 0 5rem 0;
 }
 
-.store .clasificacion__elementos {
+.store .classification__elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,20 +851,119 @@ nav .navmenu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5rem 0;
 }
 
-.store .clasificacion__elementos span {
+.store .classification__elements span {
   padding: .5rem;
 }
 
-.store .clasificacion__elementos i {
+.store .classification__elements i {
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: .6rem;
 }
 
-.store .clasificacion__elementos label {
+.store .classification__elements label {
   padding-left: 1.1rem;
+}
+
+.store__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 0 2rem;
+}
+
+.store__content .filter {
+  padding-right: 2rem;
+}
+
+.store__content .filter__type {
+  padding-bottom: 1.5rem;
+}
+
+.store__content .filter__type span {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1rem;
+}
+
+.store__content .filter__type form {
+  padding: 1rem 0;
+}
+
+.store__content .filter__type .filter__category, .store__content .filter__type .filter__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: .5rem;
+}
+
+.store__content .filter__type .filter__category button, .store__content .filter__type .filter__color button {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  max-width: none;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.store__content .filter__type .filter__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.store__content .filter__type .filter__price input {
+  margin-bottom: 0;
+}
+
+.store__content .filter__type .filter__price p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  max-width: none;
 }
 
 .store #new-in, .store #essential, .store #collection {
@@ -816,7 +972,41 @@ nav .navmenu {
   -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 2rem;
-  padding: 0 2rem;
+}
+
+.store #new-in .error, .store #essential .error, .store #collection .error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.store #new-in .error span, .store #essential .error span, .store #collection .error span {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  max-width: 20rem;
+}
+
+.store #new-in .error i, .store #essential .error i, .store #collection .error i {
+  color: black;
+  font-size: 3rem;
+  padding: .6rem;
 }
 
 .store #new-in .card, .store #essential .card, .store #collection .card {
@@ -927,7 +1117,7 @@ nav .navmenu {
   padding-bottom: 5rem;
 }
 
-.store #new-in .card .card__detail h3, .store #new-in .card .card__detail h3 a, .store #new-in .card .card__detail strong, .store #new-in .card .card__detail button, .store #essential .card .card__detail h3, .store #essential .card .card__detail h3 a, .store #essential .card .card__detail strong, .store #essential .card .card__detail button, .store #collection .card .card__detail h3, .store #collection .card .card__detail h3 a, .store #collection .card .card__detail strong, .store #collection .card .card__detail button {
+.store #new-in .card .card__detail h3, .store #new-in .card .card__detail h3 a, .store #new-in .card .card__detail strong, .store #essential .card .card__detail h3, .store #essential .card .card__detail h3 a, .store #essential .card .card__detail strong, .store #collection .card .card__detail h3, .store #collection .card .card__detail h3 a, .store #collection .card .card__detail strong {
   color: #000000;
   font-size: 1.4rem;
   font-weight: 800;

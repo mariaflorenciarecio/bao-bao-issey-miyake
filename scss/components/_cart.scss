@@ -94,8 +94,8 @@
         @include button-text(black, none, center);
         padding-top: 1.5rem;
     }
-}
 
-.show {
-    transform: translateX(0);
+    &__show {
+        transform: translateX(0);
+    }
 }

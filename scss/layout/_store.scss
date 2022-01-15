@@ -8,24 +8,62 @@
         padding: 5rem 0;
     }
 
-    .clasificacion {
+    .classification {
         @include flex(row, nowrap, space-between, center);
         @include flex-detail($black);
-        padding: 0 2rem;
+        padding: 12.4rem 2rem 0 2rem;
 
-        h1 { 
-            @include title($black, center); 
-            padding: 5rem 0 5rem 0;
-        }
+        h1 { @include title($black, center); }
 
-        &__elementos {
+        &__elements {
             @include flex(row, nowrap, space-between, center);
+            padding: 5rem 0;
 
             span {padding: .5rem }
 
-            i { @include icon($black, 1.2rem); }
+            i { @include icon($black, 1.6rem); }
 
             label { padding-left: 1.1rem; }
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0 2rem;
+
+        .filter {
+            padding-right: 2rem;
+
+            &__type {
+                padding-bottom: 1.5rem;
+
+                span { @include subtitle(black, left); }
+
+                form { padding: 1rem 0; }
+    
+                .filter__category, .filter__color {
+                    @include flex(column, nowrap, space-between, flex-start);
+                    padding: .5rem;
+    
+                    button { 
+                        @include paragraph(black, left, none);
+                        text-transform: capitalize;
+                        background-color: transparent;
+                        border: none;
+                        padding: .5rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .filter__price {
+                    @include flex(column, nowrap, left, flex-start);
+
+                    input { margin-bottom: 0; }
+
+                    p { @include paragraph(black, left, none); }
+                }
+            }
         }
     }
 
@@ -33,7 +71,12 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
         grid-gap: 2rem;
-        padding: 0 2rem;
+
+        .error {
+            @include flex(column, nowrap, center, center);
+            span { @include paragraph(black, center, 20rem); }
+            i { @include icon(black, 3rem); }
+        }
 
         .card {
             @include flex(column, nowrap, center, center);
