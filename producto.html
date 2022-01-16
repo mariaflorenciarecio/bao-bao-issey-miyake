@@ -15,7 +15,9 @@
         rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Producto | BAO BAO ISSEY MIYAKE</title>
+    <title>
+        <!-- titulo renderizado -->
+    </title>
 </head>
 <!-- CIERRE HEAD -->
 
@@ -77,8 +79,32 @@
     <!-- CIERRE ASIDE CART -->
 
     <!-- APERTURA MAIN -->
-    <main></main>
+    <main class="product">
+        <h1 id="main-title">
+            <!-- titulo renderizado -->
+        </h1>
+        <div id="single-product-center">
+            <img id="single-product-img"/>
+            <div>
+                <div>
+                    <p id="single-product-color">Negro</p>
+                    <h2 id="single-product-title">Crossbody Prism</h2>
+                    <p id="single-product-price">$250.00</p>
+                    <p id="single-product-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+                        modi? Minima libero doloremque necessitatibus! Praesentium
+                        recusandae quod nesciunt animi voluptatem!
+                    </p>
+                    <button id="add-to-cart" data-id="id">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- CIERRE MAIN -->
+
+    <div id="spinner" class="loading">
+        <div class="loader"></div>
+    </div>
 
     <!-- APERTURA FOOTER -->
     <footer>

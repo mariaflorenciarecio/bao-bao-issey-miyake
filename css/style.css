@@ -220,7 +220,7 @@ nav button, footer button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   color: black;
   font-size: 3rem;
   padding: .6rem;
@@ -757,6 +757,14 @@ nav .navmenu {
           align-items: center;
 }
 
+.product {
+  padding-top: 30rem;
+}
+
+.product h1 {
+  color: black;
+}
+
 .store {
   background-color: #ffffff;
   max-width: 114rem;
@@ -790,7 +798,7 @@ nav .navmenu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   padding: 12.4rem 2rem 0 2rem;
 }
 
@@ -871,8 +879,8 @@ nav .navmenu {
 .store__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  -ms-grid-columns: 17rem auto;
+      grid-template-columns: 17rem auto;
   padding: 0 2rem;
 }
 
@@ -969,9 +977,23 @@ nav .navmenu {
 .store #new-in, .store #essential, .store #collection {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+}
+
+@media (min-width: 576px) {
+  .store #new-in, .store #essential, .store #collection {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .store #new-in, .store #essential, .store #collection {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .store #new-in .error, .store #essential .error, .store #collection .error {
@@ -984,12 +1006,16 @@ nav .navmenu {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 50rem;
+  left: 0rem;
+  width: 100%;
 }
 
 .store #new-in .error span, .store #essential .error span, .store #collection .error span {
@@ -1019,9 +1045,9 @@ nav .navmenu {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1113,8 +1139,8 @@ nav .navmenu {
 }
 
 .store #new-in .card .card__detail, .store #essential .card .card__detail, .store #collection .card .card__detail {
-  padding-top: 2.5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .store #new-in .card .card__detail h3, .store #new-in .card .card__detail h3 a, .store #new-in .card .card__detail strong, .store #essential .card .card__detail h3, .store #essential .card .card__detail h3 a, .store #essential .card .card__detail strong, .store #collection .card .card__detail h3, .store #collection .card .card__detail h3 a, .store #collection .card .card__detail strong {

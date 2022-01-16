@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "name": "Backpack",
+    "price": 100000,
+    "collection": "Lucent",
+    "category": "Mochilas",
+    "color": "Blanco",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum purus id elit viverra porta. Donec nisl nisl, blandit quis sodales in, malesuada sed leo. Phasellus tristique iaculis efficitur.",
+    "stock": 5,
+    "newIn": false,
+    "essential": false
+}

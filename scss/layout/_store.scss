@@ -29,7 +29,7 @@
 
     &__content {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 17rem auto;
         padding: 0 2rem;
 
         .filter {
@@ -69,17 +69,24 @@
 
     #new-in, #essential, #collection {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
 
+        @media (min-width: 576px) { grid-template-columns: repeat(3, 1fr); }
+        @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
+        
         .error {
-            @include flex(column, nowrap, center, center);
+            @include flex(column, nowrap, flex-start, center);
+            position: absolute;
+            top: 50rem; left: 0rem;
+            width: 100%;
+
             span { @include paragraph(black, center, 20rem); }
             i { @include icon(black, 3rem); }
         }
 
         .card {
-            @include flex(column, nowrap, center, center);
+            @include flex(column, nowrap, flex-start, center);
 
             .overlay__item {
                 @include overlay__content(rgba(0, 0, 0, 0.6));
@@ -89,10 +96,11 @@
 
             .card__detail { 
                 @include flex-detail($black);
-                padding-bottom: 5rem;
+                padding-bottom: 2rem;
             } 
         }
     }
 
     .black-button { @include button-text(black, 1.2rem, center); }
+    
 }

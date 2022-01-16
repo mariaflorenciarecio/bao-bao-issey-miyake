@@ -12,6 +12,8 @@ export {
 
 const allProducts = './products.json';
 
+const singleProductUrl = './product.json';
+
 const formatPrice = (price) => {
     let formattedPrice = new Intl.NumberFormat('en-US', {
         style:'currency',
@@ -35,6 +37,7 @@ const setStorageItem = (name, item) => {
 
 export {
     allProducts,
+    singleProductUrl,
     formatPrice,
     getStorageItem,
     setStorageItem,
