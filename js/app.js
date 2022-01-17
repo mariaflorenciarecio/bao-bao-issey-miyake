@@ -2,13 +2,13 @@
 // SELECCIONAR ELEMENTOS //
 ///////////////////////////
 
-const productCard = document.getElementById("catalogo");
-const cartItems = document.getElementById("carrito__items");
-const subtotal = document.getElementById("subtotal");
-const cartUnits = document.getElementById("navbar__items");
+const productCard = document.querySelector("#catalogo");
+const cartItems = document.querySelector("#carrito__items");
+const subtotal = document.querySelector("#subtotal");
+const cartUnits = document.querySelector("#navbar__items");
 
-const toggleBtn = document.querySelector(".navbar__carrito");
-const closeBtn = document.querySelector(".close");
+// const toggleBtn = document.querySelector(".navbar__carrito");
+// const closeBtn = document.querySelector(".close");
 const sidebar = document.querySelector(".carrito__sidebar");
 
 ///////////////////////////////////
@@ -37,18 +37,6 @@ function renderProducts() {
     });
 };
 renderProducts();
-
-//////////////////////////////
-// RENDERIZAR MODAL CARRITO //
-//////////////////////////////
-
-toggleBtn.addEventListener("click", function () {
-    sidebar.classList.toggle("show-sidebar");
-});
-
-closeBtn.addEventListener("click", function closeSidebar() {
-    sidebar.classList.remove("show-sidebar");
-});
 
 ///////////////////////////////
 // MOSTRAR ITEMS DEL CARRITO //
@@ -107,38 +95,6 @@ function renderSubtotal() {
     cartUnits.innerHTML = totalItems;
 };
 
-//////////////////////////////////
-// RENDERIZAR ITEMS DEL CARRITO //
-//////////////////////////////////
-
-function renderCartItems() {
-    cartItems.innerHTML = ""; // limpia los elementos del carrito
-    cart.forEach((item) => {
-        const itemCard = document.createElement("div");
-        itemCard.classList.add("item");
-        itemCard.innerHTML = `
-            <div class="item__image">
-                <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
-            </div>
-            <div class="item__data">
-                <div class="item__bin" onclick="removeFromCart(${item.id})">
-                    <i class="far fa-trash-alt"></i>
-                </div>
-                <h3><a href="#">${item.name} ${item.collection}</a></h3>
-                <h4>${item.color}</h4>
-                <div class="item__units">
-                    <i class="fas fa-minus minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
-                    <strong>${item.numberOfUnits}</strong>
-                    <i class="fas fa-plus plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
-                </div>
-                <span class="item__subtotal">$${item.price} c/u</span>
-                <strong class="item__total">$${item.price*item.numberOfUnits}</strong>
-            </div>
-        `;
-        cartItems.appendChild(itemCard);
-    });
-};
-
 //////////////////////////////
 // BORRAR ITEMS DEL CARRITO //
 //////////////////////////////
@@ -173,3 +129,106 @@ function changeNumberOfUnits(action, id) {
 
     updateCart();
 };
+
+//////////////////////////////////
+// RENDERIZAR ITEMS DEL CARRITO //
+//////////////////////////////////
+
+// function renderCartItems() {
+//     cartItems.innerHTML = ""; // limpia los elementos del carrito
+//     cart.forEach((item) => {
+//         const itemCard = document.createElement("div");
+//         itemCard.classList.add("item");
+//         itemCard.innerHTML = `
+//             <div class="item__image">
+//                 <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
+//             </div>
+//             <div class="item__data">
+//                 <div class="item__bin" onclick="removeFromCart(${item.id})">
+//                     <i class="far fa-trash-alt"></i>
+//                 </div>
+//                 <h3><a href="#">${item.name} ${item.collection}</a></h3>
+//                 <h4>${item.color}</h4>
+//                 <div class="item__units">
+//                     <i class="fas fa-minus minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
+//                     <strong>${item.numberOfUnits}</strong>
+//                     <i class="fas fa-plus plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
+//                 </div>
+//                 <span class="item__subtotal">$${item.price} c/u</span>
+//                 <strong class="item__total">$${item.price*item.numberOfUnits}</strong>
+//             </div>
+//         `;
+//         cartItems.appendChild(itemCard);
+//     });
+// };
+
+///////////////////////////////////////////////////
+// RENDERIZAR ITEMS DEL CARRITO APLICANDO JQUERY //
+///////////////////////////////////////////////////
+
+function renderCartItems() {
+    cartItems.innerHTML = ""; // limpia los elementos del carrito
+    cart.forEach((item) => {
+        $("#carrito__items").append(`
+            <div class="item">
+                <div class="item__image">
+                    <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
+                </div>
+                <div class="item__data">
+                    <div class="item__bin" onclick="removeFromCart(${item.id})">
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                    <h3><a href="#">${item.name} ${item.collection}</a></h3>
+                    <h4>${item.color}</h4>
+                    <div class="item__units">
+                        <i class="fas fa-minus minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
+                        <strong>${item.numberOfUnits}</strong>
+                        <i class="fas fa-plus plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
+                    </div>
+                    <span class="item__subtotal">$${item.price} c/u</span>
+                    <strong class="item__total">$${item.price*item.numberOfUnits}</strong>
+                </div>
+            </div>
+        `);
+    });
+};
+
+//////////////////////////////
+// RENDERIZAR MODAL CARRITO //
+//////////////////////////////
+
+// toggleBtn.addEventListener("click", function () {
+//     sidebar.classList.toggle("show-sidebar");
+// });
+
+// closeBtn.addEventListener("click", function closeSidebar() {
+//     sidebar.classList.remove("show-sidebar");
+// });
+
+///////////////////////////////////////////////
+// RENDERIZAR MODAL CARRITO APLICANDO JQUERY //
+///////////////////////////////////////////////
+
+$(".navbar__carrito").on("click", function () {
+    sidebar.classList.toggle("show-sidebar");
+});
+
+$(".close").on("click", function closeSidebar() {
+    sidebar.classList.remove("show-sidebar");
+});
+
+///////////////////////////
+// DOM LISTO PARA USARSE //
+///////////////////////////
+
+// window.addEventListener("DOMContentLoaded", function() {
+//     console.log("El DOM esta listo.");
+// })
+
+////////////////////////////////////////////
+// DOM LISTO PARA USARSE APLICANDO JQUERY //
+////////////////////////////////////////////
+
+$(document).ready(function() {
+    console.log("El DOM esta listo.");
+})
