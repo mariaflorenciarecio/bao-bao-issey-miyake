@@ -15,31 +15,32 @@ const priceDOM = document.getElementById('single-product-price');
 const descDOM = document.getElementById('single-product-desc');
 const cartBtn = document.getElementById('add-to-cart');
 
-let productID;
-
 window.addEventListener('DOMContentLoaded', async function() {
     const urlID = window.location.search;
 
     try {
-        const response = await fetch(`${singleProductUrl}${urlID}`);
+        const response = await fetch("./products.json");
+        const products = await response.json();
         if (response.status >= 200 && response.status <= 299) {
-            const product = await response.json();
-            const {id, name, price, collection, category, color, description} = product;
-            productID = id;
-            document.title = `${name.toUpperCase()} ${collection.toUpperCase()} | BAO BAO ISSEY MIYAKE`;
-            pageTitleDOM.textContent = `Home / ${collection} / ${category} / ${name}`;
-            imgDOM.src = `./assets/img/tienda/${name}-${collection}-${color}.jpg`;
-            imgDOM.alt = `${name} ${collection} ${color}`;
-            colorDOM.textContent = color;
-            titleDOM.textContent = `${name} ${collection}`;
-            priceDOM.textContent = formatPrice(price);
-            descDOM.textContent = description;
+            const singleProduct = products.filter((product) => `?id=${product.id}` === urlID)
+            function renderSingleProduct() {
+                singleProduct.forEach((product) => {
+                    document.title = `${product.name.toUpperCase()} ${product.collection.toUpperCase()} | BAO BAO ISSEY MIYAKE`;
+                    pageTitleDOM.textContent = `Home / ${product.collection} / ${product.category} / ${product.name}`;
+                    imgDOM.src = `./assets/img/tienda/${product.name}-${product.collection}-${product.color}.jpg`;
+                    imgDOM.alt = `${product.name} ${product.collection} ${product.color}`;
+                    colorDOM.textContent = product.color;
+                    titleDOM.textContent = `${product.name} ${product.collection}`;
+                    priceDOM.textContent = formatPrice(product.price);
+                    descDOM.textContent = product.description;
+                })
+            }
+            renderSingleProduct()
         } else {
-            console.log(response.status, response.statusText);
             centerDOM.innerHTML = `
                 <div>
-                    <h3 class="error">Perdón, algo salío mal.</h3>
-                    <a>Volver al home</a>
+                    <h3 class="error">Oops! Algo salió mal.</h3>
+                    <a href="#">Volver al home</a>
                 </div>
             `;
         }
