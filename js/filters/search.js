@@ -8,9 +8,10 @@ const setupSearch = (store) => {
         const value = searchInput.value;
         if(value) {
             const newStore = store.filter((product) => {
-                let {name} = product;
+                let {name, collection, category, color} = product;
                 name = name.toLowerCase();
-                if(name.startsWith(value)) {
+                collection = collection.toLowerCase();
+                if(name.includes(value) || (collection.includes(value))) {
                     return product
                 }
             });

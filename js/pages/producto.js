@@ -3,7 +3,7 @@ import '../cart/toggleCart.js';
 import '../cart/setupCart.js';
 
 import { addToCart } from '../cart/setupCart.js';
-import { singleProductUrl, formatPrice } from '../utils.js';
+import { allProducts, formatPrice } from '../utils.js';
 
 const loading = document.getElementById('spinner');
 const centerDOM = document.getElementById('single-product-center');
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', async function() {
     const urlID = window.location.search;
 
     try {
-        const response = await fetch("./products.json");
+        const response = await fetch(allProducts);
         const products = await response.json();
         if (response.status >= 200 && response.status <= 299) {
             const singleProduct = products.filter((product) => `?id=${product.id}` === urlID)

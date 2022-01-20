@@ -117,23 +117,23 @@
 //         const itemCard = document.createElement("div");
 //         itemCard.classList.add("item");
 //         itemCard.innerHTML += `
-//             <div class="item__image">
-//                 <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
-//             </div>
-//             <div class="item__data">
-//                 <div class="item__bin" onclick="removeFromCart(${item.id})">
-//                     <i class="far fa-trash-alt"></i>
-//                 </div>
-//                 <h3><a href="#">${item.name} ${item.collection}</a></h3>
-//                 <h4>${item.color}</h4>
-//                 <div class="item__units">
-//                     <i class="fas fa-minus minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
-//                     <strong>${item.numberOfUnits}</strong>
-//                     <i class="fas fa-plus plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
-//                 </div>
-//                 <span class="item__subtotal">$${item.price} c/u</span>
-//                 <strong class="item__total">$${item.price*item.numberOfUnits}</strong>
-//             </div>
+            // <div class="item__image">
+            //     <img src="./assets/img/tienda/${item.name}-${item.collection}-${item.color}.jpg" alt="${item.name} ${item.collection} Color ${item.color}">
+            // </div>
+            // <div class="item__data">
+            //     <div class="item__bin" onclick="removeFromCart(${item.id})">
+            //         <i class="far fa-trash-alt"></i>
+            //     </div>
+            //     <h3><a href="#">${item.name} ${item.collection}</a></h3>
+            //     <h4>${item.color}</h4>
+            //     <div class="item__units">
+            //         <i class="fas fa-minus minus" onclick="changeNumberOfUnits('minus', ${item.id})"></i>
+            //         <strong>${item.numberOfUnits}</strong>
+            //         <i class="fas fa-plus plus" onclick="changeNumberOfUnits('plus', ${item.id})"></i>
+            //     </div>
+            //     <span class="item__subtotal">$${item.price} c/u</span>
+            //     <strong class="item__total">$${item.price*item.numberOfUnits}</strong>
+            // </div>
 //         `;
 //         cartItems.appendChild(itemCard);
 //     });
