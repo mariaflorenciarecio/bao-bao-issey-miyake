@@ -62,16 +62,16 @@
 //////////////////////////////
 
 // function addToCart(id) {
-//     if (cart.some((item) => item.id === id)) {
-//         changeNumberOfUnits("plus", id);
-//     } else {
-//         const item = Products.find((product) => product.id === id);
+    // if (cart.some((item) => item.id === id)) {
+    //     changeNumberOfUnits("plus", id);
+    // } else {
+    //     const item = Products.find((product) => product.id === id);
 
-//         cart.push({
-//             ...item, 
-//             numberOfUnits: 1,
-//         });
-//     }; // checkea si el producto ya existe en el carrito
+    //     cart.push({
+    //         ...item, 
+    //         numberOfUnits: 1,
+    //     });
+    // }; // checkea si el producto ya existe en el carrito
 
 //     updateCart();
 // };

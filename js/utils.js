@@ -10,7 +10,7 @@ export {
 }
 */
 
-const allProducts = './products.json';
+const allProducts = './db/products.json';
 
 const formatPrice = (price) => {
     let formattedPrice = new Intl.NumberFormat('en-US', {
