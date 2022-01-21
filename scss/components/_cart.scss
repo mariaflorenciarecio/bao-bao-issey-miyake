@@ -56,7 +56,10 @@
 
                 .item__bin, .item__subtotal, .item__total { align-self: self-end; }
 
-                .item__bin { cursor: pointer; }
+                .item__bin { 
+                    font-size: 1.6rem;
+                    cursor: pointer; 
+                }
             } 
 
             &__units {
@@ -66,6 +69,7 @@
                 margin-top: .5rem;
 
                 i { 
+                    font-size: 1rem;
                     padding: .8rem; 
                     cursor: pointer;
                 }

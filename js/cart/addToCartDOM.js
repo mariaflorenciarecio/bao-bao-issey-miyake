@@ -11,15 +11,17 @@ const addToCartDOM = ({id, name, price, collection, color, amount}) => {
             <img src="./assets/img/tienda/${name}-${collection}-${color}.jpg" alt="${name} ${collection} Color ${color}">
         </div>
         <div class="item__data">
-            <div class="item__bin cart-item-remove-btn" data-id="${id}">
-                remove
-            </div>
+            <i class="far fa-trash-alt item__bin" data-id="${id}"></i>
             <h3><a href="#">${name} ${collection}</a></h3>
             <h4>${color}</h4>
             <div class="item__units">
-                <i class="fas fa-minus minus" data-id="${id}"></i>
+                <div class="cart-item-decrease-btn" data-id="${id}">
+                    <i class="fas fa-minus"></i>
+                </div>
                 <strong class="cart-item-amount" data-id="${id}">${amount}</strong>
-                <i class="fas fa-plus plus" data-id="${id}"></i>
+                <div class="cart-item-increase-btn" data-id="${id}">
+                    <i class="fas fa-plus"></i>
+                </div>
             </div>
             <span class="item__subtotal">${formatPrice(price)} c/u</span>
             <strong class="item__total">${formatPrice(price*amount)}</strong>

@@ -267,6 +267,7 @@ nav button, footer button {
 }
 
 .cart #cart-items .item__data .item__bin {
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
@@ -292,6 +293,7 @@ nav button, footer button {
 }
 
 .cart #cart-items .item__units i {
+  font-size: 1rem;
   padding: .8rem;
   cursor: pointer;
 }
