@@ -21,7 +21,7 @@ const cartTotalDOM = document.getElementById('cart-total');
 
 let cart = getStorageItem('cart');
 
-// AGREGAR ITEM //
+// AÑADIR AL CARRITO //
 
 export const addToCart = (id) => {
     let item = cart.find((cartItem) => cartItem.id == id);

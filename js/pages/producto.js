@@ -7,13 +7,10 @@ import { allProducts, formatPrice } from '../utils.js';
 
 const loading = document.getElementById('spinner');
 const centerDOM = document.getElementById('single-product-center');
-const pageTitleDOM = document.getElementById('main-title')
-const imgDOM = document.getElementById('single-product-img');
-const titleDOM = document.getElementById('single-product-title');
-const colorDOM = document.getElementById('single-product-color');
-const priceDOM = document.getElementById('single-product-price');
-const descDOM = document.getElementById('single-product-desc');
-const cartBtn = document.getElementById('add-to-cart');
+const productPage = document.getElementById('product-page');
+const buySingleProductBtn = document.getElementById('buy-single-product');
+
+console.log(productPage);
 
 window.addEventListener('DOMContentLoaded', async function() {
     const urlID = window.location.search;
@@ -26,16 +23,23 @@ window.addEventListener('DOMContentLoaded', async function() {
             function renderSingleProduct() {
                 singleProduct.forEach((product) => {
                     document.title = `${product.name.toUpperCase()} ${product.collection.toUpperCase()} | BAO BAO ISSEY MIYAKE`;
-                    pageTitleDOM.textContent = `Home / ${product.collection} / ${product.category} / ${product.name}`;
-                    imgDOM.src = `./assets/img/tienda/${product.name}-${product.collection}-${product.color}.jpg`;
-                    imgDOM.alt = `${product.name} ${product.collection} ${product.color}`;
-                    colorDOM.textContent = product.color;
-                    titleDOM.textContent = `${product.name} ${product.collection}`;
-                    priceDOM.textContent = formatPrice(product.price);
-                    descDOM.textContent = product.description;
-                })
-            }
-            renderSingleProduct()
+                    productPage.innerHTML = `
+                        <div class="product__img">
+                            <img src="./assets/img/tienda/${product.name}-${product.collection}-${product.color}.jpg" alt="${product.name} ${product.collection} Color ${product.color}">
+                        </div>
+                        <div class="product__info">
+                            <p>${product.color}</p>
+                            <h2>${product.name} ${product.collection}</h2>
+                            <p>${formatPrice(product.price)}</p>
+                            <p>${product.description}</p>
+                            <div class="black-button" data-id="${product.id}">
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    `;
+                });
+            };
+            renderSingleProduct();
         } else {
             centerDOM.innerHTML = `
                 <div>
@@ -43,13 +47,23 @@ window.addEventListener('DOMContentLoaded', async function() {
                     <a href="#">Volver al home</a>
                 </div>
             `;
-        }
+        };
     } catch (error) {
         console.log(error);
-    }
+    };
+
     loading.style.display = 'none';
 });
 
-cartBtn.addEventListener('click', function() {
-    addToCart(productID);
+// APLICAR FUNCIONALIDAD A BOTON //
+
+productPage.addEventListener('click', function(e) {
+    const parent = e.target.parentElement;
+    const parentID = e.target.parentElement.dataset.id;
+
+    // boton añadir al carrito //
+
+    if(parent.classList.contains('black-button')) {
+        addToCart(parentID)
+    };
 });
