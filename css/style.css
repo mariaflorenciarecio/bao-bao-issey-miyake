@@ -817,7 +817,7 @@ nav .navmenu {
 }
 
 .product__img {
-  width: 55%;
+  width: 50%;
 }
 
 .product__img img {
@@ -840,7 +840,7 @@ nav .navmenu {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 45%;
+  width: 50%;
   padding-left: 5rem;
 }
 
@@ -852,7 +852,7 @@ nav .navmenu {
   text-decoration: none;
   letter-spacing: .1rem;
   line-height: 1.5;
-  max-width: 30rem;
+  max-width: 100%;
 }
 
 .product__info p span {
@@ -923,7 +923,7 @@ nav .navmenu {
   text-decoration: none;
   letter-spacing: .1rem;
   line-height: 1.5;
-  max-width: 30rem;
+  max-width: 100%;
 }
 
 .product__detail i, .product__service i {
