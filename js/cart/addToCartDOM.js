@@ -23,8 +23,7 @@ const addToCartDOM = ({id, name, price, collection, color, amount}) => {
                     <i class="fas fa-plus"></i>
                 </div>
             </div>
-            <span class="item__subtotal">${formatPrice(price)} c/u</span>
-            <strong class="item__total">${formatPrice(price*amount)}</strong>
+            <strong class="item__total">${formatPrice(price)}</strong>
         </div>
     `;
     cartItemsDOM.appendChild(div);

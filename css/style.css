@@ -297,7 +297,7 @@ nav button, footer button {
   max-width: none;
 }
 
-.cart #cart-items .item__data .item__bin, .cart #cart-items .item__data .item__subtotal, .cart #cart-items .item__data .item__total {
+.cart #cart-items .item__data .item__bin, .cart #cart-items .item__data .item__total {
   -ms-flex-item-align: self-end;
       -ms-grid-row-align: self-end;
       align-self: self-end;

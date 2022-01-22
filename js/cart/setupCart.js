@@ -57,7 +57,7 @@ function displayCartTotal() {
     let total = cart.reduce((total, cartItem) => {
         return total += cartItem.price * cartItem.amount
     },0);
-    const amount = cart.reduce((total, cartItem) => {
+    let amount = cart.reduce((total, cartItem) => {
         return total += cartItem.amount
     },0);
     cartTotalDOM.innerHTML = `
