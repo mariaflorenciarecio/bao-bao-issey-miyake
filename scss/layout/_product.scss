@@ -1,7 +1,71 @@
 .product {
-    padding-top: 30rem;
+    @include flex(row, nowrap, center, center);
+    max-width: 114rem;
+    margin: auto;
+    
+    &__img {
+        width: 55%;
+        img { width: 100%; }
+    }
 
-    h1 {
-        color: black;
+    &__info {
+        @include flex(column, nowrap, center, flex-start);
+        width: 45%;
+        padding-left: 5rem;
+
+        p { 
+            @include paragraph(black, left, 30rem);
+            span { @include highlight(flex-start); };
+        }
+
+        h1 { 
+            @include title(black, left); 
+            font-size: 2.5rem;
+            padding: .5rem 0;
+        }
+
+        strong { 
+            @include subtitle(black, left); 
+            font-size: 1.8rem;
+            width: 100%;
+            
+            &:after {
+                content: "";
+                background-color: #dddddd;
+                display: block;
+                position: relative;
+                bottom: 0;
+                height: 1px;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    &__detail, &__service {
+        padding-top: 2rem;
+
+        span {
+            @include subtitle(black, left); 
+            font-size: 1.2rem;
+            padding-bottom: .5rem;
+        }
+
+        p { @include paragraph(black, left, 30rem); }
+
+        i { 
+            color: black;
+            font-size: 2.8rem;
+            width: 4.5rem;
+        }
+    }
+
+    &__service { 
+        @include flex(row, wrap, left, center);
+        padding-top: 3rem;
+    }
+
+    .black-button { 
+        @include button-text(black, 2rem, left); 
+        padding-bottom: 0;
     }
 }

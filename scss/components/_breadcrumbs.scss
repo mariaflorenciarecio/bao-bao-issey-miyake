@@ -1,0 +1,14 @@
+.breadcrumbs {
+    padding: 16.7rem 0 3rem 2.6rem;
+    
+    ul {
+        @include flex(row, nowrap, left, center);
+        a, span { @include highlight(flex-start); }
+        a {
+            &:after {
+                content: "/";
+                padding: 0 1rem;
+            }
+        }
+    }
+}

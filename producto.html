@@ -66,39 +66,51 @@
     </header>
     <!-- CIERRE HEADER -->
 
-    <!-- APERTURA ASIDE CART -->
+    <!-- APERTURA CART -->
     <aside id="cart-overlay" class="cart">
         <i id="close-cart" class="fas fa-times close"></i>
         <h2>Tu carrito</h2>
-        <div id="cart-items"></div>
-        <div id="cart-total" class="cart__price"></div>
+        <div id="cart-items">
+            <!-- informacion renderizada -->
+        </div>
+        <div id="cart-total" class="cart__price">
+            <!-- informacion renderizada -->
+        </div>
         <div class="cart__checkout">
             <button class="black-button">Finalizar compra</button>
         </div>
     </aside>
-    <!-- CIERRE ASIDE CART -->
+    <!-- CIERRE CART -->
 
     <!-- APERTURA BREADCRUMBS -->
-    <section id="breadcrumbs">
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./tienda.html">Tienda</a></li>
-            <li><strong>
-                <!-- nombre de producto renderizado -->
-            </strong></li>
-        </ul>
+    <section id="breadcrumbs" class="breadcrumbs">
+        <!-- informacion renderizada -->
     </section>
     <!-- CIERRE BREADCRUMBS -->
 
-    <!-- APERTURA MAIN -->
-    <main id="product-page" class="product">
+    <!-- APERTURA PRODUCT DETAIL -->
+    <main id="product-detail" class="product">
         <!-- informacion renderizada -->
     </main>
-    <!-- CIERRE MAIN -->
+    <!-- CIERRE PRODUCT DETAIL -->
 
+    <!-- APERTURA SPINNER -->
     <div id="spinner" class="loading">
         <div class="loader"></div>
     </div>
+    <!-- CIERRE SPINNER -->
+
+    <!-- APERTURA NEW IN -->
+    <section class="store">
+        <h2>New in</h2>
+        <div id="new-in">
+            <!-- productos renderizados -->
+        </div>
+        <div class="black-button">
+            <a href="./tienda.html">Ver tienda</a>
+        </div>
+    </section>
+    <!-- CIERRE NEW IN -->
 
     <!-- APERTURA FOOTER -->
     <footer>
@@ -116,8 +128,6 @@
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
     <!-- producto js -->
     <script type="module" src="./js/pages/producto.js"></script>
-    <!-- <script src="./js/productos.js"></script>
-    <script src="./js/app.js"></script> -->
     <!-- CIERRE SCRIPTS -->
 
 </body>
