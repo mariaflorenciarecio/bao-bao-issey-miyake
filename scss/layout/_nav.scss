@@ -10,15 +10,17 @@ nav {
         padding: 1rem;
 
         &__info { 
-            width: 12rem; 
+            width: 16rem; 
             line-height: 2.8rem; 
+
+            i { width: 3.2rem; }
         }
 
         &__icons {
             @include flex(row, nowrap, right, center);
-            width: 12rem;
+            width: 16rem;
 
-            .navbar__wishlist { padding-right: 1rem; }
+            .navbar__user { padding-right: 1rem; }
 
             .navbar__cart { cursor: pointer; }
         }
