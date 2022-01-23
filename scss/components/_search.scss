@@ -1,0 +1,18 @@
+form {
+    @include flex(row, nowrap, left, center);
+
+    input {
+        color: black; 
+        background-color: transparent;
+        font: { size: 1.2rem; weight: 400; }
+        letter-spacing: .1rem;
+        border: 1px solid black;
+        border-radius: 0;
+        padding: .4rem;
+        margin-bottom: 2rem;
+    }
+
+    input::placeholder { color: black; }
+
+    input:focus, select:focus, textarea:focus { outline: 0; }
+}

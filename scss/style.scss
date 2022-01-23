@@ -6,10 +6,16 @@
 @import './base/reset';
 @import './base/typo';
 
-@import './components/carrito';
+@import './components/breadcrumbs';
+@import './components/buttons';
+@import './components/cart';
+@import './components/filter';
+@import './components/search';
 @import './components/select';
+@import './components/switch';
 
 @import './layout/footer';
-@import './layout/tienda';
 @import './layout/hero';
 @import './layout/nav';
+@import './layout/product';
+@import './layout/store';

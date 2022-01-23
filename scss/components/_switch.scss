@@ -1,0 +1,29 @@
+.switch {
+    @include flex(row, nowrap, space-around, center);
+    position: absolute; right: 10rem; bottom: 10rem;
+    width: 4rem; height: 2rem;
+    background-color: white;
+    border: 2px solid white;
+    padding: 1.2rem 2.4rem;
+    transition: all 0.3s linear;
+    
+    i {
+        color: black;
+        font-size: 1.2rem;
+        padding: .7rem;
+        cursor: pointer;
+    }
+
+    &__button {
+        display: block;
+        position: absolute; left: 0; top: 0;
+        width: 50%; height: 100%;
+        background: black;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+}
+
+.slide .switch__button {
+    left: 50%;
+}

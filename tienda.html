@@ -2,15 +2,12 @@
 <html lang="es">
 
 <!-- APERTURA HEAD -->
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,215 +20,150 @@
 <!-- CIERRE HEAD -->
 
 <!-- APERTURA BODY -->
-
 <body>
     <!-- APERTURA HEADER -->
     <header>
-        <!-- barra de navegacion -->
+        <!-- nav -->
         <nav>
-            <div class="highlight">
-                <p>ENVIO GRATIS PARA COMPRAS SUPERIORES A $1.000 | 3, 6 Y 12 CUOTAS SIN INTERES</p>
-            </div>
+            <!-- barra superior -->
             <div class="navbar">
+                <!-- nav info -->
                 <ul class="navbar__info">
-                    <li><a href="./index.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                    <li><a href="./index.html"><i class="fas fa-exclamation-circle"></i> Cancelar pedido</a></li>
-                </ul>
-                <a class="navbar__logo" href="./index.html"><img src="./assets/img/baobao-black-logo.png"
-                        alt="Logo de Bao Bao Issey Miyake"></a>
-                <ul class="navbar__icons">
                     <li>
+                        <i class="fas fa-store"></i>
+                        <span>Nuestros locales</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Atención al cliente</span>
+                    </li>
+                </ul>
+                <!-- nav logo -->
+                <a href="./index.html"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+                <!-- nav icons -->
+                <ul class="navbar__icons">
+                    <li class="navbar__user">
                         <i class="fas fa-user-astronaut"></i>
                     </li>
-                    <li class="navbar__carrito">
+                    <li id="toggle-cart" class="navbar__cart">
                         <i class="fas fa-shopping-cart"></i>
-                        <span id="navbar__items">0</span>
+                        <span id="cart-item-count"></span>
                     </li>
                 </ul>
             </div>
-            <input type="checkbox" id="toggle" class="toggle">
+            <!-- barra inferior -->
             <ul class="navmenu">
-                <li><a class="navmenu__item" href="./html/novedades.html">Novedades</a></li>
-                <li class="navmenu__container">
-                    <button class="navmenu__item">Colección</button>
-                    <ul class="navmenu__dropdown">
-                        <li><a href="./html/coleccion/lucent.html">Lucent Series</a></li>
-                        <li><a href="./html/coleccion/prism.html">Prism Series</a></li>
-                        <li><a href="./html/coleccion/platinum.html">Platinum Series</a></li>
-                        <li><a href="./html/coleccion/slash.html">Slash Series</a></li>
-                    </ul>
-                </li>
-                <li class="navmenu__container">
-                    <button class="navmenu__item">Carteras</button>
-                    <ul class="navmenu__dropdown">
-                        <li><a href="">Tote</a></li>
-                        <li><a href="">Crossbody</a></li>
-                        <li><a href="">Backpack</a></li>
-                        <li><a href="">Clutch</a></li>
-                        <li><a href="">Pouch</a></li>
-                        <li><a href="">Complementos</a></li>
-                    </ul>
-                </li>
-                <li><a class="navmenu__item" href="./html/esenciales.html">Esenciales</a></li>
-                <li class="navmenu__container">
-                    <button class="navmenu__item">Regalos</button>
-                    <ul class="navmenu__dropdown">
-                        <li><a href="./html/regalos/regalos-grandes.html">Grandes</a></li>
-                        <li><a href="./html/regalos/regalos-medianos.html">Medianos</a></li>
-                        <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
-                    </ul>
-                </li>
+                <li><button>All</button></li>
+                <li><button>Lucent</button></li>
+                <li><button>Prism</button></li>
+                <li><button>Platinum</button></li>
+                <li><button>Slash</button></li>
             </ul>
-            <label for="toggle" class="toggle__label">
-                <span><i class="fas fa-bars"></i></span>
-            </label>
         </nav>
     </header>
     <!-- CIERRE HEADER -->
 
-    <div id="carrito" class="carrito__sidebar">
-        <div class="close">
-            <i class="fas fa-times"></i>
-        </div>
+    <!-- APERTURA ASIDE CART -->
+    <aside id="cart-overlay" class="cart">
+        <i id="close-cart" class="fas fa-times close"></i>
         <h2>Tu carrito</h2>
-        <div id="carrito__items"></div>
-        <div id="subtotal" class="cart__price"></div>
+        <div id="cart-items"></div>
+        <div id="cart-total" class="cart__price">
+        </div>
         <div class="cart__checkout">
             <button class="black-button">Finalizar compra</button>
         </div>
-    </div>
+    </aside>
+    <!-- CIERRE ASIDE CART -->
 
     <!-- APERTURA MAIN -->
-    <main>
-        <section id="tienda">
+    <main class="store">
 
-            <div class="clasificacion">
-                <h1>Tienda</h1>
-                <div class="clasificacion__elementos">
-                    <span><i class="fas fa-shopping-bag"></i>37 Productos</span>
-                    <span id="filtrar" class="black-button"><i class="fas fa-filter"></i>Filtrar</span>
-                    <div id="ordenar">
-                        <label>Ordenar por</label>
-                        <select>
-                            <option value="#">Más relevantes</option>
-                            <option value="#">A - Z</option>
-                            <option value="#">Z - A</option>
-                            <option value="#">Menor precio</option>
-                            <option value="#">Mayor precio</option>
-                        </select>
-                    </div>
+        <section class="classification">
+            <h1>Colección</h1>
+            <div class="classification__elements">
+                <div id="products-quantity" class="quantity">
+                    <!-- cantidad renderizada -->
+                </div>
+                <div id="sort">
+                    <label>Ordenar por</label>
+                    <select>
+                        <option value="#">Más relevantes</option>
+                        <option value="#">A - Z</option>
+                        <option value="#">Z - A</option>
+                        <option value="#">Menor precio</option>
+                        <option value="#">Mayor precio</option>
+                    </select>
                 </div>
             </div>
-
-            <div id="catalogo"></div>
-            <!-- productos renderizados -->
         </section>
+
+        <section class="store__content">
+            <!-- APERTURA ASIDE FILTRAR -->
+            <aside class="filter">
+                <form id="search-form">
+                    <input id="search-input" type="text" placeholder="Buscar..."/>
+                </form>
+                <div class="filter__type">
+                    <span>Categoría</span>
+                    <div id="categories" class="filter__category">
+                        <!-- categorias renderizadas -->
+                    </div>
+                </div>
+                <div class="filter__type">
+                    <span>Color</span>
+                    <div id="colors" class="filter__color">
+                        <!-- colores renderizadas -->
+                    </div>
+                </div>
+                <div class="filter__type">
+                    <span>Precio</span>
+                    <form class="filter__price">
+                        <input id="price-input" type="range" min="0" value="500" max="1000"/>
+                        <p id="price-value">
+                            <!-- valor renderizado -->
+                        </p>
+                    </form>
+                </div>
+                <div id="new" class="filter__type">
+                        <!-- colores renderizadas -->
+                    </div>
+                </div>
+            </aside>
+            <!-- CIERRE ASIDE FILTRAR -->
+
+            <section id="collection">
+                <!-- productos renderizados -->
+            </section>
+        </section>
+
+        <div id="spinner" class="loading">
+            <div class="loader"></div>
+        </div>
+
     </main>
     <!-- CIERRE MAIN -->
 
-
     <!-- APERTURA FOOTER -->
-    <!-- <footer>
-        <div class="flex__content">
-            <div class="flex__item">
-                <a href="./index.html"><img src="./assets/img/baobao-white-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
-                <div class="footer-social">
-                    <a href="https://www.baobaoisseymiyake.com/"><i class="fas fa-globe"></i></a>
-                    <a href="https://www.instagram.com/baobaoisseymiyake_official/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div> -->
-    <!-- informacion principal -->
-    <!-- <div class="flex__content"> -->
-    <!-- coleccion -->
-    <!-- <div class="flex__item">
-                <ul>
-                    <li class="subtitle">Colección</li>
-                    <li><a href="./html/coleccion/lucent.html">Lucent Series</a></li>
-                    <li><a href="./html/coleccion/prism.html">Prism Series</a></li>
-                    <li><a href="./html/coleccion/platinum.html">Platinum Series</a></li>
-                    <li><a href="./html/coleccion/slash.html">Slash Series</a></li>
-                </ul>
-            </div> -->
-    <!-- carteras -->
-    <!-- <div class="flex__item">
-                <ul>
-                    <li class="subtitle">Carteras</li>
-                    <li><a href="./html/carteras/tote.html">Tote</a></li>
-                    <li><a href="./html/carteras/crossbody.html">Crossbody</a></li>
-                    <li><a href="./html/carteras/backpack.html">Backpack</a></li>
-                    <li><a href="./html/carteras/clutch.html">Clutch</a></li>
-                    <li><a href="./html/carteras/pouch.html">Pouch</a></li>
-                    <li><a href="./html/carteras/complementos.html">Complementos</a></li>
-                </ul>
-            </div> -->
-    <!-- regalos -->
-    <!-- <div class="flex__item">
-                <ul>
-                    <li class="subtitle">Regalos</li>
-                    <li><a href="./html/regalos/regalos-grandes.html">Grandes</a></li>
-                    <li><a href="./html/regalos/regalos-medianos.html">Medianos</a></li>
-                    <li><a href="./html/regalos/regalos-pequeños.html">Pequeños</a></li>
-                </ul>
-            </div> -->
-    <!-- sobre nosotros -->
-    <!-- <div class="flex__item">
-                <ul>
-                    <li class="subtitle">Sobre Nosotros</li>
-                    <li><a href="./index.html">Términos y condiciones</a></li>
-                    <li><a href="./index.html">Políticas de privacidad</a></li>
-                    <li><a href="./index.html">Nuestros locales</a></li>
-                </ul>
-            </div> -->
-    <!-- ayuda -->
-    <!-- <div class="flex__item">
-                <ul>
-                    <li class="subtitle">Ayuda</li>
-                    <li><a href="./index.html">Atención al cliente</a></li>
-                    <li><a href="./index.html">FAQ</a></li>
-                    <li><a href="./index.html">Cancelar pedido</a></li>
-                </ul>
-            </div>
-        </div> -->
-    <!-- newsletter -->
-    <!-- <div class="flex__item">
-            <div class="newsletter">
-                <p>Suscribite al newsletter para recibir novedades de nuestras colecciones, promociones, eventos y proyectos especiales:</p>
-                <form action="" class="subscribe-form">
-                    <input class="subscribe" type="email" name="email" placeholder="Ingresá tu e-mail" required>
-                    <button class="action-icon"><i class="fas fa-arrow-right"></i></button>
-                    <input class="subscribe-button" type="submit" value="Suscribirse">
-                </form>
-            </div>
-        </div> -->
-    <!-- copyright -->
-    <!-- <div class="flex__item">
-            <div class="copyright">
-                <p>© 2021 ISSEY MIYAKE INC. Todos los derechos reservados.</p>
-                <p>Desarrollado con 💜 por María Florencia Recio.</p>
-                <div class="footer-social">
-                    <a href="https://github.com/mariaflorenciarecio"><i class="fab fa-github"></i></i></a>
-                    <a href="https://www.linkedin.com/in/mariaflorenciarecio/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+    <footer>
+        <p>© 2021 ISSEY MIYAKE INC. Todos los derechos reservados.</p>
+        <p>Desarrollado con 💜 por María Florencia Recio.</p>
+        <div>
+            <a href="https://github.com/mariaflorenciarecio"><i class="fab fa-github"></i></i></a>
+            <a href="https://www.linkedin.com/in/mariaflorenciarecio/"><i class="fab fa-linkedin-in"></i></a>
         </div>
-    </footer> -->
+    </footer>
     <!-- CIERRE FOOTER -->
 
     <!-- APERTURA SCRIPTS -->
-    <!-- JQuery -->
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
-    <!-- aos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000 });
-    </script>
-    <!-- js -->
-    <script src="./js/productos.js"></script>
-    <script src="./js/app.js"></script>
+    <!-- tienda js -->
+    <script type="module" src="./js/pages/tienda.js"></script>
     <!-- CIERRE SCRIPTS -->
+
 </body>
 <!-- CIERRE BODY -->
 

@@ -11,10 +11,13 @@
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Home | BAO BAO ISSEY MIYAKE</title>
+    <title>
+        <!-- titulo renderizado -->
+    </title>
 </head>
 <!-- CIERRE HEAD -->
 
@@ -62,91 +65,51 @@
     </header>
     <!-- CIERRE HEADER -->
 
-    <!-- APERTURA ASIDE CART -->
+    <!-- APERTURA CART -->
     <aside id="cart-overlay" class="cart">
         <i id="close-cart" class="fas fa-times close"></i>
         <h2>Tu carrito</h2>
-        <div id="cart-items"></div>
-        <div id="cart-total" class="cart__price"></div>
+        <div id="cart-items">
+            <!-- informacion renderizada -->
+        </div>
+        <div id="cart-total" class="cart__price">
+            <!-- informacion renderizada -->
+        </div>
         <div class="cart__checkout">
             <button class="black-button">Finalizar compra</button>
         </div>
     </aside>
-    <!-- CIERRE ASIDE CART -->
+    <!-- CIERRE CART -->
 
-    <!-- APERTURA MAIN -->
-    <main>
-        <!-- APERTURA HERO -->
-        <section class="hero">
-            <h1>Bao Bao Issey Miyake</h1>
-            <div class="hero__title">
-                <p>Your</p>
-                <div class="hero__effect">
-                    <span>tote</span>
-                    <span>crossbody</span>
-                    <span>clutch</span>
-                    <span>pouch</span>
-                    <span>tote</span>
-                </div>
-            </div>
-            <p>Colección de carteras con un concepto y método de producción innovadores. Formas versátiles infinitas, generadas a partir de una estructura de piezas triangulares. Belleza, diversión, sorpresa y practicidad para cada momento de tu vida.</p>
-            <div class="hero__button">
-                <a href="./tienda.html">Ver tienda</a>
-            </div>
-            <video class="hero__video" autoplay muted loop>
-                <source src="./assets/video/baobao-origin.mp4" type="video/mp4">
-            </video>
-            <button class="switch">
-                <i class="fas fa-play"></i>
-                <i class="fas fa-pause"></i>
-                <span class="switch__button"></span>
-            </button>
-        </section>
-        <!-- CIERRE HERO -->
+    <!-- APERTURA BREADCRUMBS -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <!-- informacion renderizada -->
+    </section>
+    <!-- CIERRE BREADCRUMBS -->
 
-        <section class="store">
-            <h2>New in</h2>
-            <div id="new-in">
-                <!-- productos renderizados -->
-            </div>
-            <div class="black-button">
-                <a href="./tienda.html">Ver tienda</a>
-            </div>
-        </section>
-
-        <!-- ARMAR SLIDER -->
-        <!-- <section class="slider">
-            <div class="slider__slide">
-                <img src="./assets/img/index/carteras-tote.png" alt="Carteras Tote">
-            </div>
-            <div class="slider__slide">
-                <img src="./assets/img/index/coleccion-lucent.png" alt="Colección Lucent">
-            </div>
-            <div class="slider__slide">
-                <img src="./assets/img/index/proximamente.png" alt="Próximamente">
-            </div>
-            <div class="slider__buttons">
-                <button type="button" class="prevBtn">
-                    <i class="fas fa-arrow-left"></i>
-                </button>
-                <button type="button" class="nextBtn">
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
-        </section> -->
-
-        <section class="store">
-            <h2>Esenciales</h2>
-            <div id="essential">
-                <!-- productos renderizados -->
-            </div>
-            <div class="black-button">
-                <a href="./tienda.html">Ver tienda</a>
-            </div>
-        </section>
-        
+    <!-- APERTURA PRODUCT DETAIL -->
+    <main id="product-detail" class="product">
+        <!-- informacion renderizada -->
     </main>
-    <!-- CIERRE MAIN -->
+    <!-- CIERRE PRODUCT DETAIL -->
+
+    <!-- APERTURA SPINNER -->
+    <div id="spinner" class="loading">
+        <div class="loader"></div>
+    </div>
+    <!-- CIERRE SPINNER -->
+
+    <!-- APERTURA NEW IN -->
+    <section class="store">
+        <h2>New in</h2>
+        <div id="new-in">
+            <!-- productos renderizados -->
+        </div>
+        <div class="black-button">
+            <a href="./tienda.html">Ver tienda</a>
+        </div>
+    </section>
+    <!-- CIERRE NEW IN -->
 
     <!-- APERTURA FOOTER -->
     <footer>
@@ -164,8 +127,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
-    <!-- index js -->
-    <script type="module" src="index.js"></script>
+    <!-- producto js -->
+    <script type="module" src="./js/pages/producto.js"></script>
     <!-- CIERRE SCRIPTS -->
 
 </body>

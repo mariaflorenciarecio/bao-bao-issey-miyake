@@ -1,43 +1,8 @@
-// -------------------- FOOTER --------------------
-
 footer {
-    background-color: $black;
-    padding: 5rem 0;
+    @include flex(column, nowrap, center, center);
+    background-color: black;
+    padding: 2rem;
+    margin: 5rem 0 0 auto;
 
-    .flex__content {
-        @include flex(row, wrap, space-between, start);
-        .flex__item { width: 50vw; padding: 1.5rem; }
-        .flex__item:last-child { margin-right: auto; }
-    }
-
-    .flex__item {
-        li { 
-            @include subtitle($white, left); 
-            padding-bottom: .25rem;
-        }
-    
-        a { @include paragraph($white, left, none); }
-
-        .newsletter {
-            @include flex(column, nowrap, center, center);
-            padding: 1.5rem 0 5rem 0;
-            p { @include paragraph($white, left, 40rem); }
-            .subscribe-form { padding-top: 1.5rem; }
-        }
-    
-        .copyright {
-            padding-top: 5rem;
-            border-top: 1px solid $white;
-
-            p { 
-                @include paragraph($white, center, none); 
-                padding-bottom: .5rem;
-            }
-        }
-
-        .footer-social {
-            text-align-last: center;
-            i { font-size: 1.5rem; padding: .5rem; }
-        }
-    }
+    p, i { padding: .5rem; }
 }

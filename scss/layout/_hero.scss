@@ -58,7 +58,7 @@
         }
     }
 
-    &__button { @include button($white, 3rem, left); }
+    &__button { @include button-text($white, 3rem, left); }
 
     &__video {
         position: absolute;
