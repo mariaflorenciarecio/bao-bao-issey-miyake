@@ -85,10 +85,10 @@ window.addEventListener('DOMContentLoaded', async function() {
                             </div>
                         </div>
                     `;
+                    const newIn = products.filter((product) => product.newIn === true);
+                    display(newIn, document.getElementById('new-in'));
                 });
             };
-            const newIn = products.filter((product) => product.newIn === true);
-            display(newIn, document.getElementById('new-in'));
             renderSingleProduct();
         } else {
             productDetail.innerHTML = `
