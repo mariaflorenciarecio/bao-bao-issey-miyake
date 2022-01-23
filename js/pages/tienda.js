@@ -1,6 +1,7 @@
 // IMPORTS GLOBALES //
 import '../cart/toggleCart.js';
 import '../cart/setupCart.js';
+import '../filters/new.js';
 
 // IMPORTS FILTROS //
 import setupSearch from '../filters/search.js';

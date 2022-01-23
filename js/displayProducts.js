@@ -1,6 +1,8 @@
 import { formatPrice } from './utils.js';
 import { addToCart } from './cart/setupCart.js';
 
+const productsQuantity = document.getElementById('products-quantity');
+
 const display = (products, element) => {
     // mostrar elementos
     element.innerHTML = products.map((product) => {
@@ -37,6 +39,10 @@ const display = (products, element) => {
             addToCart(parent.dataset.id)
         }
     });
+    productsQuantity.innerHTML = `
+            <i class="fas fa-shopping-bag"></i>
+            <span>${products.length}</span>
+        `;
 };
 
 export default display;

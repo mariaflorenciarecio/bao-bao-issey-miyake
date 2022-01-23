@@ -1073,18 +1073,15 @@ nav .navmenu {
   padding: 5rem 0;
 }
 
-.store .classification__elements span {
-  padding: .5rem;
+.store .classification__elements .quantity {
+  width: 8rem;
 }
 
 .store .classification__elements i {
-  color: #000000;
+  color: black;
   font-size: 1.6rem;
   padding: .6rem;
-}
-
-.store .classification__elements label {
-  padding-left: 1.1rem;
+  padding: 0 1rem;
 }
 
 .store__content {
@@ -1403,5 +1400,38 @@ nav .navmenu {
   padding: 1.2rem 2.4rem;
   background-color: transparent;
   cursor: pointer;
+}
+
+#new {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: left;
+}
+
+#new h3 a, #new a, #new button {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  border: 1px solid black;
+  padding: 1.2rem 2.4rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#new p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  max-width: 20rem;
+  display: inline-block;
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

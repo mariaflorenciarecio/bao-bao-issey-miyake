@@ -1,6 +1,5 @@
 import display from "../displayProducts.js";
 
-
 const setupSearch = (store) => {
     const searchForm = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
@@ -8,7 +7,7 @@ const setupSearch = (store) => {
         const value = searchInput.value;
         if(value) {
             const newStore = store.filter((product) => {
-                let {name, collection, category, color} = product;
+                let {name, collection} = product;
                 name = name.toLowerCase();
                 collection = collection.toLowerCase();
                 if(name.includes(value) || (collection.includes(value))) {

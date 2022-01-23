@@ -19,11 +19,14 @@
             @include flex(row, nowrap, space-between, center);
             padding: 5rem 0;
 
-            span {padding: .5rem }
+            .quantity {
+                width: 8rem;
+            }
 
-            i { @include icon($black, 1.6rem); }
-
-            label { padding-left: 1.1rem; }
+            i { 
+                @include icon(black, 1.6rem); 
+                padding: 0 1rem;
+            }
         }
     }
 
@@ -103,4 +106,13 @@
 
     .black-button { @include button-text(black, 1.2rem, center); }
     
+}
+
+#new {
+    @include button-text(black, 1.2rem, left);
+    p {
+        @include paragraph(black, left, 20rem);
+        display: inline-block;
+        padding-bottom: 1rem;
+    }
 }

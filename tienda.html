@@ -82,17 +82,19 @@
         <section class="classification">
             <h1>Colección</h1>
             <div class="classification__elements">
-                <span><i class="fas fa-shopping-bag"></i>37 Productos</span>
-                    <div id="sort">
-                        <label>Ordenar por</label>
-                        <select>
-                            <option value="#">Más relevantes</option>
-                            <option value="#">A - Z</option>
-                            <option value="#">Z - A</option>
-                            <option value="#">Menor precio</option>
-                            <option value="#">Mayor precio</option>
-                        </select>
-                    </div>
+                <div id="products-quantity" class="quantity">
+                    <!-- cantidad renderizada -->
+                </div>
+                <div id="sort">
+                    <label>Ordenar por</label>
+                    <select>
+                        <option value="#">Más relevantes</option>
+                        <option value="#">A - Z</option>
+                        <option value="#">Z - A</option>
+                        <option value="#">Menor precio</option>
+                        <option value="#">Mayor precio</option>
+                    </select>
+                </div>
             </div>
         </section>
 
@@ -123,6 +125,10 @@
                         </p>
                     </form>
                 </div>
+                <div id="new" class="filter__type">
+                        <!-- colores renderizadas -->
+                    </div>
+                </div>
             </aside>
             <!-- CIERRE ASIDE FILTRAR -->
 
@@ -150,6 +156,8 @@
     <!-- CIERRE FOOTER -->
 
     <!-- APERTURA SCRIPTS -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
     <!-- tienda js -->
