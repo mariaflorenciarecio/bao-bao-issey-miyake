@@ -11,9 +11,12 @@ nav {
 
         &__info { 
             width: 16rem; 
-            line-height: 2.8rem; 
+            line-height: 2.2rem; 
 
-            i { width: 3.2rem; }
+            i { 
+                width: 3.2rem; 
+                text-align-last: center;
+            }
         }
 
         &__icons {
@@ -24,9 +27,5 @@ nav {
 
             .navbar__cart { cursor: pointer; }
         }
-    }
-
-    .navmenu {
-        @include flex(row, nowrap, center, center);
     }
 }

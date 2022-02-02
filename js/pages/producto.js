@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', async function() {
                                 <button>Comprar</button>
                             </div>
                             <div class="product__service">
-                                <i class="fas fa-truck"></i>
+                                <i class="fas fa-shipping-fast"></i>
                                 <div>
                                     <span>Envío Gratis</span>
                                     <p>Compras superiores a $100.00</p>

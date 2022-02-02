@@ -748,11 +748,12 @@ nav .navbar {
 
 nav .navbar__info {
   width: 16rem;
-  line-height: 2.8rem;
+  line-height: 2.2rem;
 }
 
 nav .navbar__info i {
   width: 3.2rem;
+  text-align-last: center;
 }
 
 nav .navbar__icons {
@@ -780,24 +781,6 @@ nav .navbar__icons .navbar__user {
 
 nav .navbar__icons .navbar__cart {
   cursor: pointer;
-}
-
-nav .navmenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .product {
