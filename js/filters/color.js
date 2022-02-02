@@ -8,7 +8,7 @@ const setupColors = (store) => {
     })
     .join('');
     colorsDOM.addEventListener('click', function(e) {
-        const element = e.target
+        const element = e.target;
         if(element.classList.contains('color-button')) {
             let colorStore = [];
             if(element.textContent === 'all') {
