@@ -39,11 +39,12 @@ h1 {
   text-transform: uppercase;
 }
 
-nav span, nav p, footer span, footer p {
+nav a, nav p, nav span, footer a, footer p, footer span {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: .1rem;
+  text-decoration: none;
 }
 
 nav i, footer i {
@@ -108,7 +109,7 @@ nav i, footer i {
 }
 
 .breadcrumbs {
-  padding: 16.7rem 0 3rem 2.6rem;
+  padding: 11.8rem 0 3rem 2.6rem;
 }
 
 .breadcrumbs ul {
@@ -993,7 +994,7 @@ nav .navbar__icons .navbar__cart {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2rem;
-  padding: 12.4rem 2rem 0 2rem;
+  padding: 8.8rem 2rem 0 2rem;
 }
 
 .store .classification h3, .store .classification h3 a, .store .classification strong {
@@ -1316,6 +1317,7 @@ nav .navbar__icons .navbar__cart {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 4rem;
 }
 
 .store #new-in .card .overlay__item .overlay__buttons a, .store #new-in .card .overlay__item .overlay__buttons button, .store #essential .card .overlay__item .overlay__buttons a, .store #essential .card .overlay__item .overlay__buttons button, .store #collection .card .overlay__item .overlay__buttons a, .store #collection .card .overlay__item .overlay__buttons button {

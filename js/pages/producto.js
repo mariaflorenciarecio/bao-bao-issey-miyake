@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', async function() {
                     `;
                     productDetail.innerHTML = `
                         <div class="product__img">
-                            <img src="./assets/img/tienda/${product.name}-${product.collection}-${product.color}.jpg" alt="${product.name} ${product.collection} Color ${product.color}">
+                            <img src="./assets/img/tienda/${product.name}-${product.collection}-${product.color}-Model.jpg" alt="${product.name} ${product.collection} Color ${product.color}">
                         </div>
                         <div class="product__info">
                             <p>SKU 000${product.id} • <span>${product.color}<span></p>

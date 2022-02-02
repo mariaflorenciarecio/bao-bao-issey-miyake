@@ -38,7 +38,7 @@
         "dimensions": "8.50 cm x 11.50 cm",
         "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
         "newIn": false,
-        "essential": false
+        "essential": true
     },
 
     {
@@ -93,7 +93,7 @@
         "description": "-",
         "dimensions": "-",
         "composition": "-",
-        "newIn": false,
+        "newIn": true,
         "essential": false
     },
 
@@ -135,7 +135,7 @@
         "description": "Triángulos más pequeños que los de lucent series. La luz se concentra en las piezas creando un delicado resplandor, parecido a una joya. Cuando se tira del cordón, las piezas crean una expresión tridimensional. El bolso se puede disfrutar de dos maneras: usando el cordón como una sola correa para convertirlo en una bandolera, o doblado, para convertirlo en un bolso de mano.",
         "dimensions": "23.50 cm x 15.50 cm",
         "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
-        "newIn": false,
+        "newIn": true,
         "essential": false
     },
 
@@ -206,7 +206,7 @@
         "dimensions": "-",
         "composition": "-",
         "newIn": false,
-        "essential": false
+        "essential": true
     },
 
     {
@@ -276,7 +276,7 @@
         "dimensions": "-",
         "composition": "-",
         "newIn": false,
-        "essential": false
+        "essential": true
     },
 
     {

@@ -19,9 +19,6 @@ const display = (products, element) => {
                             <button class="overlay__cart" data-id="${id}">
                                 <i class="fas fa-cart-plus"></i>
                             </button>
-                            <button data-id="${id}">
-                                <i class="fas fa-heart"></i>
-                            </button>
                         </div>
                     </div>
                 </div>

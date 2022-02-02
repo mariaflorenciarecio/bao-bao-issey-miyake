@@ -2,6 +2,7 @@
 
 import './js/cart/toggleCart.js';
 import './js/cart/setupCart.js';
+import './js/switch.js';
 
 // IMPORTS ESPECIFICOS //
 

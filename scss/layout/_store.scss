@@ -11,7 +11,7 @@
     .classification {
         @include flex(row, nowrap, space-between, center);
         @include flex-detail($black);
-        padding: 12.4rem 2rem 0 2rem;
+        padding: 8.8rem 2rem 0 2rem;
 
         h1 { @include title($black, center); }
 
@@ -94,7 +94,10 @@
             .overlay__item {
                 @include overlay__content(rgba(0, 0, 0, 0.6));
                 img { width: 100%; }
-                .overlay__buttons { @include button-icon(white); }
+                .overlay__buttons { 
+                    @include button-icon(white); 
+                    padding: 4rem;
+                }
             }
 
             .card__detail { 
