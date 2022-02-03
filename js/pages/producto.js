@@ -21,7 +21,7 @@ const loading = document.getElementById('spinner');
 
 // MOSTRAR CONTENIDO //
 
-window.addEventListener('DOMContentLoaded', async function() {
+window.addEventListener('load', async function() {
     const urlID = window.location.search;
     try {
         const response = await fetch(allProducts);
