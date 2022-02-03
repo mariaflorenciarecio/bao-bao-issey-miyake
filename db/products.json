@@ -1,250 +1,96 @@
 [
     {
         "id": 1,
-        "name": "Backpack",
-        "price": 100000,
-        "collection": "Lucent",
-        "category": "Mochilas",
+        "name": "Bolso",
+        "price": 98000,
+        "collection": "Cart",
+        "category": "Bolso",
         "color": "Negro",
-        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo. Esta mochila es lo suficientemente grande para guardar documentos de tamaño A4 y un portátil de 15 pulgadas. Su estilo neutral se adapta a cualquier ocasión y género.",
-        "dimensions": "40.00 cm x 34.00 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Cinta: 100% nylon / Asa: cuero artificial",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
+        "dimensions": "36.00 cm x 43.50 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon / Asa: 100% nylon",
         "newIn": false,
         "essential": false
     },
 
     {
         "id": 2,
-        "name": "Backpack",
-        "price": 100000,
-        "collection": "Solid",
-        "category": "Mochilas",
-        "color": "Plateado",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 3,
-        "name": "Billetera",
-        "price": 25000, 
-        "collection": "Lucent",
-        "category": "Accesorios",
+        "name": "Bolso",
+        "price": 95000,
+        "collection": "Carton",
+        "category": "Bolso",
         "color": "Blanco",
-        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Una billetera ideal para el mundo en el que vivimos, donde cada vez se usa más la tarjeta que el efectivo.",
-        "dimensions": "8.50 cm x 11.50 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
+        "dimensions": "32.00 cm x 41.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero artificial",
         "newIn": false,
         "essential": true
     },
 
     {
+        "id": 3,
+        "name": "Bolso",
+        "price": 155000,
+        "collection": "Crystal",
+        "category": "Bolso",
+        "color": "Blanco",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
+        "dimensions": "30.00 cm x 35.00 cm",
+        "composition": "Superficie: 100% cuero artificial / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero vacuno",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
         "id": 4,
-        "name": "Billetera",
-        "price": 25000,
-        "collection": "Prism",
-        "category": "Accesorios",
-        "color": "Negro",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
+        "name": "Bolso",
+        "price": 59500,
+        "collection": "Lucent",
+        "category": "Bolso",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
+        "dimensions": "28.50 cm x 23.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
         "newIn": false,
         "essential": false
     },
 
     {
         "id": 5,
-        "name": "Clutch",
-        "price": 50000,
-        "collection": "Solid",
-        "category": "Carteras",
-        "color": "Negro",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": false,
+        "name": "Bolso",
+        "price": 174500,
+        "collection": "Medallion",
+        "category": "Bolso",
+        "color": "Blanco",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
+        "dimensions": "34.00 cm x 34.00 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero artificial",
+        "newIn": true,
         "essential": false
     },
 
     {
         "id": 6,
-        "name": "Crossbody",
-        "price": 75000,
-        "collection": "Lucent",
-        "category": "Carteras",
-        "color": "Blanco",
-        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
-        "dimensions": "17.00 cm x 23.00 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsa: 100% nylon / Cinta: 100% nylon / Asa: 100% cuero artificial",
+        "name": "Bolso",
+        "price": 99000,
+        "collection": "Metallic",
+        "category": "Bolso",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
+        "dimensions": "34.00 cm x 34.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero artificial",        
         "newIn": false,
-        "essential": true
+        "essential": false
     },
 
     {
         "id": 7,
-        "name": "Crossbody",
-        "price": 75000,
-        "collection": "Lucent",
-        "category": "Carteras",
-        "color": "Plateado",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": true,
-        "essential": false
-    },
-
-    {
-        "id": 8,
-        "name": "Crossbody",
-        "price": 75000,
+        "name": "Bolso",
+        "price": 107000,
         "collection": "Platinum",
-        "category": "Carteras",
+        "category": "Bolso",
         "color": "Plateado",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": true,
-        "essential": false
-    },
-
-    {
-        "id": 9,
-        "name": "Crossbody",
-        "price": 75000,
-        "collection": "Prism",
-        "category": "Carteras",
-        "color": "Negro",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 10,
-        "name": "Crossbody",
-        "price": 75000,
-        "collection": "Prism",
-        "category": "Carteras",
-        "color": "Plateado",
-        "description": "Triángulos más pequeños que los de lucent series. La luz se concentra en las piezas creando un delicado resplandor, parecido a una joya. Cuando se tira del cordón, las piezas crean una expresión tridimensional. El bolso se puede disfrutar de dos maneras: usando el cordón como una sola correa para convertirlo en una bandolera, o doblado, para convertirlo en un bolso de mano.",
-        "dimensions": "23.50 cm x 15.50 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
-        "newIn": true,
-        "essential": false
-    },
-
-    {
-        "id": 11,
-        "name": "Crossbody",
-        "price": 75000,
-        "collection": "Slash",
-        "category": "Carteras",
-        "color": "Negro",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 12,
-        "name": "Crossbody",
-        "price": 75000,
-        "collection": "Slash",
-        "category": "Carteras",
-        "color": "Plateado",
-        "description": "Bandolera rectangular con cierre. Las mismas se pueden aplanar doblando el fondo y los costados hacia adentro, ofreciendo una comodidad suprema. Las correas son ajustables, creando un diseño que brinda tres posibilidades de uso: como bandolera, cartera o bolso de mano.",
-        "dimensions": "16.00 cm x 32.00 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsa: 100 % nylon / Cinta: 100 % nylon / Asa: cuero artificial",
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 13,
-        "name": "Crossbody",
-        "price": 75000,
-        "collection": "Solid",
-        "category": "Carteras",
-        "color": "Negro",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 14,
-        "name": "Llavero",
-        "price": 10000,
-        "collection": "Lucent",
-        "category": "Accesorios",
-        "color": "Blanco",
-        "description": "Un llavero con colgante en forma de cubo. Es un accesorio divertido que podés colocar en tu bolso y coleccionar tantos como quieras en diferentes colores.",
-        "dimensions": "5.00 cm x 5.00cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Anillo y cadena: 100% acero inoxidable",
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 15,
-        "name": "Pouch",
-        "price": 50000,
-        "collection": "Lucent",
-        "category": "Carteras",
-        "color": "Blanco",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": false,
-        "essential": true
-    },
-
-    {
-        "id": 16,
-        "name": "Pouch",
-        "price": 50000,
-        "collection": "Prism",
-        "category": "Carteras",
-        "color": "Plateado",
-        "description": "Triángulos más pequeños que los de lucent series. La luz se concentra en las piezas creando un delicado resplandor, parecido a una joya. En este clutch cabe un smartphone y un pasaporte, lo que lo hace perfecto para viajar. Usalo solo como bolso de mano o colocalo en un bolso más grande para mantener juntos los artículos pequeños.",
-        "dimensions": "11.50 cm x 19.50 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsa: 100% nylon",
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 17,
-        "name": "Tote",
-        "price": 100000,
-        "collection": "Lucent",
-        "category": "Carteras",
-        "color": "Plateado",
-        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Esta bolsa tiene el tamaño adecuado para documentos de tamaño A4.",
-        "dimensions": "34.00 cm x 34.00 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Asa: 100% cuero artificial",        
-        "newIn": false,
-        "essential": false
-    },
-
-    {
-        "id": 18,
-        "name": "Tote",
-        "price": 100000,
-        "collection": "Platinum",
-        "category": "Carteras",
-        "color": "Plateado",
-        "description": "La serie platinum utiliza un material superficial espejado que emite una luz premium de mayor calidad. Se trata de un pequeño bolso de mano que puede contener varios elementos facilitando el caminar. Viene con un dije removible.",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
         "dimensions": "27.50 cm x 27.50 cm",
         "composition": "Superficie: 100% poliuretano / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero artificial",
         "newIn": true,
@@ -252,57 +98,421 @@
     },
 
     {
-        "id": 19,
-        "name": "Tote",
-        "price": 100000,
+        "id": 8,
+        "name": "Bolso",
+        "price": 59500,
         "collection": "Prism",
-        "category": "Carteras",
-        "color": "Blanco",
-        "description": "Triángulos más pequeños que los de lucent series. La luz se concentra en las piezas creando un delicado resplandor, parecido a una joya. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Esta bolsa tiene el tamaño adecuado para documentos de tamaño A4.",
+        "category": "Bolso",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
         "dimensions": "39.50 cm x 39.50 cm",
-        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Asa: 100% cuero artificial",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero artificial",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 9,
+        "name": "Bolso",
+        "price": 145000,
+        "collection": "Tonneau",
+        "category": "Bolso",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo en la cartera. El bolsillo interior con cremallera es un lugar seguro para guardar objetos de valor como la billetera y las llaves. Este bolso tiene el tamaño adecuado para documentos de tamaño A4.",
+        "dimensions": "23.00 cm x 33.00 cm",
+        "composition": "Superficie: 100% cuero artificial / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero vacuno",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 10,
+        "name": "Bandolera",
+        "price": 139000,
+        "collection": "Blocky",
+        "category": "Bandolera",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "28.50 cm x 45.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 11,
+        "name": "Bandolera",
+        "price": 65000,
+        "collection": "Carton",
+        "category": "Bandolera",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "16.00 cm x 32.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 12,
+        "name": "Bandolera",
+        "price": 145000,
+        "collection": "Crystal",
+        "category": "Bandolera",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "16.50 cm x 31.00 cm",
+        "composition": "Superficie: 100% cuero artificial / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero vacuno",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 13,
+        "name": "Bandolera",
+        "price": 117500,
+        "collection": "Hexagon",
+        "category": "Bandolera",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "14.00 cm x 20.00 cm",
+        "composition": "Superficie: 100% cuero artificial / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 14,
+        "name": "Bandolera",
+        "price": 35000,
+        "collection": "Lucent",
+        "category": "Bandolera",
+        "color": "Blanco",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "17.00 cm x 23.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": true
+    },
+
+    {
+        "id": 15,
+        "name": "Bandolera",
+        "price": 45000,
+        "collection": "Metallic",
+        "category": "Bandolera",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "19.50 cm x 15.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 16,
+        "name": "Bandolera",
+        "price": 49500,
+        "collection": "Mini",
+        "category": "Bandolera",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "15.50 cm xx 11.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% resina de cloruro de vinilo",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 17,
+        "name": "Bandolera",
+        "price": 101000,
+        "collection": "Pixel",
+        "category": "Bandolera",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "17.50 cm x 23.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 18,
+        "name": "Bandolera",
+        "price": 84000,
+        "collection": "Platinum",
+        "category": "Bandolera",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "16.00 cm x 31.50 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero artificial",
+        "newIn": true,
+        "essential": false
+    },
+
+    {
+        "id": 19,
+        "name": "Bandolera",
+        "price": 66500,
+        "collection": "Saddle",
+        "category": "Bandolera",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "14.50 cm x 25.50 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon / Asa: 100% nylon",
         "newIn": false,
         "essential": false
     },
 
     {
         "id": 20,
-        "name": "Tote",
-        "price": 100000,
-        "collection": "Slash",
-        "category": "Carteras",
-        "color": "Blanco",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
-        "newIn": false,
-        "essential": true
-    },
-
-    {
-        "id": 21,
-        "name": "Tote",
-        "price": 100000,
-        "collection": "Solid",
-        "category": "Carteras",
-        "color": "Blanco",
-        "description": "-",
-        "dimensions": "-",
-        "composition": "-",
+        "name": "Bandolera",
+        "price": 43500,
+        "collection": "Sash",
+        "category": "Bandolera",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "16.50 cm x 35.00 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon / Asa: 100% nylon",
         "newIn": false,
         "essential": false
     },
 
     {
+        "id": 21,
+        "name": "Bandolera",
+        "price": 106500,
+        "collection": "Wring",
+        "category": "Bandolera",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla. Con un diseño simple y minimalista, esta bandolera tiene el tamaño adecuado para guardar una billetera y otros objetos de valor, lo que la hace perfecta para viajar o simplemente salir.",
+        "dimensions": "23.50 cm x 15.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% nylon",
+        "newIn": true,
+        "essential": false
+    },
+
+    {
         "id": 22,
-        "name": "Tote",
-        "price": 100000,
-        "collection": "Solid",
-        "category": "Carteras",
+        "name": "Mochila",
+        "price": 88000,
+        "collection": "Daypack",
+        "category": "Mochila",
         "color": "Negro",
-        "description": "-",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo. Esta mochila es lo suficientemente grande para guardar documentos de tamaño A4 y un portátil de 15 pulgadas. Su estilo neutral se adapta a cualquier ocasión y género.",
+        "dimensions": "43.00 cm x 34.00 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon / Hombrera: 100% poliéster / Cinta: 100% nylon / Asa: cuero artificial",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 23,
+        "name": "Mochila",
+        "price": 98000,
+        "collection": "Flat",
+        "category": "Mochila",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo. Esta mochila es lo suficientemente grande para guardar documentos de tamaño A4 y un portátil de 15 pulgadas. Su estilo neutral se adapta a cualquier ocasión y género.",
+        "dimensions": "40.00 cm x 34.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon / Hombrera: 100% poliéster / Cinta: 100% nylon / Asa: cuero artificial",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 24,
+        "name": "Mochila",
+        "price": 181500,
+        "collection": "Hexagon",
+        "category": "Mochila",
+        "color": "Plateado",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo. Esta mochila es lo suficientemente grande para guardar documentos de tamaño A4 y un portátil de 15 pulgadas. Su estilo neutral se adapta a cualquier ocasión y género.",
+        "dimensions": "39.00 cm x 28.50 cm",
+        "composition": "Superficie: 100% cuero artificial / Tela base: 100% poliéster / Bolsillo: 100% nylon / Hombrera: 100% poliéster / Cinta: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 25,
+        "name": "Mochila",
+        "price": 128500,
+        "collection": "Liner",
+        "category": "Mochila",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo. Esta mochila es lo suficientemente grande para guardar documentos de tamaño A4 y un portátil de 15 pulgadas. Su estilo neutral se adapta a cualquier ocasión y género.",
+        "dimensions": "45.00 cm x 28.00 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon / Hombrera: 100% poliéster / Cinta: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 26,
+        "name": "Mochila",
+        "price": 76500,
+        "collection": "Walker",
+        "category": "Mochila",
+        "color": "Negro",
+        "description": "Las piezas triangulares se disponen regularmente sobre la tela de rejilla, mostrando diversas expresiones cada vez que se inserta algo. Esta mochila es lo suficientemente grande para guardar documentos de tamaño A4 y un portátil de 15 pulgadas. Su estilo neutral se adapta a cualquier ocasión y género.",
+        "dimensions": "41.00 cm x 34.00 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon / Hombrera: 100% poliéster / Cinta: 100% nylon / Asa: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 27,
+        "name": "Clutch",
+        "price": 35000,
+        "collection": "Kuro",
+        "category": "Clutch",
+        "color": "Negro",
+        "description": "En este clutch cabe un smartphone y un pasaporte, lo que lo hace perfecto para viajar. Usalo solo como bolso de mano o colocalo en un bolso más grande para mantener juntos los artículos pequeños.",
+        "dimensions": "26.00 cm x 36.00 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon / Asa: 100% cuero vacuno",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 28,
+        "name": "Clutch",
+        "price": 116500,
+        "collection": "Tonneau",
+        "category": "Clutch",
+        "color": "Negro",
+        "description": "En este clutch cabe un smartphone y un pasaporte, lo que lo hace perfecto para viajar. Usalo solo como bolso de mano o colocalo en un bolso más grande para mantener juntos los artículos pequeños.",
+        "dimensions": "18.00 cm x 26.50 cm",
+        "composition": "Superficie: 100% cuero artificial / Tela base: 100% poliéster / Bolsillo: 100% nylon / Asa: 100% cuero vacuno",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 29,
+        "name": "Pouch",
+        "price": 25000,
+        "collection": "Lucent",
+        "category": "Pouch",
+        "color": "Blanco",
+        "description": "En este pouch cabe un smartphone y un pasaporte, lo que lo hace perfecto para viajar. Usalo solo como bolso de mano o colocalo en un bolso más grande para mantener juntos los artículos pequeños.",
+        "dimensions": "16.00 cm x 24.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
+        "newIn": false,
+        "essential": true
+    },
+
+    {
+        "id": 30,
+        "name": "Pouch",
+        "price": 19500,
+        "collection": "Prism",
+        "category": "Pouch",
+        "color": "Plateado",
+        "description": "En este pouch cabe un smartphone y un pasaporte, lo que lo hace perfecto para viajar. Usalo solo como bolso de mano o colocalo en un bolso más grande para mantener juntos los artículos pequeños.",
+        "dimensions": "11.50 cm x 19.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 31,
+        "name": "Billetera",
+        "price": 55000,
+        "collection": "Cassette",
+        "category": "Accesorios",
+        "color": "Negro",
+        "description": "Una billetera ideal para el mundo en el que vivimos, donde cada vez se usa más la tarjeta que el efectivo.",
+        "dimensions": "8.50 cm x 11.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 32,
+        "name": "Billetera",
+        "price": 29000,
+        "collection": "Flipper",
+        "category": "Accesorios",
+        "color": "Blanco",
+        "description": "Una billetera ideal para el mundo en el que vivimos, donde cada vez se usa más la tarjeta que el efectivo.",
+        "dimensions": "11.00 cm x 13.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 33,
+        "name": "Billetera",
+        "price": 35000,
+        "collection": "Kuro",
+        "category": "Accesorios",
+        "color": "Negro",
+        "description": "Una billetera ideal para el mundo en el que vivimos, donde cada vez se usa más la tarjeta que el efectivo.",
         "dimensions": "-",
-        "composition": "-",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% cuero de caballo",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 34,
+        "name": "Billetera",
+        "price": 32500, 
+        "collection": "Mat",
+        "category": "Accesorios",
+        "color": "Blanco",
+        "description": "Una billetera ideal para el mundo en el que vivimos, donde cada vez se usa más la tarjeta que el efectivo.",
+        "dimensions": "8.50 cm x 11.50 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
+        "newIn": false,
+        "essential": true
+    },
+
+    {
+        "id": 35,
+        "name": "Billetera",
+        "price": 21000,
+        "collection": "Metallic",
+        "category": "Accesorios",
+        "color": "Plateado",
+        "description": "Una billetera ideal para el mundo en el que vivimos, donde cada vez se usa más la tarjeta que el efectivo.",
+        "dimensions": "8.00 cm x 11.00 cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Bolsillo: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 36,
+        "name": "Billetera",
+        "price": 15000,
+        "collection": "Olyster",
+        "category": "Accesorios",
+        "color": "Negro",
+        "description": "Una billetera ideal para el mundo en el que vivimos, donde cada vez se usa más la tarjeta que el efectivo.",
+        "dimensions": "7.00 cm x 11.00 cm",
+        "composition": "Superficie: 100% poliuretano / Tela base: 100% algodón / Bolsillo: 100% nylon",
+        "newIn": false,
+        "essential": false
+    },
+
+    {
+        "id": 37,
+        "name": "Llavero",
+        "price": 10000,
+        "collection": "Cube",
+        "category": "Accesorios",
+        "color": "Blanco",
+        "description": "Un llavero con colgante en forma de cubo. Es un accesorio divertido que podés colocar en tu bolso.",
+        "dimensions": "5.00 cm x 5.00cm",
+        "composition": "Superficie: 100% resina de cloruro de vinilo / Tela base: 100% poliéster / Anillo y cadena: 100% acero inoxidable",
         "newIn": false,
         "essential": false
     }
