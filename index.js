@@ -8,6 +8,7 @@ import './js/cart/setupCart.js';
 import fetchProducts from './js/fetchProducts.js';
 import { setupStore, store } from './js/store.js';
 import display from './js/displayProducts.js';
+import renderCollection from './js/pages/tienda.js'
 
 // MOSTRAR PRODUCTOS //
 
@@ -24,7 +25,7 @@ const init = async () => {
 
 // SPA //
 
-const spa = document.getElementById('spa')
+const spa = document.getElementById('spa');
 
 const renderHomePage = () => {
     while(spa.firstChild)spa.removeChild(spa.firstChild);
@@ -37,7 +38,6 @@ const renderHomePage = () => {
 };
 
 const renderHero = () => {
-    while(spa.firstChild)spa.removeChild(spa.firstChild);
     const heroSection = document.createElement('section');
     heroSection.classList.add('hero');
     heroSection.innerHTML = `
@@ -87,12 +87,8 @@ const renderNewIn = () => {
     const newInSection = document.createElement('section');
     newInSection.classList.add('store');
     newInSection.innerHTML = `
-        <h2>New in</h2>
         <div id="new-in">
             <!-- productos renderizados -->
-        </div>
-        <div class="black-button">
-            <a href="#/tienda">Ver más</a>
         </div>
     `;
     spa.appendChild(newInSection);
@@ -103,21 +99,12 @@ const renderSlider = () => {
     sliderSection.classList.add('slider');
     sliderSection.innerHTML = `
         <div class="slider__slide">
-            <img src="./assets/img/index/carteras-tote.png" alt="Carteras Tote">
-        </div>
-        <div class="slider__slide">
-            <img src="./assets/img/index/coleccion-lucent.png" alt="Colección Lucent">
-        </div>
-        <div class="slider__slide">
-            <img src="./assets/img/index/proximamente.png" alt="Próximamente">
-        </div>
-        <div class="slider__buttons">
-            <button type="button" class="prevBtn">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <button type="button" class="nextBtn">
-                <i class="fas fa-arrow-right"></i>
-            </button>
+            <img src="./assets/img/index/carteras-tote.png" alt="Bolsos de mano">
+            <div class="overlay__content">
+                <div class="overlay__buttons">
+                    <a href="#/tienda" class="black-button">Ver colección</a>
+                </div>
+            </div>
         </div>
     `;
     spa.appendChild(sliderSection);
@@ -127,21 +114,24 @@ const renderEssential = () => {
     const essentialSection = document.createElement('section');
     essentialSection.classList.add('store');
     essentialSection.innerHTML = `
-        <h2>Esenciales</h2>
         <div id="essential">
             <!-- productos renderizados -->
         </div>
-        <div class="black-button">
-            <a href="#/tienda">Ver más</a>
-        </div>
     `;
-    spa.appendChild(essentialSection)
+    spa.appendChild(essentialSection);
+};
+
+// PAGINA COLECCION
+
+const renderCollectionPage = () => {
+    while(spa.firstChild)spa.removeChild(spa.firstChild);
+    renderCollection();
 };
 
 const routes = [
     {path: '/', action: 'showHomePage'},
     {path: '/tienda', action: 'showCollectionPage'},
-    {path: '/producto', action: 'showProductPage'}
+    {path: '/error404', action: 'showError404'}
 ]
 
 const findPath = () => location.hash.slice(1).toLowerCase() || '/'
@@ -156,13 +146,10 @@ const router = () => {
             renderHomePage();
             break;
         case 'showCollectionPage':
-            console.log('Accion al mostrar coleccion');
-            break;
-        case 'showProductPage':
-            console.log('Accion al mostrar producto');
+            renderCollectionPage();
             break;
         default:
-            console.error('Ruta inexistente');
+            console.error('Error 404');
             break;
     }
 }

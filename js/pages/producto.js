@@ -34,7 +34,7 @@ window.addEventListener('load', async function() {
                     breadcrumbs.innerHTML = `
                         <ul>
                             <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./tienda.html">Colección</a></li>
+                            <li><a href="./index.html#/tienda">Colección</a></li>
                             <li><span>${product.name} ${product.collection}</span></li>
                         </ul>
                     `;

@@ -13,7 +13,7 @@ const display = (products, element) => {
                     <img src="./assets/img/tienda/${name}-${collection}-${color}.jpg" alt="${name} ${collection} Color ${color}">
                     <div class="overlay__content">
                         <div class="overlay__buttons">
-                            <a href="#/producto?id=${id}">
+                            <a href="producto.html?id=${id}">
                                 <i class="fas fa-search"></i>
                             </a>
                             <button class="overlay__cart" data-id="${id}">

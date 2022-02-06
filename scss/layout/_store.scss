@@ -1,5 +1,4 @@
 .store {
-    background-color: $white;
     max-width: 114rem;
     margin: auto;
 
@@ -107,7 +106,7 @@
         }
     }
 
-    .black-button { @include button-text(black, 1.2rem, center); }
+    // .black-button { @include button-text(black, 1.2rem, center); }
     
 }
 
