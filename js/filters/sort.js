@@ -2,10 +2,8 @@ import display from '../displayProducts.js';
 
 const setupSort = (store) => {
     const sortBtn = document.getElementById('sort');
-    console.log(sortBtn);
     sortBtn.onchange = function() {
         const sort = document.getElementById('sort').value;
-        console.log(sort);
         let sortStore = [];
         if(sort == 'Más relevantes') {
             sortStore = store.sort((a, b) => a.id - b.id);

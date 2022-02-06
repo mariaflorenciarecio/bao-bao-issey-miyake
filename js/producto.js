@@ -1,17 +1,13 @@
-/////////////////////////
-// DETALLE DE PRODUCTO //
-/////////////////////////
-
 // IMPORTS GLOBALES //
 
-import '../cart/toggleCart.js';
-import '../cart/setupCart.js';
+import './cart/toggleCart.js';
+import './cart/setupCart.js';
 
 // IMPORTS ESPECIFICOS //
 
-import { addToCart } from '../cart/setupCart.js';
-import { allProducts, formatPrice } from '../utils.js';
-import display from '../displayProducts.js';
+import { addToCart } from './cart/setupCart.js';
+import { allProducts, formatPrice } from './utils.js';
+import display from './displayProducts.js';
 
 // DECLARAR VARIABLES //
 
@@ -19,15 +15,23 @@ const breadcrumbs = document.getElementById('breadcrumbs');
 const productDetail = document.getElementById('product-detail');
 const loading = document.getElementById('spinner');
 
-// MOSTRAR CONTENIDO //
+///////////////////////////////////
+// RENDERIZAR PRODUCTO DETALLADO //
+///////////////////////////////////
 
 window.addEventListener('load', async function() {
     const urlID = window.location.search;
+
     try {
         const response = await fetch(allProducts);
         const products = await response.json();
+
+        // renderizar contenido si el estado es 200 OK, si no, renderizar error.
+
         if (response.status >= 200 && response.status <= 299) {
-            const singleProduct = products.filter((product) => `?id=${product.id}` === urlID)
+            const singleProduct = products.filter((product) => `?id=${product.id}` === urlID);
+            const newIn = products.filter((product) => product.newIn === true);
+
             function renderSingleProduct() {
                 singleProduct.forEach((product) => {
                     document.title = `${product.name.toUpperCase()} ${product.collection.toUpperCase()} | BAO BAO ISSEY MIYAKE`;
@@ -85,32 +89,33 @@ window.addEventListener('load', async function() {
                             </div>
                         </div>
                     `;
-                    const newIn = products.filter((product) => product.newIn === true);
                     display(newIn, document.getElementById('new-in'));
                 });
             };
             renderSingleProduct();
+
         } else {
             productDetail.innerHTML = `
                 <div>
-                    <h3 class="error">Oops! Algo salió mal.</h3>
-                    <a href="./index.html">Volver al home</a>
+                    <h1 class="error">Oops! Algo salió mal.</h1>
                 </div>
             `;
         };
+
     } catch (error) {
         console.log(error);
     };
+
+    // ocultar spinner al mostrar contenido
+
     loading.style.display = 'none';
 });
 
-// APLICAR FUNCIONALIDAD A BOTON //
+// EVENTO AÑADIR AL CARRITO //
 
 productDetail.addEventListener('click', function(e) {
     const parent = e.target.parentElement;
     const parentID = e.target.parentElement.dataset.id;
-
-    // boton añadir al carrito //
 
     if(parent.classList.contains('black-button')) {
         addToCart(parentID)

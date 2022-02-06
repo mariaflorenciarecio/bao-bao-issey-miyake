@@ -34,7 +34,7 @@ body, input, button {
 }
 
 h1 {
-  color: white;
+  color: black;
   font-size: 5rem;
   text-transform: uppercase;
 }
@@ -883,6 +883,7 @@ nav .navbar__icons .navbar__cart {
       -ms-flex-align: center;
           align-items: center;
   max-width: 114rem;
+  padding-bottom: 3rem;
   margin: auto;
 }
 

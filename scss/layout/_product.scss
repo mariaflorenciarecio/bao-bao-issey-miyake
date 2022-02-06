@@ -1,6 +1,7 @@
 .product {
     @include flex(row, nowrap, center, center);
     max-width: 114rem;
+    padding-bottom: 3rem;
     margin: auto;
     
     &__img {
