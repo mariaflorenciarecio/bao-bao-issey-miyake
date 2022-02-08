@@ -2,6 +2,7 @@
 
 import './cart/toggleCart.js';
 import './cart/setupCart.js';
+import './newsletter/forms.js';
 
 // IMPORTS ESPECIFICOS //
 

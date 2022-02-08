@@ -10,7 +10,7 @@ nav {
         padding: 1rem;
 
         &__info { 
-            width: 16rem; 
+            width: 30rem; 
             line-height: 2.2rem; 
 
             i { 
@@ -21,9 +21,12 @@ nav {
 
         &__icons {
             @include flex(row, nowrap, right, center);
-            width: 16rem;
+            width: 30rem;
 
-            .navbar__user { padding-right: 1rem; }
+            .navbar__user { 
+                margin-right: 1rem; 
+                cursor: pointer;
+            }
 
             .navbar__cart { cursor: pointer; }
         }

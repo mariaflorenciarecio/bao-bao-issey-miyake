@@ -32,7 +32,7 @@
 @mixin highlight($align) {
     color: $grey-400;
     font: { size: 1.2rem; weight: $extra-bold; }
-    text: { align: $align; transform: lowercase; decoration: none; }
+    text: { align: $align; decoration: none; }
     letter-spacing: .05rem;
 }
 
@@ -45,18 +45,6 @@
     letter-spacing: .1rem;
     line-height: 1.5;
     max-width: $width;
-}
-
-// flex informacion
-
-@mixin flex-info($color) {
-    @include flex(column, nowrap, center, center);
-    h3 { 
-        @include subtitle($color, center); 
-        padding-bottom: 1.5rem;
-    }
-    p { @include paragraph($color, center, 34rem) }
-    .button { @include button($color, 4.2rem, center); }
 }
 
 // flex detalle

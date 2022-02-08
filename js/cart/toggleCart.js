@@ -3,7 +3,7 @@ const toggleCartBtn = document.getElementById('toggle-cart');
 const closeCartBtn = document.getElementById('close-cart');
 
 toggleCartBtn.addEventListener('click', () => {
-    cartOverlay.classList.add('cart__show');
+    cartOverlay.classList.toggle('cart__show');
 });
 
 closeCartBtn.addEventListener('click', () => {
