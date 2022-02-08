@@ -6,10 +6,11 @@
 
 import { Subscriber } from './subscriber.js';
 import { Newsletter } from './newsletter.js';
+import emptyMessage from '../cart/toggleCart.js';
 
 // DECLARAR VARIABLES
 
-const forms = document.getElementById('forms');
+const notifications = document.getElementById('notifications');
 const greeting = document.getElementById('greeting');
 
 // FORMULARIO DE SUSCRIPCION
@@ -24,7 +25,7 @@ subscribeForm.innerHTML = `
     <input id="subscriber-email" type="email" required="required" placeholder="Ingresá tu e-mail">
     <input type="submit" value="Suscribirse">
 `;
-forms.appendChild(subscribeForm);
+notifications.appendChild(subscribeForm);
 
 // FORMULARIO PARA CANCELAR SUSCRIPCION
 
@@ -35,15 +36,17 @@ unsubscribeForm.innerHTML = `
     <p id="goodbye">¿Querés dejar de recibir nuestras últimas novedades?</p>
     <input id="unsubscribe-btn" type="submit" value="Cancelar suscripción">
 `;
-forms.appendChild(unsubscribeForm);
+notifications.appendChild(unsubscribeForm);
 
 // ABRIR Y CERRAR FORMULARIOS
 
 document.getElementById('toggle-form-btn').addEventListener('click', () => {
     if (localStorage.getItem('subscriber name') == null) {
         subscribeForm.classList.toggle('newsletter__show');
+        emptyMessage.classList.remove('empty-message__show');
     } else {
         unsubscribeForm.classList.toggle('newsletter__show');
+        emptyMessage.classList.remove('empty-messagee__show');
     };
 });
 
@@ -83,3 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         greeting.textContent = `¡Hola, ${localStorage.getItem('subscriber name')}!`;
     } 
 }, false);
+
+// EXPORT
+
+export { subscribeForm, unsubscribeForm };

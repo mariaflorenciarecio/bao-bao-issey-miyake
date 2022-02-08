@@ -525,6 +525,133 @@ nav button, footer button {
   display: flex;
 }
 
+.empty-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  background-color: white;
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 6rem;
+  right: 2rem;
+  padding: 3rem;
+  z-index: 2;
+}
+
+.empty-message h2 {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  font-size: 1.8rem;
+}
+
+.empty-message p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  max-width: none;
+  width: 23rem;
+}
+
+.empty-message__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thanks-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  background-color: white;
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 3rem;
+  z-index: 3;
+}
+
+.thanks-message h2 {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  font-size: 1.8rem;
+}
+
+.thanks-message p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+  max-width: none;
+  width: 28rem;
+  padding-top: 1rem;
+}
+
+.thanks-message a {
+  color: #979797;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .05rem;
+  width: 28rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+
+.thanks-message__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;

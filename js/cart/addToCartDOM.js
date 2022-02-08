@@ -1,6 +1,12 @@
+//////////
+// ITEM //
+//////////
+
+// IMPORT ESPECIFICO
+
 import { formatPrice } from '../utils.js';
 
-const cartItemsDOM = document.getElementById('cart-items');
+// AGREGAR ITEM AL CARRITO
 
 const addToCartDOM = ({id, name, price, collection, color, amount}) => {
     const div = document.createElement('div');
@@ -26,7 +32,9 @@ const addToCartDOM = ({id, name, price, collection, color, amount}) => {
             <strong class="item__total">${formatPrice(price)}</strong>
         </div>
     `;
-    cartItemsDOM.appendChild(div);
+    document.getElementById('cart-items').appendChild(div);
 };
+
+// EXPORT
 
 export default addToCartDOM;
