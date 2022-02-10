@@ -2,6 +2,12 @@
 // NEWSLETTER //
 ////////////////
 
+// IMPORT ESPECIFICO
+
+import {subscribeForm} from './forms.js';
+
+// NEWSLETTER
+
 export class Newsletter{
 
     // CREAR "BASE DE DATOS SUSCRIPTORES"

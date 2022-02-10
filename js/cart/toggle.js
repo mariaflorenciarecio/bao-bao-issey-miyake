@@ -1,9 +1,8 @@
-/////////////
-// EVENTOS //
-/////////////
+////////////////////
+// TOGGLE CARRITO //
+////////////////////
 
 // IMPORT ESPECIFICO
-
 import { subscribeForm, unsubscribeForm } from '../newsletter/forms.js';
 
 // DECLARAR VARIABLES
@@ -12,6 +11,19 @@ const cartOverlay = document.getElementById('cart-overlay');
 const toggleCartBtn = document.getElementById('toggle-cart');
 const closeCartBtn = document.getElementById('close-cart');
 const checkOut = document.getElementById('checkout');
+const notifications = document.getElementById('notifications');
+const cartItemCountDOM = document.getElementById('cart-item-count')
+
+// MENSAJE "GRACIAS POR TU COMPRA"
+
+const thanksMessage = document.createElement('div');
+thanksMessage.setAttribute('id', 'thanks');
+thanksMessage.classList.add('thanks-message');
+thanksMessage.innerHTML = `
+    <h2>¡GRACIAS POR TU COMPRA!</h2>
+    <p>Esperamos que hayas tenido una agradable experiencia en BAO BAO ISSEY MIYAKE. ¡Hasta la próxima!</p>
+`;
+notifications.appendChild(thanksMessage);
 
 // MENSAJE "CARRITO VACIO"
 
@@ -21,18 +33,7 @@ emptyMessage.innerHTML = `
     <h2>Oops!</h2>
     <p>Tu carrito esta vacío. Por favor, agregá algún producto.</p>
 `;
-document.getElementById('notifications').appendChild(emptyMessage);
-
-// MENSAJE "GRACIAS POR TU COMPRA"
-
-const thanksMessage = document.createElement('div');
-thanksMessage.classList.add('thanks-message');
-thanksMessage.innerHTML = `
-    <h2>¡GRACIAS POR TU COMPRA!</h2>
-    <p>Esperamos que hayas tenido una agradable experiencia en BAO BAO ISSEY MIYAKE. ¡Hasta la próxima!</p>
-    <a href="./index.html">Ir a home</a>
-`;
-document.getElementById('notifications').appendChild(thanksMessage);
+notifications.appendChild(emptyMessage);
 
 // ABRIR CARRITO AL AGREGARLE UN ITEM
 
@@ -61,11 +62,17 @@ closeCartBtn.addEventListener('click', () => {
     cartOverlay.classList.remove('cart__show');
 });
 
-// ABRIR MENSAJE "GRACIAS POR TU COMPRA"
+// ABRIR Y CERRAR MENSAJE "GRACIAS POR TU COMPRA"
 
 checkOut.addEventListener('click', () => {
+    localStorage.removeItem('cart');
+    cartItemCountDOM.textContent = '0';
     cartOverlay.classList.remove('cart__show');
     thanksMessage.classList.add('thanks-message__show');
+    setTimeout(function() {
+        thanksMessage.classList.remove('thanks-message__show');
+        window.location.href = "./index.html";
+    }, 4000);
 });
 
 // EXPORT

@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome -->
+    <meta name="description" content="TIENDA BAO BAO ISSEY MIYAKE. Bolsos con un concepto radical, basado en triángulos y técnicas de manufactura, trayendo alegría espontánea a través de sus formas en constante cambio. ¡Compralos aquí!">
+    <meta name="keywords" content="issey miyake,bao bao,bao bao issey miyake,lucent,slash,prism,platinum,kuro,clutch,handbag,tote,pouch,crossbody,backpack,bolsos,carteras,mochilas,accesorios">
+    <link rel="icon" href="./assets/img/favicon-baobao.ico">
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
-    <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Home | BAO BAO ISSEY MIYAKE</title>
 </head>
@@ -22,29 +22,22 @@
 <body>
     <!-- APERTURA HEADER -->
     <header>
-        <!-- nav -->
-        <nav>
-            <!-- barra superior -->
-            <div class="navbar">
-                <!-- nav info -->
-                <ul class="navbar__info">
-                    <li><a href="#/"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#/tienda"><i class="fas fa-shopping-bag"></i> Colección</a></li>
-                </ul>
-                <!-- nav logo -->
-                <a href="#/"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
-                <!-- nav icons -->
-                <ul class="navbar__icons">
-                    <li id="toggle-form-btn" class="navbar__user">
-                        <i class="far fa-paper-plane"></i>
-                        <span id="greeting"></span>
-                    </li>
-                    <li id="toggle-cart" class="navbar__cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span id="cart-item-count"></span>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar">
+            <ul class="navbar__info">
+                <li><a href="#/"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#/tienda"><i class="fas fa-shopping-bag"></i> Colección</a></li>
+            </ul>
+            <a href="#/"><img src="./assets/img/baobao-black-logo.png" alt="Logo de Bao Bao Issey Miyake"></a>
+            <ul class="navbar__icons">
+                <li id="toggle-form-btn" class="navbar__user">
+                    <i class="far fa-paper-plane"></i>
+                    <span id="greeting"></span>
+                </li>
+                <li id="toggle-cart" class="navbar__cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-item-count"></span>
+                </li>
+            </ul>
         </nav>
     </header>
     <!-- CIERRE HEADER -->
@@ -55,14 +48,14 @@
         <h2>Tu carrito</h2>
         <div id="cart-items"></div>
         <div id="cart-total" class="cart__price"></div>
-        <div id="checkout" class="cart__checkout">
-            <button class="black-button">Finalizar compra</button>
+        <div class="cart__checkout">
+            <button id="checkout" class="black-button">Finalizar compra</button>
         </div>
     </aside>
     <!-- CIERRE CART -->
 
     <!-- APERTURA NOTIFICACIONES -->
-    <section id="notifications">
+    <section id="notifications" class="notifications-index">
         <!-- contenido renderizado (formularios) -->
     </section>
     <!-- CIERRE NOTIFICACIONES -->
@@ -75,7 +68,7 @@
 
     <!-- APERTURA FOOTER -->
     <footer>
-        <p>© 2021 ISSEY MIYAKE INC. Todos los derechos reservados.</p>
+        <p><a href="https://www.baobaoisseymiyake.com/">© 2021 ISSEY MIYAKE INC.</a> Todos los derechos reservados.</p>
         <p>Desarrollado con 💜 por María Florencia Recio.</p>
         <div>
             <a href="https://github.com/mariaflorenciarecio"><i class="fab fa-github"></i></i></a>
@@ -85,9 +78,7 @@
     <!-- CIERRE FOOTER -->
 
     <!-- APERTURA SCRIPTS -->
-    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/aab291df05.js" crossorigin="anonymous"></script>
-    <!-- index js -->
     <script type="module" src="./js/index.js"></script>
     <!-- CIERRE SCRIPTS -->
 

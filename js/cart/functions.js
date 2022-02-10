@@ -1,13 +1,13 @@
-/////////////
-// CARRITO //
-/////////////
+///////////////////////////
+// FUNCIONES DEL CARRITO //
+///////////////////////////
 
 // IMPORTS ESPECIFICOS
 
 import { getStorageItem, setStorageItem, formatPrice } from '../utils.js';
-import { openCart } from './toggleCart.js';
+import { openCart } from './toggle.js';
 import { findProduct } from '../store.js';
-import addToCartDOM from './addToCartDOM.js';
+import addToCartDOM from './item.js';
 
 // DECLARAR VARIABLES
 
@@ -78,7 +78,6 @@ function displayCartItemsDOM() {
 function removeItem(id) {
     cart = cart.filter((cartItem) => cartItem.id != id);
 };
-
 // INCREMENTAR UNIDADES
 
 function increaseAmount(id) {
@@ -116,21 +115,20 @@ function setupCartFunctionality() {
         const id = e.target.dataset.id;
         const parentID = e.target.parentElement.dataset.id;
 
-        // boton borrar item
+        // BOTON BORRAR ITEM
 
         if(element.classList.contains('item__bin')) {
             removeItem(id);
             parent.parentElement.remove();
         };
 
-        // boton incrementar unidades
-
+        // BOTON INCREMENTAR UNIDADES
         if(parent.classList.contains('cart-item-increase-btn')) {
             const newAmount = increaseAmount(parentID);
             parent.previousElementSibling.textContent = newAmount;
         };
 
-        // boton disminuir unidades
+        // BOTON DISMINUIR UNIDADES
 
         if(parent.classList.contains('cart-item-decrease-btn')) {
             const newAmount = decreaseAmount(parentID);

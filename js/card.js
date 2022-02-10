@@ -1,10 +1,15 @@
-import { formatPrice } from './utils.js';
-import { addToCart } from './cart/setupCart.js';
+//////////
+// CARD //
+//////////
 
-// const productsQuantity = document.getElementById('products-quantity');
+// IMPORT ESPECIFICOS
+
+import { formatPrice } from './utils.js';
+import { addToCart } from './cart/functions.js';
+
+// CARD DOM
 
 const display = (products, element) => {
-    // mostrar elementos
     element.innerHTML = products.map((product) => {
         const {id, name, price, collection, color} = product;
         return `
@@ -13,7 +18,7 @@ const display = (products, element) => {
                     <img src="./assets/img/tienda/${name}-${collection}-${color}.jpg" alt="${name} ${collection} Color ${color}">
                     <div class="overlay__content">
                         <div class="overlay__buttons">
-                            <a href="producto.html?id=${id}">
+                            <a href="product.html?id=${id}">
                                 <i class="fas fa-search"></i>
                             </a>
                             <button class="overlay__cart" data-id="${id}">
@@ -23,7 +28,7 @@ const display = (products, element) => {
                     </div>
                 </div>
                 <div class="card__detail">
-                    <h3><a href="#">${name} ${collection}</a></h3>
+                    <h3><a href="product.html?id=${id}">${name} ${collection}</a></h3>
                     <p>${formatPrice(price)}</p>
                 </div>
             </div>
@@ -36,11 +41,8 @@ const display = (products, element) => {
             addToCart(parent.dataset.id)
         }
     });
-    // productsQuantity.innerHTML = `
-    //         <i class="fas fa-shopping-bag"></i>
-    //         <span>${products.length}</span>
-    // `;
 };
 
+// EXPORT
 
 export default display;

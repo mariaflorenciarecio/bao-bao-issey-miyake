@@ -1,18 +1,22 @@
-// IMPORTS GLOBALES //
+///////////
+// INDEX //
+///////////
 
-import './cart/toggleCart.js';
-import './cart/setupCart.js';
+// IMPORTS GLOBALES
+
+import './cart/toggle.js';
+import './cart/functions.js';
 import './newsletter/forms.js';
 
-// IMPORTS ESPECIFICOS //
+// IMPORTS ESPECIFICOS
 
-import fetchProducts from './fetchProducts.js';
+import fetchProducts from './fetch.js';
 import { setupStore, store } from './store.js';
-import display from './displayProducts.js';
-import renderCollection from './views/collection.js'
-import renderHome from './views/home.js'
+import display from './card.js';
+import renderCollection from './spa/collectionPage.js'
+import renderHome from './spa/homePage.js'
 
-// MOSTRAR PRODUCTOS //
+// MOSTRAR PRODUCTOS EN LA SPA (HOME + COLLECTION)
 
 const init = async () => {
     const products = await fetchProducts();
@@ -25,9 +29,13 @@ const init = async () => {
     }
 };
 
-// SPA //
+// SPA (SINGLE PAGE APLICATION) //
+
+// declarar variables
 
 const spa = document.getElementById('spa');
+
+// renderizar las paginas home y collection
 
 const renderHomePage = () => {
     while(spa.firstChild)spa.removeChild(spa.firstChild);
@@ -40,18 +48,23 @@ const renderCollectionPage = () => {
     renderCollection();
 };
 
+// rutas
+
 const routes = [
     {path: '/', action: 'showHomePage'},
     {path: '/tienda', action: 'showCollectionPage'},
-]
+];
 
-const findPath = () => location.hash.slice(1).toLowerCase() || '/'
+// path, action
 
-const findActionByPath = (path, routes) => routes.find(route => route.path === path || undefined)
+const findPath = () => location.hash.slice(1).toLowerCase() || '/';
+const findActionByPath = (path, routes) => routes.find(route => route.path === path || undefined);
+
+// router
 
 const router = () => {
-    const path = findPath()
-    const route = findActionByPath(path, routes)
+    const path = findPath();
+    const route = findActionByPath(path, routes);
     switch(route.action) {
         case 'showHomePage':
             renderHomePage();
@@ -62,13 +75,17 @@ const router = () => {
         default:
             console.error('Ruta inexistente.');
             break;
-    }
-}
+    };
+};
+
+// ejecutar funcion cuando la ventana se haya cargado
 
 window.onload = function() {
     router();
-}
+};
+
+// ejecutar funcion cuando cambie la almohadilla de la url
 
 window.onhashchange = function() {
     router();
-}
+};

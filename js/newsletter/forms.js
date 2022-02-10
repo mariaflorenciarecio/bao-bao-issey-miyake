@@ -1,12 +1,12 @@
-/////////////////
-// FORMULARIOS //
-/////////////////
+//////////////////////////////////////////////////
+// FORMULARIOS NEWSLETTER ( HOME + COLLECTION ) //
+//////////////////////////////////////////////////
 
 // IMPORTS ESPECIFICOS
 
 import { Subscriber } from './subscriber.js';
 import { Newsletter } from './newsletter.js';
-import emptyMessage from '../cart/toggleCart.js';
+import emptyMessage from '../cart/toggle.js';
 
 // DECLARAR VARIABLES
 
@@ -41,13 +41,18 @@ notifications.appendChild(unsubscribeForm);
 // ABRIR Y CERRAR FORMULARIOS
 
 document.getElementById('toggle-form-btn').addEventListener('click', () => {
-    if (localStorage.getItem('subscriber name') == null) {
-        subscribeForm.classList.toggle('newsletter__show');
-        emptyMessage.classList.remove('empty-message__show');
+    if(notifications.classList.contains('notifications-index')) {
+        if (localStorage.getItem('subscriber name') == null) {
+            subscribeForm.classList.toggle('newsletter__show');
+            emptyMessage.classList.remove('empty-message__show');
+        } else {
+            unsubscribeForm.classList.toggle('newsletter__show');
+            emptyMessage.classList.remove('empty-message__show');
+        };
     } else {
-        unsubscribeForm.classList.toggle('newsletter__show');
-        emptyMessage.classList.remove('empty-messagee__show');
-    };
+        subscribeForm.classList.remove('newsletter__show');
+        unsubscribeForm.classList.remove('newsletter__show');
+    }
 });
 
 // CREAR NUEVO SUSCRIPTOR Y SALUDARLO, EN BASE A LOS DATOS INGRESADOS EN EL FORMULARIO
@@ -72,8 +77,10 @@ subscribeForm.addEventListener('submit', function(e) {
 // CANCELAR SUSCRIPCION, ELIMINANDO LOS DATOS ALOJADOS EN EL LOCAL STORAGE
 
 document.getElementById('unsubscribe-btn').addEventListener('click', () => {
-    localStorage.removeItem('subscriber name'), localStorage.removeItem('newsletter');
+    localStorage.removeItem('subscriber name');
+    localStorage.removeItem('newsletter');
     unsubscribeForm.classList.remove('newsletter__show');
+    greeting.style.display = 'none';
 });
 
 // ACTUALIZAR SALUDO

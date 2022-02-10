@@ -1,21 +1,19 @@
-// IMPORTS ESPECIFICOS //
+//////////////////////
+// PAGINA COLECCION //
+//////////////////////
 
-import display from '../displayProducts.js';
+// IMPORTS ESPECIFICOS
+
+import display from '../card.js';
 import { store } from '../store.js';
-import setupCategories from '../filters/categories.js';
-import setupColors from '../filters/color.js';
-import setupPrice from '../filters/price.js';
-import setupSearch from '../filters/search.js';
-import setupSort from '../filters/sort.js';
+import { setupCategories, setupColors, setupPrice, setupSearch, setupSort } from '../filters.js';
 
-//////////////////////////
-// RENDERIZAR COLECCION //
-//////////////////////////
+// DOM VISTA "COLECCION"
 
 const renderCollection = () => {
     const spa = document.getElementById('spa');
-
-    // DOM ORDENES //
+    
+    // DOM FILTRO "ORDEN"
 
     const storeSection = document.createElement('section');
     storeSection.classList.add('store');
@@ -42,7 +40,7 @@ const renderCollection = () => {
     `;
     storeSection.appendChild(sortSection);
 
-    // DOM FILTROS & COLECCION //
+    // DOM FILTROS "CATEGORIA, COLOR, PRECIO, BUSCAR" & COLECCION
 
     const containerSection = document.createElement('section');
     containerSection.classList.add('store__content');
@@ -88,7 +86,7 @@ const renderCollection = () => {
     storeSection.appendChild(containerSection);
     spa.appendChild(storeSection);
 
-    // IMPORTAR FUNCIONES //
+    // APLICAR FUNCIONES
 
     display(store, document.getElementById('collection'));
     setupCategories(store);
@@ -98,6 +96,6 @@ const renderCollection = () => {
     setupSort(store);
 };
 
-// EXPORT POR DEFECTO //
+// EXPORT
 
 export default renderCollection;

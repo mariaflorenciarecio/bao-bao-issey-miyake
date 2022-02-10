@@ -1,11 +1,13 @@
-/////////////////////
-// RENDERIZAR HOME //
-/////////////////////
+/////////////////
+// PAGINA HOME //
+/////////////////
+
+// DOM VISTA "HOME"
 
 const renderHome = () => {
     const spa = document.getElementById('spa');
 
-    // DOM HERO //
+    // DOM HERO
 
     const heroSection = document.createElement('section');
     heroSection.classList.add('hero');
@@ -36,7 +38,7 @@ const renderHome = () => {
     `;
     spa.appendChild(heroSection);
 
-    // DOM NOVEDADES //
+    // DOM NOVEDADES
 
     const newInSection = document.createElement('section');
     newInSection.classList.add('store');
@@ -47,7 +49,7 @@ const renderHome = () => {
     `;
     spa.appendChild(newInSection);
 
-    // DOM SLIDER //
+    // DOM SLIDER
 
     const sliderSection = document.createElement('section');
     sliderSection.classList.add('slider');
@@ -63,7 +65,7 @@ const renderHome = () => {
     `;
     spa.appendChild(sliderSection);
 
-    // DOM ESENCIALES //
+    // DOM ESENCIALES
 
     const essentialSection = document.createElement('section');
     essentialSection.classList.add('store');
@@ -74,7 +76,7 @@ const renderHome = () => {
     `;
     spa.appendChild(essentialSection);
 
-    // EVENTO SWITCH //
+    // REPRODUCIR O PAUSAR VIDEO
 
     const switchBtn = document.querySelector(".switch")
     const video = document.querySelector(".hero__video")
@@ -89,6 +91,6 @@ const renderHome = () => {
     });
 };
 
-// EXPORT POR DEFECTO //
+// EXPORT
 
 export default renderHome;

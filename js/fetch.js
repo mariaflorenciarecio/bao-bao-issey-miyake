@@ -1,4 +1,12 @@
+///////////
+// FETCH //
+///////////
+
+// IMPORT ESPECIFICO
+
 import { allProducts } from './utils.js';
+
+// OBTENER DATOS DE ALLPRODUCTS.JSON
 
 const fetchProducts = async () => {
     const response = await fetch(allProducts).catch((err) => 
@@ -8,5 +16,7 @@ const fetchProducts = async () => {
     }
     return response;
 };
+
+// EXPORT
 
 export default fetchProducts;
