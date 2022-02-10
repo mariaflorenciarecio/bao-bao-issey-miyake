@@ -1,16 +1,12 @@
-/*
-const getElement = (selection) => {
-    const element = document.querySelector(selection)
-    if (element) return element
-    throw new Error(`Por favor chequear "${selection}", no existe tal elemento.`)
-}
+///////////
+// UTILS //
+///////////
 
-export {
-    getElement
-}
-*/
+// DATA BASE
 
-const allProducts = './db/products.json';
+const allProducts = './db/allProducts.json';
+
+// DAR FORMATO AL PRECIO
 
 const formatPrice = (price) => {
     let formattedPrice = new Intl.NumberFormat('en-US', {
@@ -18,7 +14,9 @@ const formatPrice = (price) => {
         currency: 'USD',
     }).format((price/100).toFixed(2));
     return formattedPrice;
-}
+};
+
+// GET STORAGE
 
 const getStorageItem = (item) => {
     let storageItem = localStorage.getItem(item);
@@ -29,13 +27,18 @@ const getStorageItem = (item) => {
     }
     return storageItem;
 };
+
+// SET STORAGE
+
 const setStorageItem = (name, item) => {
     localStorage.setItem(name, JSON.stringify(item));
 };
+
+// EXPORT
 
 export {
     allProducts,
     formatPrice,
     getStorageItem,
     setStorageItem,
-}
+};

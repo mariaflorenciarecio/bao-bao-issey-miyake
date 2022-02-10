@@ -1,0 +1,52 @@
+.newsletter {
+    @include flex(column, nowrap, center, center);
+    display: none;
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 6rem; right: 7rem;
+    padding: 3rem;
+    z-index: 2;
+
+    h2 { 
+        @include subtitle(black, center); 
+        font-size: 1.8rem;
+    }
+
+    p { 
+        @include paragraph(black, center, none); 
+        width: 23rem;
+
+        &:first-of-type { padding: 1rem 0; };
+    }
+
+    input {
+        width: 23rem;
+        border: 1px solid #ddd;
+        padding: 1rem 0;
+        margin: .8rem 0;
+        outline: none;
+        text-indent: 1rem;
+
+        &::placeholder { @include paragraph(rgba(0, 0, 0, 0.5), left, none); }
+        
+        &:focus { border: 1px solid black; }
+
+        &[type="submit"] {
+            color: white;
+            background-color: black;
+            border: none;
+            outline: none;
+            text-indent: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+    
+    span { 
+        @include highlight(center); 
+        cursor: pointer;
+    }
+
+    &__show { display: flex; }
+}

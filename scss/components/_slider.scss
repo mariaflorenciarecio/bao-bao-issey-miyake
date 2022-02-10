@@ -1,0 +1,13 @@
+.slider {
+    max-width: 114rem;
+    padding: 3rem 0 5rem 0;
+    margin: auto;
+
+    &__slide {
+        @include overlay__content(rgba(0, 0, 0, 0.6));
+        @include button-text(white, 0, center);
+        padding-bottom: 0;
+
+        img { width: 100%; }
+    }
+}

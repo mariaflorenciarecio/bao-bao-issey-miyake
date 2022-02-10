@@ -6,7 +6,8 @@
     position: relative;
     overflow: hidden;
     min-height: 100vh;
-    padding: 17.2rem 0 0 10rem;
+    padding: 8.9rem 0 0 8.9rem;
+    margin-bottom: 5rem;
 
     h1 { @include subtitle($white, left); }
     p { @include paragraph($white, left, 64rem); }
