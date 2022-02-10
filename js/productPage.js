@@ -99,13 +99,6 @@ window.addEventListener('load', async function() {
                                 <p>30 días después de la compra</p>
                             </div>
                         </div>
-                        <div class="product__service">
-                            <i class="fas fa-store"></i>
-                            <div>
-                                <span>Entrega en Tienda</span>
-                                <p>Retirá tu pedido en la tienda más cercana</p>
-                            </div>
-                        </div>
                     </div>
                 `;
 

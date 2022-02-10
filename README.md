@@ -21,7 +21,7 @@ El trabajo busca transmitir la **innovación, versatilidad y practicidad** que s
 
 ## Herramientas
 
-### Lenguajes
+### Tecnologías
 
 * **HTML5**
 * **CSS3**
