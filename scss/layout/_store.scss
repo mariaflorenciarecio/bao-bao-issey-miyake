@@ -8,9 +8,13 @@
     }
 
     .classification {
-        @include flex(row, nowrap, space-between, center);
-        @include flex-detail($black);
-        padding: 8.8rem 2rem 0 2rem;
+        display: none;
+
+        @media (min-width: 576px) { 
+            @include flex(row, nowrap, space-between, center);
+            @include flex-detail($black);
+            padding: 8.8rem 2rem 0 2rem;
+        }
 
         h1 { @include title($black, center); }
 
@@ -30,12 +34,21 @@
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: 17rem auto;
+        @include flex(column, nowrap, space-between, flex-start);
         padding: 0 2rem;
 
+        @media (min-width: 576px) { 
+            display: grid;
+            grid-template-columns: 17rem auto;
+        }
+
         .filter {
-            padding-right: 2rem;
+            display: none;
+
+            @media (min-width: 576px) { 
+                display: inherit;
+                padding-right: 2rem;
+            }
 
             &__type {
                 padding-bottom: 1.5rem;
@@ -73,9 +86,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
-
-        @media (min-width: 576px) { grid-template-columns: repeat(3, 1fr); }
-        @media (min-width: 768px) { grid-template-columns: repeat(4, 1fr); }
         
         .error {
             @include flex(column, nowrap, flex-start, center);
@@ -106,8 +116,21 @@
         }
     }
 
-    // .black-button { @include button-text(black, 1.2rem, center); }
+    #new-in, #essential {
+        @media (min-width: 576px) { grid-template-columns: repeat(4, 1fr); }
+        @media (min-width: 992px) { grid-template-columns: repeat(4, 1fr); }
+    }
     
+    #collection {
+        @media (max-width: 575px) { 
+            padding-top: 11rem;
+        }
+    
+        @media (min-width: 576px) { 
+            @media (min-width: 576px) { grid-template-columns: repeat(3, 1fr); }
+            @media (min-width: 992px) { grid-template-columns: repeat(4, 1fr); }
+        }
+    }
 }
 
 #new {
