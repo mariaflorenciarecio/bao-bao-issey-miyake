@@ -1,9 +1,14 @@
+#spa {
+    min-height: calc(100vh - 121px)
+}
+
 footer {
     @include flex(column, nowrap, center, center);
     background-color: black;
     border-top: 1px solid white;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    height:121px;
 
     p, i { padding: .5rem; }
 }

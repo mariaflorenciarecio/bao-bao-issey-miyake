@@ -25,7 +25,7 @@ const setupCategories = (store) => {
             else {
                 newStore = store.filter((product) => product.category === e.target.textContent)
             }
-            display(newStore, document.getElementById('collection'))
+            display(newStore, document.getElementById('collection'), true)
         }
     })
 };
@@ -49,7 +49,7 @@ const setupColors = (store) => {
             else {
                 colorStore = store.filter((product) => product.color === e.target.textContent)
             }
-            display(colorStore, document.getElementById('collection'))
+            display(colorStore, document.getElementById('collection'), true)
         }
     })
 };
@@ -72,7 +72,7 @@ const setupPrice = (store) => {
         const value = parseInt(priceInput.value);
         priceValue.textContent = `Máximo: $${value}`;
         let newStore = store.filter((product) => product.price/100 <= value);
-        display(newStore, document.getElementById('collection'));
+        display(newStore, document.getElementById('collection'), true);
         if(newStore.length < 1) {
             const products = document.getElementById('collection');
             products.innerHTML = `
@@ -101,7 +101,7 @@ const setupSearch = (store) => {
                     return product
                 }
             });
-            display(newStore, document.getElementById('collection'))
+            display(newStore, document.getElementById('collection'), true)
             if(newStore.length < 1) {
                 const products = document.getElementById('collection');
                 products.innerHTML = `
@@ -112,7 +112,7 @@ const setupSearch = (store) => {
                 `;
             }
         } else {
-            display(store, document.getElementById('collection'));
+            display(store, document.getElementById('collection'), true);
         }
     });
 };
@@ -203,7 +203,7 @@ const setupSort = (store) => {
                 return 0;
             });
         }
-        display(sortStore, document.getElementById('collection'));
+        display(sortStore, document.getElementById('collection'), true);
     };
 }
 

@@ -1,4 +1,4 @@
-select {
+select, option {
     color: black;
     background-color: transparent;
     font: { family: 'Manrope', sans-serif; size: 1.2rem; weight: 400; }
@@ -15,4 +15,8 @@ select {
     &::-ms-expand {
         display: none;
     }
+}
+
+option {
+    color: $grey-400;
 }

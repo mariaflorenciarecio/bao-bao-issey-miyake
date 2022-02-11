@@ -43,7 +43,7 @@ export const addToCart = (id) => {
 function displayCartItemCount() {
     const amount = cart.reduce((total, cartItem) => {
         return total += cartItem.amount
-    },0);
+    }, 0);
     cartItemCountDOM.textContent = amount;
     if(amount == 0) {
         document.getElementById('cart-overlay').classList.remove('cart__show');
@@ -78,6 +78,7 @@ function displayCartItemsDOM() {
 function removeItem(id) {
     cart = cart.filter((cartItem) => cartItem.id != id);
 };
+
 // INCREMENTAR UNIDADES
 
 function increaseAmount(id) {
