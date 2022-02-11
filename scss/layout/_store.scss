@@ -13,7 +13,7 @@
         @media (min-width: 576px) { 
             @include flex(row, nowrap, space-between, center);
             @include flex-detail($black);
-            padding: 8.8rem 2rem 0 2rem;
+            padding-top: 8.8rem;
         }
 
         h1 { @include title($black, center); }
@@ -35,7 +35,6 @@
 
     &__content {
         @include flex(column, nowrap, space-between, flex-start);
-        padding: 0 2rem;
 
         @media (min-width: 576px) { 
             display: grid;
@@ -127,7 +126,7 @@
         }
     
         @media (min-width: 576px) { 
-            @media (min-width: 576px) { grid-template-columns: repeat(3, 1fr); }
+            @media (min-width: 768px) { grid-template-columns: repeat(3, 1fr); }
             @media (min-width: 992px) { grid-template-columns: repeat(4, 1fr); }
         }
     }
