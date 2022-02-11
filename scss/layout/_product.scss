@@ -1,7 +1,6 @@
 .product {
     @include flex(column, nowrap, center, center);
     max-width: 114rem;
-    padding-bottom: 3rem;
     margin: auto;
 
     @media (min-width: 992px) {
@@ -18,11 +17,6 @@
         img { width: 100%; }
 
         @media (min-width: 992px) {
-            width: 55%;
-        }
-
-        @media (min-width: 1200px) {
-            max-width: 114rem;
             width: 50%;
         }
     }
@@ -34,13 +28,9 @@
 
         @media (min-width: 992px) {
             @include flex(column, nowrap, center, flex-start);
-            width: 45%;
+            width: 50%;
             padding-left: 5rem;
             padding-top: 0;
-        }
-
-        @media (min-width: 1200px) {
-            width: 50%;
         }
 
         p { 

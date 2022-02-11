@@ -9,7 +9,7 @@ import { addToCart } from './cart/functions.js';
 
 // CARD DOM
 
-const display = (products, element) => {
+const display = (products, element, filters) => {
     element.innerHTML = products.map((product) => {
         const {id, name, price, collection, color} = product;
         return `
@@ -35,6 +35,9 @@ const display = (products, element) => {
         `;
     })
     .join('');
+
+    if (filters) return;
+
     element.addEventListener('click', function(e) {
         const parent = e.target.parentElement;
         if(parent.classList.contains('overlay__cart')) {

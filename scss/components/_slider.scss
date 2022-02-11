@@ -1,7 +1,16 @@
 .slider {
     max-width: 114rem;
-    padding: 3rem 0 5rem 0;
     margin: auto;
+    padding: 0 2rem;
+
+    @media (min-width: 1200px) { 
+        padding: 0;
+    }
+
+    h2 { 
+        @include title($black, center); 
+        padding: 3rem 0 5rem 0;
+    }
 
     &__slide {
         @include overlay__content(rgba(0, 0, 0, 0.6));

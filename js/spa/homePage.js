@@ -43,6 +43,7 @@ const renderHome = () => {
     const newInSection = document.createElement('section');
     newInSection.classList.add('store');
     newInSection.innerHTML = `
+        <h2>Novedades</h2>
         <div id="new-in">
             <!-- productos renderizados -->
         </div>
@@ -54,11 +55,12 @@ const renderHome = () => {
     const sliderSection = document.createElement('section');
     sliderSection.classList.add('slider');
     sliderSection.innerHTML = `
+        <h2>Descubrí la colección</h2>
         <div class="slider__slide">
             <img src="./assets/img/index/carteras-tote.png" alt="Bolsos de mano">
             <div class="overlay__content">
                 <div class="overlay__buttons">
-                    <a href="#/tienda" class="black-button">Ver colección</a>
+                    <a href="#/tienda" class="black-button">Descubrir</a>
                 </div>
             </div>
         </div>
@@ -70,6 +72,7 @@ const renderHome = () => {
     const essentialSection = document.createElement('section');
     essentialSection.classList.add('store');
     essentialSection.innerHTML = `
+        <h2>Esenciales</h2>
         <div id="essential">
             <!-- productos renderizados -->
         </div>
